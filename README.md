@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+concepts
+
+- when they scroll up, the dynamic island moves down
+- the dynamic island shows the country of the last visit
+- get some map concepts from the old ui design
+- make the images easily updatable from
+- use rss feed from spatialnode for articles
+- make the images zoom out on hover or click
+- maybe add a map background
+- Speaking will host podcasts, talks, youtube videos.
+- show icon on mobile in dynamic island, then show the title as tooltip
