@@ -120,28 +120,6 @@ export default function Home() {
             )}
           </button>
         </nav>
-        <header className="flex flex-col items-start gap-y-10">
-          <div className="h-24 w-24 relative">
-            <Link href={"/"}>
-              <Image
-                src="/emmanuel_jolaiya.png"
-                alt="Emmanuel Jolaiya Avatar"
-                fill
-                priority
-                className="absolute rounded-full p-0.5 h-9 w-9 ring-1 ring-border-light  dark:ring-border-dark"
-                title="Emmanuel Jolaiya"
-              />
-            </Link>
-          </div>
-          <div className="flex flex-col gap-y-6 max-w-3xl">
-            <h1 className="text-black dark:text-brand-text-light text-4xl sm:text-5xl font-bold tracking-tight">
-              {APP_CONTENT.header.hero.en}
-            </h1>
-            <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light">
-              {APP_CONTENT.header.heroBio.en}
-            </p>
-          </div>
-        </header>
       </div>
     </main>
   );
