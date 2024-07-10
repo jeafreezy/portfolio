@@ -16,11 +16,11 @@ type TColorScheme = {
   togglePreferredColorScheme?: () => void;
   preferredColorScheme?: string;
 };
-const ColorSchemeContext = createContext<TColorScheme>({});
+const ThemeContext = createContext<TColorScheme>({});
 
-export const useColorSchemeContext = () => useContext(ColorSchemeContext);
+export const useThemeContext = () => useContext(ThemeContext);
 
-const ColorSchemeProvider = ({ children }: { children: React.ReactNode }) => {
+const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [preferredColorScheme, setPreferredColorScheme] =
     useState<PreferredColorScheme>(PreferredColorScheme.LIGHT);
 
@@ -60,10 +60,10 @@ const ColorSchemeProvider = ({ children }: { children: React.ReactNode }) => {
     return { togglePreferredColorScheme, preferredColorScheme };
   }, [preferredColorScheme]);
   return (
-    <ColorSchemeContext.Provider value={memoizedValues}>
+    <ThemeContext.Provider value={memoizedValues}>
       {children}
-    </ColorSchemeContext.Provider>
+    </ThemeContext.Provider>
   );
 };
 
-export default ColorSchemeProvider;
+export default ThemeProvider;

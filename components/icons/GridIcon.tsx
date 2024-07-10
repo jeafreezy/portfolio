@@ -15,7 +15,7 @@ export default function GridIcon(props: SVGProps<SVGSVGElement>) {
         stroke="currentColor"
         strokeWidth="1"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

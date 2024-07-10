@@ -1,159 +1,20 @@
 "use client";
 import BlurFade from "@/components/BlurFade";
-import FiverrIcon from "@/components/icons/FiverrIcon";
-import GitHubIcon from "@/components/icons/GitHubIcon";
-import GoogleScholarIcon from "@/components/icons/GoogleScholarIcon";
 import GridIcon from "@/components/icons/GridIcon";
-import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import MapIcon from "@/components/icons/MapIcon";
-import TwitterIcon from "@/components/icons/TwitterIcon";
-import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import GalleryImageDialog from "@/components/ImageModal";
 import { APP_CONTENT } from "@/content/content";
-import {
-  PreferredColorScheme,
-  useColorSchemeContext,
-} from "@/context/ModeSwitcherProvider";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useState } from "react";
+import EmmanuelAvatar from "@/public/emmanuel_jolaiya.png";
+import { galleryImages, navRoutes, socials } from "@/content/config";
+import WorkExperience from "@/components/WorkExperience";
+import Education from "@/components/Education";
+import { GalleryMode, TGalleryObj } from "@/types";
 
-const navRoutes = [
-  {
-    name: "About",
-    icon: "Route",
-    route: "/about",
-  },
-  {
-    name: "Articles",
-    icon: "Route",
-    route: "/articles",
-  },
-  {
-    name: "Projects",
-    icon: "Route",
-    route: "/projects",
-  },
-  {
-    name: "Speaking",
-    icon: "Route",
-    route: "/speaking",
-  },
-  {
-    name: "Stack",
-    icon: "Route",
-    route: "/stack",
-  },
-];
-
-const socials = [
-  {
-    icon: GitHubIcon,
-    url: "https://github.com/jeafreezy",
-    title: "GitHub",
-  },
-  {
-    icon: LinkedInIcon,
-    url: "https://www.linkedin.com/in/emmanueljolaiya",
-    title: "LinkedIn",
-  },
-  {
-    icon: TwitterIcon,
-    url: "https://twitter.com/jeafreezy",
-    title: "Twitter",
-  },
-  {
-    icon: YouTubeIcon,
-    url: "https://www.youtube.com/channel/UCdYaK054HlTq49qOJDTh2oA",
-    title: "YouTube",
-  },
-  {
-    icon: GoogleScholarIcon,
-    url: "https://scholar.google.com/citations?user=TAkvVMUAAAAJ&hl=en",
-    title: "Google Scholar",
-  },
-  {
-    icon: FiverrIcon,
-    url: "https://www.fiverr.com/jolaiyaemmanuel",
-    title: "Fiverr",
-  },
-];
-
-export type TGalleryObj = {
-  width?: number;
-  height?: number;
-  path: string;
-  description?: string;
-  alt: string;
-};
-
-const images: TGalleryObj[] = [
-  {
-    width: 800,
-    height: 600,
-    path: "/gallery/2.jpeg",
-    alt: "",
-  },
-  {
-    width: 600,
-    height: 800,
-    path: "/gallery/3.jpg",
-    alt: "",
-  },
-  {
-    width: 600,
-    height: 800,
-    path: "/gallery/10.jpg",
-    alt: "",
-  },
-  {
-    width: 600,
-    height: 800,
-    path: "/gallery/1.jpg",
-    alt: "",
-  },
-
-  {
-    width: 600,
-    height: 800,
-    path: "/gallery/5.jpg",
-    alt: "",
-  },
-  {
-    width: 800,
-    height: 600,
-    path: "/gallery/6.jpg",
-    alt: "",
-  },
-
-  {
-    width: 600,
-    height: 800,
-    path: "/gallery/7.jpg",
-    alt: "",
-  },
-  {
-    width: 600,
-    height: 800,
-    path: "/gallery/8.jpg",
-    alt: "",
-  },
-  {
-    width: 800,
-    height: 600,
-    path: "/gallery/9.jpeg",
-    alt: "",
-  },
-];
-
-enum GalleryMode {
-  MAP = "map",
-  GRID = "grid",
-}
 export default function Home() {
-  const { togglePreferredColorScheme, preferredColorScheme } =
-    useColorSchemeContext();
   const pathname = usePathname();
   const [galleryMode, setGalleryMode] = useState(GalleryMode.GRID);
   const [isOpen, setIsOpen] = useState(false);
@@ -164,11 +25,10 @@ export default function Home() {
       setGalleryMode(GalleryMode.GRID);
     }
   };
-  const closeModal = useCallback(() => setIsOpen(false), [isOpen]);
-  const [galleryPreview, setGalleryPreviewObj] = useState<TGalleryObj>({
-    path: "",
-    alt: "",
-  });
+  const closeModal = useCallback(() => setIsOpen(false), []);
+  const [galleryPreview, setGalleryPreviewObj] = useState<TGalleryObj | any>(
+    {}
+  );
   return (
     <>
       <GalleryImageDialog
@@ -176,202 +36,128 @@ export default function Home() {
         isOpen={isOpen}
         onClose={closeModal}
       />
-      <main className="bg-white dark:bg-black">
-        <div className="relative mx-auto min-h-screen w-full max-w-7xl flex flex-col gap-y-20 px-20 bg-white ring-1 ring-border-light dark:bg-brand-black dark:ring-border-dark">
-          <nav className="sticky top-0 z-10 flex w-full items-center justify-between pt-6 mx-auto max-w-2xl lg:max-w-5xl">
-            <div className="h-10 w-10 relative ">
-              {pathname !== "/" && (
-                <Link href={"/"}>
-                  <Image
-                    src="/emmanuel_jolaiya.png"
-                    alt="Emmanuel Jolaiya Avatar"
-                    fill
-                    priority
-                    className="absolute rounded-full p-0.5 h-9 w-9 ring-1 ring-border-light  dark:ring-border-dark"
-                    title="Emmanuel Jolaiya"
-                  />
-                </Link>
-              )}
-            </div>
-            <div>
-              <ul
-                className="flex items-center gap-x-3 
-          rounded-full bg-white/90 px-8 py-1 text-sm font-medium 
-          text-brand-text shadow-lg shadow-brand-shadow ring-1  
-          ring-border-darker backdrop-blur dark:bg-brand-bg 
-          dark:text-brand-text-light dark:ring-white/10"
-              >
-                {navRoutes.map((route, key) => (
-                  <Link href={route.route} key={`nav-item-${key}`}>
-                    <li
-                      className={`relative flex items-center cursor-pointer px-2 py-2 transition hover:text-deep-purple dark:hover:text-light-purple ${
-                        pathname === route.route &&
-                        "text-deep-purple dark:text-light-purple"
-                      } `}
-                    >
-                      {pathname === route.route && (
-                        <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
-                      )}
-                      {route.name}
-                    </li>
-                  </Link>
-                ))}
-              </ul>
-            </div>
-            <button
-              className={`h-10 w-12 cursor-pointer shadow-sm  ${
-                preferredColorScheme === PreferredColorScheme.DARK
-                  ? "bg-brand-bg"
-                  : "bg-white"
-              } rounded-2xl p-3 ring-1 hover:dark:ring-white/20 ring-border-darker  dark:ring-white/10 flex items-center justify-center`}
-              onClick={togglePreferredColorScheme}
-              title={`Switch to ${
-                preferredColorScheme === PreferredColorScheme.DARK
-                  ? PreferredColorScheme.LIGHT
-                  : PreferredColorScheme.DARK
-              } mode`}
-            >
-              {preferredColorScheme === PreferredColorScheme.DARK ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 122.56 122.88"
-                  className="fill-white/20"
-                >
-                  <path d="M121.85,87.3A64.31,64.31,0,1,1,36.88.4c2.94-1.37,5.92.91,4.47,4.47a56.29,56.29,0,0,0,75.75,77.4l.49-.27a3.41,3.41,0,0,1,4.61,4.61l-.35.69ZM92.46,74.67H92A16.11,16.11,0,0,0,76.2,58.93v-.52a15.08,15.08,0,0,0,11-4.72,15.19,15.19,0,0,0,4.72-11h.51a15.12,15.12,0,0,0,4.72,11,15.12,15.12,0,0,0,11,4.72v.51A16.13,16.13,0,0,0,92.46,74.67Zm10.09-46.59h-.27a7.94,7.94,0,0,0-2.49-5.81A7.94,7.94,0,0,0,94,19.78v-.27A7.94,7.94,0,0,0,99.79,17a8,8,0,0,0,2.49-5.8h.27A8,8,0,0,0,105,17a8,8,0,0,0,5.81,2.49v.27A8,8,0,0,0,105,22.27a7.94,7.94,0,0,0-2.49,5.81Zm-41.5,8h-.41a12.06,12.06,0,0,0-3.78-8.82A12.06,12.06,0,0,0,48,23.5v-.41a12.07,12.07,0,0,0,8.82-3.78,12.09,12.09,0,0,0,3.78-8.82h.41a12.08,12.08,0,0,0,3.77,8.82,12.09,12.09,0,0,0,8.83,3.78v.41a12.09,12.09,0,0,0-8.83,3.78,12.08,12.08,0,0,0-3.77,8.82Z" />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 240 240"
-                  className=" fill-deep-purple"
-                >
-                  <path d="M58.57,25.81c-2.13-3.67-0.87-8.38,2.8-10.51c3.67-2.13,8.38-0.88,10.51,2.8l9.88,17.1c2.13,3.67,0.87,8.38-2.8,10.51 c-3.67,2.13-8.38,0.88-10.51-2.8L58.57,25.81L58.57,25.81z M120,51.17c19.01,0,36.21,7.7,48.67,20.16 C181.12,83.79,188.83,101,188.83,120c0,19.01-7.7,36.21-20.16,48.67c-12.46,12.46-29.66,20.16-48.67,20.16 c-19.01,0-36.21-7.7-48.67-20.16C58.88,156.21,51.17,139.01,51.17,120c0-19.01,7.7-36.21,20.16-48.67 C83.79,58.88,101,51.17,120,51.17L120,51.17z M158.27,81.73c-9.79-9.79-23.32-15.85-38.27-15.85c-14.95,0-28.48,6.06-38.27,15.85 c-9.79,9.79-15.85,23.32-15.85,38.27c0,14.95,6.06,28.48,15.85,38.27c9.79,9.79,23.32,15.85,38.27,15.85 c14.95,0,28.48-6.06,38.27-15.85c9.79-9.79,15.85-23.32,15.85-38.27C174.12,105.05,168.06,91.52,158.27,81.73L158.27,81.73z M113.88,7.71c0-4.26,3.45-7.71,7.71-7.71c4.26,0,7.71,3.45,7.71,7.71v19.75c0,4.26-3.45,7.71-7.71,7.71 c-4.26,0-7.71-3.45-7.71-7.71V7.71L113.88,7.71z M170.87,19.72c2.11-3.67,6.8-4.94,10.48-2.83c3.67,2.11,4.94,6.8,2.83,10.48 l-9.88,17.1c-2.11,3.67-6.8,4.94-10.48,2.83c-3.67-2.11-4.94-6.8-2.83-10.48L170.87,19.72L170.87,19.72z M214.19,58.57 c3.67-2.13,8.38-0.87,10.51,2.8c2.13,3.67,0.88,8.38-2.8,10.51l-17.1,9.88c-3.67,2.13-8.38,0.87-10.51-2.8 c-2.13-3.67-0.88-8.38,2.8-10.51L214.19,58.57L214.19,58.57z M232.29,113.88c4.26,0,7.71,3.45,7.71,7.71 c0,4.26-3.45,7.71-7.71,7.71h-19.75c-4.26,0-7.71-3.45-7.71-7.71c0-4.26,3.45-7.71,7.71-7.71H232.29L232.29,113.88z M220.28,170.87 c3.67,2.11,4.94,6.8,2.83,10.48c-2.11,3.67-6.8,4.94-10.48,2.83l-17.1-9.88c-3.67-2.11-4.94-6.8-2.83-10.48 c2.11-3.67,6.8-4.94,10.48-2.83L220.28,170.87L220.28,170.87z M181.43,214.19c2.13,3.67,0.87,8.38-2.8,10.51 c-3.67,2.13-8.38,0.88-10.51-2.8l-9.88-17.1c-2.13-3.67-0.87-8.38,2.8-10.51c3.67-2.13,8.38-0.88,10.51,2.8L181.43,214.19 L181.43,214.19z M126.12,232.29c0,4.26-3.45,7.71-7.71,7.71c-4.26,0-7.71-3.45-7.71-7.71v-19.75c0-4.26,3.45-7.71,7.71-7.71 c4.26,0,7.71,3.45,7.71,7.71V232.29L126.12,232.29z M69.13,220.28c-2.11,3.67-6.8,4.94-10.48,2.83c-3.67-2.11-4.94-6.8-2.83-10.48 l9.88-17.1c2.11-3.67,6.8-4.94,10.48-2.83c3.67,2.11,4.94,6.8,2.83,10.48L69.13,220.28L69.13,220.28z M25.81,181.43 c-3.67,2.13-8.38,0.87-10.51-2.8c-2.13-3.67-0.88-8.38,2.8-10.51l17.1-9.88c3.67-2.13,8.38-0.87,10.51,2.8 c2.13,3.67,0.88,8.38-2.8,10.51L25.81,181.43L25.81,181.43z M7.71,126.12c-4.26,0-7.71-3.45-7.71-7.71c0-4.26,3.45-7.71,7.71-7.71 h19.75c4.26,0,7.71,3.45,7.71,7.71c0,4.26-3.45,7.71-7.71,7.71H7.71L7.71,126.12z M19.72,69.13c-3.67-2.11-4.94-6.8-2.83-10.48 c2.11-3.67,6.8-4.94,10.48-2.83l17.1,9.88c3.67,2.11,4.94,6.8,2.83,10.48c-2.11,3.67-6.8,4.94-10.48,2.83L19.72,69.13L19.72,69.13z" />
-                </svg>
-              )}
-            </button>
-          </nav>
-          <header className="flex flex-col items-start gap-y-10">
-            <div className="h-24 w-24 relative">
-              <Link href={"/"}>
-                <Image
-                  src="/emmanuel_jolaiya.png"
-                  alt="Emmanuel Jolaiya Avatar"
-                  fill
-                  priority
-                  className="absolute rounded-full p-0.5 h-9 w-9 ring-1 ring-border-light  dark:ring-border-dark"
-                  title="Emmanuel Jolaiya"
-                />
-              </Link>
-            </div>
-            <div className="flex flex-col gap-y-6 max-w-3xl">
-              <h1 className="text-black dark:text-brand-text-light text-4xl sm:text-5xl font-bold tracking-tight leading-relaxed">
-                {APP_CONTENT.header.hero.en}
-              </h1>
-              <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light leading-relaxed">
-                {APP_CONTENT.header.heroBio.en}
-              </p>
-            </div>
-            <div className="flex gap-x-6 items-center">
-              {socials.map((socialNetwork) => (
-                <span
-                  title={socialNetwork.title}
-                  className="flex items-center justify-center"
-                  key={`social-network-${socialNetwork.title}`}
-                >
-                  <Link href={socialNetwork.url}>
-                    {
-                      <socialNetwork.icon
-                        className={`w-5 h-5 ${
-                          socialNetwork.title === "Fiverr" && "w-8 h-8"
-                        } stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
-                      />
-                    }
-                  </Link>
-                </span>
-              ))}
-            </div>
-          </header>
-          <section className="flex flex-col gap-y-10">
-            <div
-              className="self-end flex items-center justify-center cursor-pointer"
-              onClick={handleGalleryModeToggle}
-              title={
-                galleryMode == GalleryMode.MAP
-                  ? "Toggle grid view"
-                  : "Toggle map view"
-              }
-            >
-              {galleryMode !== GalleryMode.MAP ? (
-                <MapIcon className="w-6 h-6 text-brand-text/60 dark:text-brand-text-light/50 dark:hover:text-brand-text-light/80" />
-              ) : (
-                <GridIcon className="w-6 h-6 text-brand-text/60 dark:text-brand-text-light/50 dark:hover:text-brand-text-light/80" />
-              )}
-            </div>
-            {galleryMode !== GalleryMode.MAP ? (
-              <div className="columns-2 gap-4 sm:columns-3">
-                {images.map((imgObj, idx) => (
-                  <BlurFade key={idx} delay={0.25 + idx * 0.05} inView>
-                    <Image
-                      className="mb-4 size-full rounded-lg object-contain cursor-zoom-in hover:scale-95 transition-all hover:opacity-95"
-                      src={imgObj.path}
-                      width={imgObj.width}
-                      height={imgObj.height}
-                      alt={`Gallery Image ${idx + 1}`}
-                      onClick={() => {
-                        setGalleryPreviewObj(imgObj);
-                        setIsOpen(true);
-                      }}
-                    />
-                  </BlurFade>
-                ))}
-              </div>
-            ) : (
-              ""
-            )}
-          </section>
-          <section className="grid grid-cols-2 grid-rows-1 gap-20">
-            <div className="h-[400px] ring-1 col-span-1">Work experience</div>
-            <div className="h-[400px] ring-1 col-span2">Education</div>
-          </section>
-          <footer className="border-t  border-border-darker dark:border-white/10 py-10 flex items-center justify-between text-brand-text dark:text-brand-text-light/80 text-base font-light leading-relaxed">
-            <div className="flex flex-col">
-              <ul className="flex items-center">
-                {navRoutes.map((route, key) => (
-                  <Link href={route.route} key={`nav-item-${key}`}>
-                    <li
-                      className={`relative flex items-center cursor-pointer px-2 py-2 transition hover:text-deep-purple dark:hover:text-light-purple ${
-                        pathname === route.route &&
-                        "text-deep-purple dark:text-light-purple"
-                      } `}
-                    >
-                      {pathname === route.route && (
-                        <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
-                      )}
-                      {route.name}
-                    </li>
-                  </Link>
-                ))}
-              </ul>
-            </div>
-            <div>
-              &copy; {new Date().getFullYear()} Emmanuel Jolaiya. Design
-              inspired by{" "}
-              <span>
-                <Link href={"https://spotlight.tailwindui.com/"} target="blank">
-                  Spencer
-                </Link>
-              </span>{" "}
-              and{" "}
-              <span>
-                <Link href={"https://dillion.io/"} target="blank">
-                  Dillion
-                </Link>
-              </span>
-              .
-            </div>
-          </footer>
+
+      <header className="flex flex-col items-start gap-y-10">
+        <div className="h-24 w-24 relative">
+          <Link href={"/"}>
+            <Image
+              src={EmmanuelAvatar}
+              placeholder="blur"
+              alt="Emmanuel Jolaiya Avatar"
+              fill
+              priority
+              className="absolute rounded-full p-0.5 h-9 w-9 ring-1 ring-border-light  dark:ring-border-dark"
+              title="Emmanuel Jolaiya"
+            />
+          </Link>
         </div>
-      </main>
+        <div className="flex flex-col gap-y-6 max-w-3xl">
+          <h1 className="text-black dark:text-brand-text-light text-4xl sm:text-5xl font-bold tracking-tight leading-relaxed">
+            {APP_CONTENT.header.hero.en}
+          </h1>
+          <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light leading-relaxed">
+            {APP_CONTENT.header.heroBio.en}
+          </p>
+        </div>
+        <div className="flex gap-x-6 items-center">
+          {socials.map((socialNetwork) => (
+            <span
+              title={socialNetwork.title}
+              className="flex items-center justify-center"
+              key={`social-network-${socialNetwork.title}`}
+            >
+              <Link href={socialNetwork.url} target="blank">
+                {
+                  <socialNetwork.icon
+                    className={`w-5 h-5 ${
+                      socialNetwork.title === "Fiverr" && "w-8 h-8"
+                    } stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
+                  />
+                }
+              </Link>
+            </span>
+          ))}
+        </div>
+      </header>
+      <section className="flex flex-col gap-y-10">
+        <div
+          className="self-end flex items-center justify-center cursor-pointer"
+          onClick={handleGalleryModeToggle}
+          title={
+            galleryMode == GalleryMode.MAP
+              ? "Toggle grid view"
+              : "Toggle map view"
+          }
+        >
+          {galleryMode !== GalleryMode.MAP ? (
+            <MapIcon className="icons icon-text" />
+          ) : (
+            <GridIcon className="icons icon-text" />
+          )}
+        </div>
+        {galleryMode !== GalleryMode.MAP ? (
+          <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+            {galleryImages.map((imgObj, idx) => (
+              <BlurFade key={idx} delay={0.25 + idx * 0.05} inView>
+                <Image
+                  className="mb-4 size-full rounded-lg object-contain cursor-zoom-in hover:scale-95 transition-all"
+                  src={imgObj.path}
+                  width={imgObj.width}
+                  height={imgObj.height}
+                  alt={`Gallery Image ${idx + 1}`}
+                  placeholder="blur"
+                  onClick={() => {
+                    setGalleryPreviewObj(imgObj);
+                    setIsOpen(true);
+                  }}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        ) : (
+          ""
+        )}
+      </section>
+      <section className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-20">
+        <WorkExperience />
+        <Education />
+      </section>
+      <footer className="border-t text-sm border-border-darker dark:border-white/10 py-6 md:py-10 flex flex-col md:flex-row gap-y-6 items-center justify-between text-brand-text dark:text-brand-text-light/80  font-light leading-relaxed">
+        <div className="flex flex-col">
+          <ul className="flex items-center">
+            {navRoutes.map((route, key) => (
+              <Link href={route.route} key={`nav-item-${key}`}>
+                <li
+                  className={`relative flex items-center cursor-pointer px-2 py-2 transition hover:text-deep-purple dark:hover:text-light-purple ${
+                    pathname === route.route &&
+                    "text-deep-purple dark:text-light-purple"
+                  } `}
+                >
+                  {pathname === route.route && (
+                    <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
+                  )}
+                  {route.name}
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+        <div className="text-center text-xs sm:text-sm">
+          &copy; {new Date().getFullYear()} Emmanuel Jolaiya. Design inspired by{" "}
+          <span>
+            <Link href={"https://spotlight.tailwindui.com/"} target="blank">
+              Tailwind UI
+            </Link>
+          </span>{" "}
+          and{" "}
+          <span>
+            <Link href={"https://dillion.io/"} target="blank">
+              Dillion
+            </Link>
+          </span>
+          .
+        </div>
+      </footer>
     </>
   );
 }
