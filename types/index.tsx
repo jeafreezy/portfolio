@@ -11,3 +11,18 @@ export enum GalleryMode {
   MAP = "map",
   GRID = "grid",
 }
+
+export type TWorkExperience = {
+  role: string;
+  roleType: string;
+  period: string;
+  companyName: string;
+  companyLogo: StaticImageData;
+};
+
+export type TEducation = {
+  degree: string;
+  period: string;
+  schoolName: string;
+  schoolLogo: StaticImageData;
+};

@@ -118,9 +118,9 @@ export default function Home() {
           ""
         )}
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-20">
-        <WorkExperience />
+      <section className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-20">
         <Education />
+        <WorkExperience />
       </section>
       <footer className="border-t text-sm border-border-darker dark:border-white/10 py-6 md:py-10 flex flex-col md:flex-row gap-y-6 items-center justify-between text-brand-text dark:text-brand-text-light/80  font-light leading-relaxed">
         <div className="flex flex-col">

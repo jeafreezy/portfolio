@@ -17,4 +17,7 @@
     .icon-stroke {
         @apply w-6 h-6 stroke-brand-text/60 dark:stroke-brand-text-light/50 dark:hover:stroke-brand-text-light/80
     }
+    .brand-ring{
+        @apply ring-1 ring-border-darker  dark:ring-white/10
+    }
 }
