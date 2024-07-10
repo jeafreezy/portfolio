@@ -16,7 +16,7 @@ export const APP_CONTENT = {
   },
   workExperience: [
     {
-      role: "Software Engineer/Founder",
+      role: "Founder",
       roleType: "Part Time",
       period: "2022 - Present",
       companyName: "Spatialnode",
