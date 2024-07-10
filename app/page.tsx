@@ -232,6 +232,7 @@ export default function Home() {
               <span
                 title={socialNetwork.title}
                 className="flex items-center justify-center"
+                key={`social-network-${socialNetwork.title}`}
               >
                 <Link href={socialNetwork.url}>
                   {
@@ -251,7 +252,7 @@ export default function Home() {
             {images.map((imgObj, idx) => (
               <BlurFade key={idx} delay={0.25 + idx * 0.05} inView>
                 <Image
-                  className="mb-4 size-full rounded-lg object-contain cursor-pointer hover:scale-105 transition-all hover:opacity-95"
+                  className="mb-4 size-full rounded-lg object-contain cursor-pointer hover:scale-95 transition-all hover:opacity-95"
                   src={imgObj.path}
                   width={imgObj.width}
                   height={imgObj.height}
