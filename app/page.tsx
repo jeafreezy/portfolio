@@ -1,4 +1,11 @@
 "use client";
+import BlurFade from "@/components/BlurFade";
+import FiverrIcon from "@/components/icons/FiverrIcon";
+import GitHubIcon from "@/components/icons/GitHubIcon";
+import GoogleScholarIcon from "@/components/icons/GoogleScholarIcon";
+import LinkedInIcon from "@/components/icons/LinkedInIcon";
+import TwitterIcon from "@/components/icons/TwitterIcon";
+import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import { APP_CONTENT } from "@/content/content";
 import {
   PreferredColorScheme,
@@ -10,19 +17,9 @@ import { usePathname } from "next/navigation";
 
 const navRoutes = [
   {
-    name: "Home",
-    icon: "Route",
-    route: "/",
-  },
-  {
     name: "About",
     icon: "Route",
     route: "/about",
-  },
-  {
-    name: "Projects",
-    icon: "Route",
-    route: "/projects",
   },
   {
     name: "Articles",
@@ -30,16 +27,105 @@ const navRoutes = [
     route: "/articles",
   },
   {
-    name: "Publications",
+    name: "Projects",
     icon: "Route",
-    route: "/publications",
+    route: "/projects",
   },
   {
     name: "Speaking",
     icon: "Route",
     route: "/speaking",
   },
+  {
+    name: "Stack",
+    icon: "Route",
+    route: "/stack",
+  },
 ];
+
+const socials = [
+  {
+    icon: GitHubIcon,
+    url: "https://github.com/jeafreezy",
+    title: "GitHub",
+  },
+  {
+    icon: LinkedInIcon,
+    url: "https://www.linkedin.com/in/emmanueljolaiya",
+    title: "LinkedIn",
+  },
+  {
+    icon: TwitterIcon,
+    url: "https://twitter.com/jeafreezy",
+    title: "Twitter",
+  },
+  {
+    icon: YouTubeIcon,
+    url: "https://www.youtube.com/channel/UCdYaK054HlTq49qOJDTh2oA",
+    title: "YouTube",
+  },
+  {
+    icon: GoogleScholarIcon,
+    url: "https://scholar.google.com/citations?user=TAkvVMUAAAAJ&hl=en",
+    title: "Google Scholar",
+  },
+  {
+    icon: FiverrIcon,
+    url: "https://www.fiverr.com/jolaiyaemmanuel",
+    title: "Fiverr",
+  },
+];
+
+const images: { width: number; height: number; path: string }[] = [
+  {
+    width: 800,
+    height: 600,
+    path: "/gallery/2.jpeg",
+  },
+  {
+    width: 600,
+    height: 800,
+    path: "/gallery/3.jpg",
+  },
+  {
+    width: 600,
+    height: 800,
+    path: "/gallery/10.jpg",
+  },
+  {
+    width: 600,
+    height: 800,
+    path: "/gallery/1.jpg",
+  },
+
+  {
+    width: 600,
+    height: 800,
+    path: "/gallery/5.jpg",
+  },
+  {
+    width: 800,
+    height: 600,
+    path: "/gallery/6.jpg",
+  },
+
+  {
+    width: 600,
+    height: 800,
+    path: "/gallery/7.jpg",
+  },
+  {
+    width: 600,
+    height: 800,
+    path: "/gallery/8.jpg",
+  },
+  {
+    width: 800,
+    height: 600,
+    path: "/gallery/9.jpeg",
+  },
+];
+
 export default function Home() {
   const { togglePreferredColorScheme, preferredColorScheme } =
     useColorSchemeContext();
@@ -134,14 +220,47 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex flex-col gap-y-6 max-w-3xl">
-            <h1 className="text-black dark:text-brand-text-light text-4xl sm:text-5xl font-bold tracking-tight">
+            <h1 className="text-black dark:text-brand-text-light text-4xl sm:text-5xl font-bold tracking-tight leading-relaxed">
               {APP_CONTENT.header.hero.en}
             </h1>
-            <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light">
+            <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light leading-relaxed">
               {APP_CONTENT.header.heroBio.en}
             </p>
           </div>
+          <div className="flex gap-x-6 items-center">
+            {socials.map((socialNetwork) => (
+              <span
+                title={socialNetwork.title}
+                className="flex items-center justify-center"
+              >
+                <Link href={socialNetwork.url}>
+                  {
+                    <socialNetwork.icon
+                      className={`w-5 h-5 ${
+                        socialNetwork.title === "Fiverr" && "w-8 h-8"
+                      } stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
+                    />
+                  }
+                </Link>
+              </span>
+            ))}
+          </div>
         </header>
+        <section>
+          <div className="columns-2 gap-4 sm:columns-3">
+            {images.map((imgObj, idx) => (
+              <BlurFade key={idx} delay={0.25 + idx * 0.05} inView>
+                <Image
+                  className="mb-4 size-full rounded-lg object-contain cursor-pointer hover:scale-105 transition-all hover:opacity-95"
+                  src={imgObj.path}
+                  width={imgObj.width}
+                  height={imgObj.height}
+                  alt={`Gallery Image ${idx + 1}`}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </section>
       </div>
     </main>
   );

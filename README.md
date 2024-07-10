@@ -35,7 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-concepts
+- icons from https://simpleicons.org
+  concepts
 
 - when they scroll up, the dynamic island moves down
 - the dynamic island shows the country of the last visit
@@ -46,3 +47,5 @@ concepts
 - maybe add a map background
 - Speaking will host podcasts, talks, youtube videos.
 - show icon on mobile in dynamic island, then show the title as tooltip
+- Publication will be a section under projects.
+- Use stack section to highlight tools. Here I can use some components from Magic UI to highlight my teck stack and tools I use.
