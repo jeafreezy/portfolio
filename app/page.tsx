@@ -165,7 +165,10 @@ export default function Home() {
     }
   };
   const closeModal = useCallback(() => setIsOpen(false), [isOpen]);
-  const [galleryPreview, setGalleryPreviewObj] = useState<TGalleryObj>({});
+  const [galleryPreview, setGalleryPreviewObj] = useState<TGalleryObj>({
+    path: "",
+    alt: "",
+  });
   return (
     <>
       <GalleryImageDialog
