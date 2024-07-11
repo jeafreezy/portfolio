@@ -96,7 +96,7 @@ export default function Home() {
           )}
         </div>
         {galleryMode !== GalleryMode.MAP ? (
-          <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+          <div className="columns-2 gap-2 lg:gap-4 lg:columns-3">
             {galleryImages.map((imgObj, idx) => (
               <BlurFade key={idx} delay={0.25 + idx * 0.05} inView>
                 <Image
