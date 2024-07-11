@@ -15,6 +15,40 @@ export const APP_CONTENT = {
       en: "I'm Emmanuel, a software engineer, earth observation (remote sensing) & geospatial expert and founder currently based in Germany. I'm the founder of Spatialnode, a platform that empower geospatial people to showcase their works and explore opportunities.",
     },
   },
+  about: {
+    hero: {
+      en: "I'm Emmanuel Jolaiya. I love to build things.",
+    },
+    content: {
+      firstBlock: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea
+          pariatur deserunt deleniti, cumque minima vitae itaque alias ipsam
+          dolores odio maiores facilis sint at! Officia necessitatibus minima
+          ipsam autem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magni ea pariatur deserunt deleniti, cumque minima vitae itaque alias
+          ipsam dolores odio maiores facilis sint at! Officia necessitatibus
+          minima ipsam autem? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit.`,
+      secondBlock: `Magni ea pariatur deserunt deleniti, cumque minima vitae itaque
+          alias ipsam dolores odio maiores facilis sint at! Officia
+          necessitatibus minima ipsam autem? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Magni ea pariatur deserunt deleniti,
+          cumque minima vitae itaque alias ipsam dolores odio maiores facilis
+          sint at! Officia necessitatibus minima ipsam autem? Lorem ipsum dolor
+          `,
+      thirdBlock: `Magni ea pariatur deserunt deleniti, cumque minima vitae itaque
+          alias ipsam dolores odio maiores facilis sint at! Officia
+          necessitatibus minima ipsam autem? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Magni ea pariatur deserunt deleniti,
+          cumque minima vitae itaque alias ipsam dolores odio maiores facilis
+          `,
+      lastBlock: `Magni ea pariatur deserunt deleniti, cumque minima vitae itaque
+          alias ipsam dolores odio maiores facilis sint at! Officia
+          necessitatibus minima ipsam autem? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Magni ea pariatur deserunt deleniti,
+          cumque minima vitae itaque alias ipsam dolores odio maiores facilis
+         `,
+    },
+  },
   workExperience: [
     {
       role: "Founder",

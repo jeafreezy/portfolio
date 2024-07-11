@@ -12,7 +12,7 @@ const NavBar = () => {
     useThemeContext();
   const pathname = usePathname();
   return (
-    <nav className="sticky md:top-0 z-10 flex w-full items-center justify-between pt-6 mx-auto max-w-2xl lg:max-w-5xl">
+    <nav className="sticky md:top-0 z-10 flex w-full items-center justify-between pt-6">
       <div className="h-10 w-10 relative">
         {pathname !== "/" && (
           <Link href={"/"}>

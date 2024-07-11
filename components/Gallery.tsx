@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import BlurFade from "@/components/BlurFade";
-import GridIcon from "@/components/icons/GridIcon";
-import MapIcon from "@/components/icons/MapIcon";
+// import GridIcon from "@/components/icons/GridIcon";
+// import MapIcon from "@/components/icons/MapIcon";
 import { galleryImages } from "@/utils/config";
 import { useCallback, useState } from "react";
 import { TGalleryObj } from "@/utils/types";
@@ -13,13 +13,13 @@ import GalleryImageDialog from "./ImageModal";
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [galleryMode, setGalleryMode] = useState(GalleryMode.GRID);
-  const handleGalleryModeToggle = () => {
-    if (galleryMode === GalleryMode.GRID) {
-      setGalleryMode(GalleryMode.MAP);
-    } else {
-      setGalleryMode(GalleryMode.GRID);
-    }
-  };
+  // const handleGalleryModeToggle = () => {
+  //   if (galleryMode === GalleryMode.GRID) {
+  //     setGalleryMode(GalleryMode.MAP);
+  //   } else {
+  //     setGalleryMode(GalleryMode.GRID);
+  //   }
+  // };
   const closeModal = useCallback(() => setIsOpen(false), []);
   const [galleryPreview, setGalleryPreviewObj] = useState<TGalleryObj | any>(
     {}
@@ -32,7 +32,7 @@ const Gallery = () => {
         onClose={closeModal}
       />
       <section className="flex flex-col gap-y-10">
-        <div
+        {/* <div
           className="self-end flex items-center justify-center cursor-pointer"
           onClick={handleGalleryModeToggle}
           title={
@@ -46,7 +46,7 @@ const Gallery = () => {
           ) : (
             <GridIcon className="icons icon-text" />
           )}
-        </div>
+        </div> */}
         {galleryMode !== GalleryMode.MAP ? (
           <div className="columns-2 gap-2 lg:gap-4 lg:columns-3">
             {galleryImages.map((imgObj, idx) => (

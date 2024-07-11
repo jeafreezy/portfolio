@@ -8,7 +8,10 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <main className="bg-white dark:bg-black">
-      <div className="relative mx-auto min-h-screen w-full max-w-7xl flex flex-col gap-y-10 md:gap-y-20 px-4 sm:px-10 bg-white ring-1 ring-border-light dark:bg-brand-black dark:ring-border-dark">
+      <div className="text-black dark:text-white text-center">
+        This site is a WIP please check back...
+      </div>
+      <div className="relative mx-auto min-h-screen w-full max-w-7xl flex flex-col gap-y-10 md:gap-y-20 px-4 sm:px-24 bg-white ring-1 ring-border-light dark:bg-brand-black dark:ring-border-dark">
         <NavBar />
         {children}
         <div
