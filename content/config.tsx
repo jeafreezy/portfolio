@@ -17,32 +17,32 @@ import Gallery5 from "@/public/gallery/5.jpg";
 
 export const navRoutes: {
   name: string;
-  icon: string;
+  icon: any;
   route: string;
 }[] = [
   {
     name: "About",
-    icon: "Route",
+    icon: GitHubIcon,
     route: "/about",
   },
   {
     name: "Articles",
-    icon: "Route",
+    icon: GitHubIcon,
     route: "/articles",
   },
   {
     name: "Projects",
-    icon: "Route",
+    icon: GitHubIcon,
     route: "/projects",
   },
   {
     name: "Speaking",
-    icon: "Route",
+    icon: GitHubIcon,
     route: "/speaking",
   },
   {
     name: "Stack",
-    icon: "Route",
+    icon: GitHubIcon,
     route: "/stack",
   },
 ];

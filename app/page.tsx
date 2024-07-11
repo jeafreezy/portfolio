@@ -37,8 +37,8 @@ export default function Home() {
         onClose={closeModal}
       />
 
-      <header className="flex flex-col items-start gap-y-10">
-        <div className="h-24 w-24 relative">
+      <header className="flex flex-col items-start gap-y-8 lg:gap-y-10">
+        <div className="h-20 md:h-24 w-20 md:w-24 relative">
           <Link href={"/"}>
             <Image
               src={EmmanuelAvatar}
@@ -51,15 +51,15 @@ export default function Home() {
             />
           </Link>
         </div>
-        <div className="flex flex-col gap-y-6 max-w-3xl">
-          <h1 className="text-black dark:text-brand-text-light text-4xl sm:text-5xl font-bold tracking-tight leading-relaxed">
+        <div className="flex flex-col gap-y-4 md:gap-y-6 max-w-3xl">
+          <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold tracking-tight leading-normal md:leading-relaxed">
             {APP_CONTENT.header.hero.en}
           </h1>
-          <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light leading-relaxed">
+          <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light leading-normal md:leading-relaxed">
             {APP_CONTENT.header.heroBio.en}
           </p>
         </div>
-        <div className="flex gap-x-6 items-center">
+        <div className="flex gap-x-4 md:gap-x-6 items-center">
           {socials.map((socialNetwork) => (
             <span
               title={socialNetwork.title}
@@ -122,7 +122,7 @@ export default function Home() {
         <Education />
         <WorkExperience />
       </section>
-      <footer className="border-t text-sm border-border-darker dark:border-white/10 py-6 md:py-10 flex flex-col md:flex-row gap-y-6 items-center justify-between text-brand-text dark:text-brand-text-light/80  font-light leading-relaxed">
+      <footer className="border-t text-sm border-border-darker dark:border-white/10 py-6 md:py-10 flex flex-col md:flex-row gap-y-6 items-center justify-between text-brand-text dark:text-brand-text-light  font-light leading-relaxed">
         <div className="flex flex-col">
           <ul className="flex items-center">
             {navRoutes.map((route, key) => (
@@ -142,7 +142,7 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className="text-center text-xs sm:text-sm">
+        <div className="text-center text-xs sm:text-sm text-brand-text dark:text-brand-text-light/80">
           &copy; {new Date().getFullYear()} Emmanuel Jolaiya. Design inspired by{" "}
           <span>
             <Link href={"https://spotlight.tailwindui.com/"} target="blank">

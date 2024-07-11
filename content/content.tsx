@@ -58,7 +58,7 @@ export const APP_CONTENT = {
       schoolLogo: UJILogo,
     },
     {
-      degree: "B.Tech. in Remote Sensing & GIS (Top 1%)",
+      degree: "B.Tech. in Remote Sensing & GIS",
       period: "2015 - 2021",
       schoolName: "The Federal University of Technology, Akure, Nigeria",
       schoolLogo: FUTALogo,

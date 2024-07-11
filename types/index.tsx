@@ -14,7 +14,6 @@ export enum GalleryMode {
 
 export type TWorkExperience = {
   role: string;
-  roleType: string;
   period: string;
   companyName: string;
   companyLogo: StaticImageData;
