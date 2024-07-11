@@ -7,10 +7,10 @@ export type TGalleryObj = {
   description: string;
 };
 
-export enum GalleryMode {
-  MAP = "map",
-  GRID = "grid",
-}
+export type TColorScheme = {
+  togglePreferredColorScheme?: () => void;
+  preferredColorScheme?: string;
+};
 
 export type TWorkExperience = {
   role: string;

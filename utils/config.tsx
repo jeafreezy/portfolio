@@ -4,7 +4,7 @@ import GoogleScholarIcon from "@/components/icons/GoogleScholarIcon";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import TwitterIcon from "@/components/icons/TwitterIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
-import { TGalleryObj } from "@/types";
+import { TGalleryObj } from "@/utils/types";
 import Gallery1 from "@/public/gallery/1.jpg";
 import Gallery2 from "@/public/gallery/2.jpeg";
 import Gallery3 from "@/public/gallery/3.jpg";
@@ -12,37 +12,47 @@ import Gallery4 from "@/public/gallery/4.jpg";
 import Gallery6 from "@/public/gallery/6.jpg";
 import Gallery7 from "@/public/gallery/7.jpg";
 import Gallery5 from "@/public/gallery/5.jpg";
+import PersonIcon from "@/components/icons/PersonIcon";
+import ArticleIcon from "@/components/icons/ArticleIcon";
+import CodeIcon from "@/components/icons/CodeIcon";
+import HomeIcon from "@/components/icons/HomeIcon";
+import MicrophoneIcon from "@/components/icons/MicrophoneIcon";
+import GridIcon from "@/components/icons/GridIcon";
 
 // Navigation routes
-
 export const navRoutes: {
   name: string;
   icon: any;
   route: string;
 }[] = [
   {
+    name: "Home",
+    icon: HomeIcon,
+    route: "/",
+  },
+  {
     name: "About",
-    icon: GitHubIcon,
+    icon: PersonIcon,
     route: "/about",
   },
   {
     name: "Articles",
-    icon: GitHubIcon,
+    icon: ArticleIcon,
     route: "/articles",
   },
   {
     name: "Projects",
-    icon: GitHubIcon,
+    icon: GridIcon,
     route: "/projects",
   },
   {
     name: "Speaking",
-    icon: GitHubIcon,
+    icon: MicrophoneIcon,
     route: "/speaking",
   },
   {
     name: "Stack",
-    icon: GitHubIcon,
+    icon: CodeIcon,
     route: "/stack",
   },
 ];

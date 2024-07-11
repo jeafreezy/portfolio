@@ -1,17 +1,18 @@
 "use client";
 
-import { PreferredColorScheme, useThemeContext } from "@/context/ThemeProvider";
+import { useThemeContext } from "@/context/ThemeProvider";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import EmmanuelAvatar from "@/public/emmanuel_jolaiya.png";
-import { navRoutes } from "@/content/config";
+import { navRoutes } from "@/utils/config";
+import { PreferredColorScheme } from "@/utils/enums";
 const NavBar = () => {
   const { togglePreferredColorScheme, preferredColorScheme } =
     useThemeContext();
   const pathname = usePathname();
   return (
-    <nav className="sticky md:top-0 z-10 flex w-full items-center justify-between pt-6 mx-auto max-w-xl lg:max-w-5xl">
+    <nav className="sticky md:top-0 z-10 flex w-full items-center justify-between pt-6 mx-auto max-w-2xl lg:max-w-5xl">
       <div className="h-10 w-10 relative">
         {pathname !== "/" && (
           <Link href={"/"}>
@@ -31,7 +32,7 @@ const NavBar = () => {
         <NavRoutes />
       </div>
       <button
-        className={`h-8 md:h-10 w-10 md:w-12 cursor-pointer shadow-sm  ${
+        className={`h-8 md:h-10 w-10 md:w-12 cursor-pointer shadow-lg ${
           preferredColorScheme === PreferredColorScheme.DARK
             ? "bg-brand-bg"
             : "bg-white"
@@ -67,15 +68,19 @@ const NavBar = () => {
 
 export default NavBar;
 
-export const NavRoutes = ({ isMobile }: { isMobile: boolean }) => {
+export const NavRoutes = ({ isMobile }: { isMobile?: boolean }) => {
   const pathname = usePathname();
   return (
     <ul
-      className="flex items-center justify-between gap-x-3 
-      rounded-full bg-white/90 px-8 py-1 text-sm font-medium 
-      text-brand-text shadow-lg shadow-brand-shadow ring-1  
+      className={`flex items-center justify-between gap-x-3 
+      rounded-full bg-white/90 px-4 md:px-8 py-1 text-sm font-medium 
+      text-brand-text ring-1
       ring-border-darker backdrop-blur dark:bg-brand-bg 
-      dark:text-brand-text-light dark:ring-white/10"
+      dark:text-brand-text-light dark:ring-white/10 ${
+        isMobile
+          ? "shadow-2xl shadow-black dark:shadow-white"
+          : "shadow-lg shadow-brand-shadow"
+      }`}
     >
       {navRoutes.map((route, key) => (
         <Link href={route.route} key={`nav-item-${key}`}>
@@ -88,11 +93,7 @@ export const NavRoutes = ({ isMobile }: { isMobile: boolean }) => {
             {pathname === route.route && (
               <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
             )}
-            {!isMobile ? (
-              route.name
-            ) : (
-              <route.icon className="icons icon-fill" />
-            )}
+            {!isMobile ? route.name : <route.icon className="icons" />}
           </li>
         </Link>
       ))}

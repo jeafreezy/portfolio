@@ -1,4 +1,4 @@
-import { APP_CONTENT } from "@/content/content";
+import { APP_CONTENT } from "@/utils/content";
 import WorkIcon from "./icons/WorkIcon";
 import DownloadIcon from "./icons/DownloadIcon";
 import Link from "next/link";

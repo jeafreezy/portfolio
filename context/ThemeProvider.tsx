@@ -1,4 +1,6 @@
 "use client";
+import { PreferredColorScheme } from "@/utils/enums";
+import { TColorScheme } from "@/utils/types";
 import {
   createContext,
   useCallback,
@@ -8,14 +10,6 @@ import {
   useState,
 } from "react";
 
-export enum PreferredColorScheme {
-  LIGHT = "light",
-  DARK = "dark",
-}
-type TColorScheme = {
-  togglePreferredColorScheme?: () => void;
-  preferredColorScheme?: string;
-};
 const ThemeContext = createContext<TColorScheme>({});
 
 export const useThemeContext = () => useContext(ThemeContext);

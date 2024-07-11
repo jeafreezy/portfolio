@@ -5,6 +5,7 @@ import RuralFarmersHubLogo from "@/public/rural_farmers_hub.png";
 import UniMunsterLogo from "@/public/Logo_WWU_Munster.png";
 import FUTALogo from "@/public/futa_logo.png";
 import UJILogo from "@/public/UJI_logo.jpeg";
+
 export const APP_CONTENT = {
   header: {
     hero: {

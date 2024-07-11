@@ -1,4 +1,4 @@
-import { APP_CONTENT } from "@/content/content";
+import { APP_CONTENT } from "@/utils/content";
 import EducationIcon from "./icons/EducationIcon";
 import ExperienceCard from "./ExperienceCard";
 

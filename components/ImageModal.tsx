@@ -1,4 +1,4 @@
-import { TGalleryObj } from "@/types";
+import { TGalleryObj } from "@/utils/types";
 import {
   Dialog,
   DialogBackdrop,
