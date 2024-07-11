@@ -67,7 +67,7 @@ const NavBar = () => {
 
 export default NavBar;
 
-export const NavRoutes = ({ isMobile }: { isMobile: boolean }) => {
+export const NavRoutes = ({ isMobile }: { isMobile?: boolean }) => {
   const pathname = usePathname();
   return (
     <ul
