@@ -1,7 +1,6 @@
 import WorkExperience from "@/components/WorkExperience";
 import Education from "@/components/Education";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
         <Education />
         <WorkExperience />
       </section>
-      <Footer />
     </>
   );
 }

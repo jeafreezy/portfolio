@@ -46,7 +46,7 @@ export const navRoutes: {
     route: "/projects",
   },
   {
-    name: "Speaking",
+    name: "Talks",
     icon: MicrophoneIcon,
     route: "/speaking",
   },

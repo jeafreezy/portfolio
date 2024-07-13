@@ -1,16 +1,16 @@
-export default function ProjectsPage() {
+import { APP_CONTENT } from "@/utils/content";
+
+export default async function ProjectsPage({}) {
   return (
-    <section>
-      <div className="flex min-h-[calc(100vh-8rem)] items-center px-6 py-12">
-        <div className="mx-auto flex max-w-sm flex-col items-center text-center">
-          <h1 className="mt-3 text-2xl font-semibold text-black dark:text-brand-text-light md:text-3xl">
-            Work in progress.
-          </h1>
-          <p className="mt-4 text-brand-text dark:text-brand-text-light/80">
-            Please check back.
-          </p>
+    <div className="min-h-screen flex flex-col gap-y-20  py-10 mb-10">
+      <div className="w-full space-y-8 max-w-3xl">
+        <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold leading-normal md:leading-[60px]">
+          {APP_CONTENT.projects.hero.en}
+        </h1>
+        <div className="flex flex-col gap-y-6 text-brand-text text-left dark:text-brand-text-light/80 text-base font-light leading-normal md:leading-relaxed">
+          <p>{APP_CONTENT.projects.description}</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

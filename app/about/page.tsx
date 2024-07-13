@@ -33,7 +33,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="flex flex-col gap-y-20 lg:items-end row-span-1">
-        <div className="w-full lg:w-[400px] space-y-10 text-brand-text/60 dark:text-brand-text-light/50">
+        <div className="w-full lg:w-[400px] space-y-10 text-brand-text  dark:text-brand-text-light/80">
           <div className="flex flex-col gap-y-4 md:gap-y-6 ">
             {socials.map((socialNetwork) => (
               <span

@@ -11,32 +11,37 @@ const NavBar = () => {
   const { togglePreferredColorScheme, preferredColorScheme } =
     useThemeContext();
   const pathname = usePathname();
+
   return (
     <nav className="sticky md:top-0 z-10 flex w-full items-center justify-between pt-6">
-      <div className="h-10 w-10 relative">
-        {pathname !== "/" && (
-          <Link href={"/"}>
-            <Image
-              src={EmmanuelAvatar}
-              placeholder="blur"
-              alt="Emmanuel Jolaiya Avatar"
-              fill
-              priority
-              className="absolute rounded-full p-0.5 h-9 w-9 ring-1 ring-border-light  dark:ring-border-dark"
-              title="Emmanuel Jolaiya"
-            />
-          </Link>
-        )}
+      <div
+        className={`${
+          pathname !== "/"
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-2"
+        } h-12 w-12 relative  rounded-full transform transition-all duration-300`}
+      >
+        <Link href={"/"}>
+          <Image
+            src={EmmanuelAvatar}
+            placeholder="blur"
+            alt="Emmanuel Jolaiya Avatar"
+            fill
+            priority
+            className="absolute rounded-full p-0.5 h-9 w-9 ring-1 ring-border-light  dark:ring-border-dark"
+            title="Emmanuel Jolaiya"
+          />
+        </Link>
       </div>
       <div className="hidden md:block">
         <NavRoutes />
       </div>
       <button
-        className={`h-8 md:h-10 w-10 md:w-12 cursor-pointer shadow-lg ${
+        className={`h-10 w-12 cursor-pointer  ${
           preferredColorScheme === PreferredColorScheme.DARK
             ? "bg-brand-bg"
             : "bg-white"
-        } rounded-2xl p-3 ring-1 hover:dark:ring-white/20 ring-border-darker  dark:ring-white/10 flex items-center justify-center`}
+        } rounded-2xl p-3  hover:dark:ring-white/20 brand-ring flex items-center justify-center`}
         onClick={togglePreferredColorScheme}
         title={`Switch to ${
           preferredColorScheme === PreferredColorScheme.DARK

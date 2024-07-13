@@ -25,3 +25,10 @@ export type TEducation = {
   schoolName: string;
   schoolLogo: StaticImageData;
 };
+
+export type TArticle = {
+  date?: string;
+  title?: string;
+  exceprt?: string;
+  link?: any;
+};
