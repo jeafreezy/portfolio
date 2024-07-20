@@ -20,4 +20,9 @@
     .brand-ring{
         @apply ring-1 ring-border-darker  dark:ring-white/10
     }
+    .brand-text{
+        @apply text-brand-text dark:text-brand-text-light/80
+
+    }
 }
+

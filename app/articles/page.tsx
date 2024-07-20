@@ -10,10 +10,7 @@ import {
 } from "@/services";
 import { formatDate } from "@/utils/formatter";
 import { extractFirst100Words } from "@/utils/parser";
-
-interface DateItem {
-  isoDate: string;
-}
+import { sortDateInDescendingOrder } from "@/utils/sorter";
 
 const fetchArticles = async () => {
   // fetch spatialnode articles from RSS Feed
@@ -45,7 +42,7 @@ export default async function ArticlesPage({}) {
           <p>{APP_CONTENT.articles.description}</p>
         </div>
       </div>
-      <div className="border-l border-border-darker relative dark:border-white/10 px-6 md:px-8">
+      <div className="border-l border-border-darker relative dark:border-white/10 pl-6 md:px-8">
         <div className="flex flex-col gap-y-20 w-full">
           {/* Spatialnode Articles */}
           {spatialnodeArticles && spatialnodeArticles?.length > 0 ? (
@@ -55,11 +52,7 @@ export default async function ArticlesPage({}) {
                 title={APP_CONTENT.articles.spatialnode.name}
               />
               {spatialnodeArticles
-                .sort((a, b) => {
-                  const dateA = a.isoDate ? new Date(a.isoDate).getTime() : 0;
-                  const dateB = b.isoDate ? new Date(b.isoDate).getTime() : 0;
-                  return dateB - dateA;
-                })
+                .sort((a, b) => sortDateInDescendingOrder(a.isoDate, b.isoDate))
                 .map((article, id) => (
                   <ArticleCard
                     key={`spatialnode-articles-${id}`}
@@ -107,11 +100,7 @@ export default async function ArticlesPage({}) {
                 title={APP_CONTENT.articles.medium.name}
               />
               {mediumArticles
-                .sort((a, b) => {
-                  const dateA = a.isoDate ? new Date(a.isoDate).getTime() : 0;
-                  const dateB = b.isoDate ? new Date(b.isoDate).getTime() : 0;
-                  return dateB - dateA;
-                })
+                .sort((a, b) => sortDateInDescendingOrder(a.isoDate, b.isoDate))
                 .map((article, id) => (
                   <ArticleCard
                     key={`medium-articles-${id}`}
@@ -148,11 +137,7 @@ export default async function ArticlesPage({}) {
                 title={APP_CONTENT.articles.hashnode.name}
               />
               {hashnodeArticles
-                .sort((a, b) => {
-                  const dateA = a.isoDate ? new Date(a.isoDate).getTime() : 0;
-                  const dateB = b.isoDate ? new Date(b.isoDate).getTime() : 0;
-                  return dateB - dateA;
-                })
+                .sort((a, b) => sortDateInDescendingOrder(a.isoDate, b.isoDate))
                 .map((article, id) => (
                   <ArticleCard
                     key={`medium-articles-${id}`}
@@ -179,7 +164,7 @@ const ArticleCard = ({ article }: { article: TArticle }) => {
         <p className=" text-brand-text dark:text-brand-text-light/80 text-sm font-extralight whitespace-nowrap basis-1/4">
           {article.date}
         </p>
-        <div className="flex flex-col gap-y-4 w-full -ml-4 md:ml-0 md:-mt-9 p-4 md:p-8 cursor-pointer transition-colors hover:bg-opacity-100 bg-opacity-0 transform duration-100 rounded-2xl hover:bg-brand-bg/5 dark:hover:bg-brand-bg/50 ">
+        <div className="flex flex-col gap-y-4 w-full -ml-4 md:ml-0 md:-mt-9 pl-4 md:p-8 cursor-pointer transition-colors hover:bg-opacity-100 bg-opacity-0 transform duration-100 rounded-2xl hover:bg-brand-bg/5 dark:hover:bg-brand-bg/50 ">
           <p className="text-black dark:text-brand-text-light text-base font-semibold tracking-tight">
             {article.title}
           </p>
@@ -203,7 +188,7 @@ const ArticlePublisher = ({
   title: string;
 }) => {
   return (
-    <div className="absolute -left-[30px] bg-white rounded-full dark:bg-black md:-left-[52px] -top-8 md:-top-2">
+    <div className="absolute -left-[40px] bg-white rounded-full dark:bg-black md:-left-[52px] -top-8 md:-top-2">
       <div className="relative w-8 h-8 md:w-10 md:h-10">
         <Image
           src={logo}

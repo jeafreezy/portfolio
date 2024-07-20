@@ -1,4 +1,7 @@
 "use client";
+
+// Source: https://magicui.design/docs/components/blur-fade
+
 import { useRef } from "react";
 import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 

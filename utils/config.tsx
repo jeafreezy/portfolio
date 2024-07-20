@@ -4,7 +4,7 @@ import GoogleScholarIcon from "@/components/icons/GoogleScholarIcon";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import TwitterIcon from "@/components/icons/TwitterIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
-import { TGalleryObj } from "@/utils/types";
+import { TGalleryObj, TProjectCategory } from "@/utils/types";
 import Gallery1 from "@/public/gallery/1.jpg";
 import Gallery2 from "@/public/gallery/2.jpeg";
 import Gallery3 from "@/public/gallery/3.jpg";
@@ -18,6 +18,7 @@ import CodeIcon from "@/components/icons/CodeIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
 import MicrophoneIcon from "@/components/icons/MicrophoneIcon";
 import GridIcon from "@/components/icons/GridIcon";
+import { ProjectCategory } from "./enums";
 
 // Navigation routes
 export const navRoutes: {
@@ -147,5 +148,43 @@ export const galleryImages: TGalleryObj[] = [
     path: Gallery1,
     description:
       "Happy mood. A quick portrait after submitting my final data science assignment at UJI, Spain.",
+  },
+];
+
+// Projects Tags
+
+export const projectCategories: TProjectCategory[] = [
+  {
+    displayName: "All",
+    slug: ProjectCategory.ALL,
+  },
+  {
+    displayName: "Backend",
+    slug: ProjectCategory.BACKEND,
+  },
+  {
+    displayName: "Desktop",
+    slug: ProjectCategory.DESKTOP,
+  },
+  {
+    displayName: "DevOps",
+    slug: ProjectCategory.DEVOPS,
+  },
+  {
+    displayName: "Frontend",
+    slug: ProjectCategory.FRONTEND,
+  },
+  {
+    displayName: "Open Source",
+    slug: ProjectCategory.OPEN_SOURCE,
+  },
+
+  {
+    displayName: "Publications",
+    slug: ProjectCategory.PUBLICATIONS,
+  },
+  {
+    displayName: "Volunteering",
+    slug: ProjectCategory.VOLUNTEERING,
   },
 ];

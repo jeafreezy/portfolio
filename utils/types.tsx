@@ -32,3 +32,13 @@ export type TArticle = {
   exceprt?: string;
   link?: any;
 };
+
+export type TStackItem = {
+  exceprt: string;
+  title: string;
+};
+
+export type TProjectCategory = {
+  displayName: string;
+  slug: string;
+};
