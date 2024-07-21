@@ -89,17 +89,19 @@ export const NavRoutes = ({ isMobile }: { isMobile?: boolean }) => {
     >
       {navRoutes.map((route, key) => (
         <Link href={route.route} key={`nav-item-${key}`}>
-          <li
-            className={`relative flex items-center cursor-pointer px-2 py-2 transition hover:text-deep-purple dark:hover:text-light-purple ${
-              pathname === route.route &&
-              "text-deep-purple dark:text-light-purple"
-            } `}
-          >
-            {pathname === route.route && (
-              <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
-            )}
-            {!isMobile ? route.name : <route.icon className="icons" />}
-          </li>
+          <ul>
+            <li
+              className={`relative flex items-center cursor-pointer px-2 py-2 transition hover:text-deep-purple dark:hover:text-light-purple ${
+                pathname === route.route &&
+                "text-deep-purple dark:text-light-purple"
+              } `}
+            >
+              {pathname === route.route && (
+                <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
+              )}
+              {!isMobile ? route.name : <route.icon className="icons" />}
+            </li>
+          </ul>
         </Link>
       ))}
     </ul>

@@ -20,8 +20,19 @@ export enum ProjectCategory {
   PUBLICATIONS = "publications",
   VOLUNTEERING = "volunteering",
 }
+export enum MediaCategory {
+  ALL = "all",
+  CONFERENCE_TALKS = "conference-talks",
+  CONFERENCE_WORKSHOPS = "conference-workshops",
+  PODCAST_HOST = "podcast-host",
+  PODCAST_GUEST = "podcast-guest",
+  WEBINARS = "webinars",
+  INTERVIEWS = "interviews",
+  TUTORIAL_VIDEOS = "tutorial-videos",
+}
 
 export enum ProjectTag {
+  Ruby = "Ruby",
   GDAL = "Gdal",
   Python = "Python",
   FastAPI = "FastAPI",
@@ -51,4 +62,13 @@ export enum ProjectTag {
   WebSocket = "Websockets",
   CSS3 = "CSS3",
   SQL = "SQL",
+  OpenStreetMap = "OpenStreetMap",
+  Mapathon = "Mapathon",
+  YouthMappers = "YouthMappers",
+  ArcGIS = "ArcGIS",
+  DSAS = "DSAS",
+  GEE = "GEE",
+  RemoteSensing = "Remote Sensing",
+  DeepLearning = "Deep Learning",
+  TeamWork = "Team Work",
 }

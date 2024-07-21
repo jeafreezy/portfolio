@@ -4,7 +4,7 @@ import GoogleScholarIcon from "@/components/icons/GoogleScholarIcon";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import TwitterIcon from "@/components/icons/TwitterIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
-import { TGalleryObj, TProjectCategory } from "@/utils/types";
+import { TGalleryObj, TMediaCategory, TProjectCategory } from "@/utils/types";
 import Gallery1 from "@/public/gallery/1.jpg";
 import Gallery2 from "@/public/gallery/2.jpeg";
 import Gallery3 from "@/public/gallery/3.jpg";
@@ -18,7 +18,7 @@ import CodeIcon from "@/components/icons/CodeIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
 import MicrophoneIcon from "@/components/icons/MicrophoneIcon";
 import GridIcon from "@/components/icons/GridIcon";
-import { ProjectCategory } from "./enums";
+import { MediaCategory, ProjectCategory } from "./enums";
 
 // Navigation routes
 export const navRoutes: {
@@ -47,9 +47,9 @@ export const navRoutes: {
     route: "/projects",
   },
   {
-    name: "Talks",
+    name: "Media",
     icon: MicrophoneIcon,
-    route: "/speaking",
+    route: "/media",
   },
   {
     name: "Stack",
@@ -178,7 +178,6 @@ export const projectCategories: TProjectCategory[] = [
     displayName: "Open Source",
     slug: ProjectCategory.OPEN_SOURCE,
   },
-
   {
     displayName: "Publications",
     slug: ProjectCategory.PUBLICATIONS,
@@ -186,5 +185,40 @@ export const projectCategories: TProjectCategory[] = [
   {
     displayName: "Volunteering",
     slug: ProjectCategory.VOLUNTEERING,
+  },
+];
+
+export const mediaCategories: TMediaCategory[] = [
+  {
+    displayName: "All",
+    slug: MediaCategory.ALL,
+  },
+  {
+    displayName: "Conference Talks",
+    slug: MediaCategory.CONFERENCE_TALKS,
+  },
+  {
+    displayName: "Conference Workshops",
+    slug: MediaCategory.CONFERENCE_WORKSHOPS,
+  },
+  {
+    displayName: "Podcasts (Guest)",
+    slug: MediaCategory.PODCAST_GUEST,
+  },
+  {
+    displayName: "Podcasts (Host)",
+    slug: MediaCategory.PODCAST_HOST,
+  },
+  {
+    displayName: "Interviews",
+    slug: MediaCategory.INTERVIEWS,
+  },
+  {
+    displayName: "Tutorial Videos",
+    slug: MediaCategory.TUTORIAL_VIDEOS,
+  },
+  {
+    displayName: "Webinars",
+    slug: MediaCategory.WEBINARS,
   },
 ];

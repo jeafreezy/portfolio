@@ -30,11 +30,14 @@ const Header = () => {
       <div className="flex gap-x-4 md:gap-x-6 items-center">
         {socials.map((socialNetwork) => (
           <span
-            title={socialNetwork.title}
             className="flex items-center justify-center"
             key={`social-network-${socialNetwork.title}`}
           >
-            <Link href={socialNetwork.url} target="blank">
+            <Link
+              href={socialNetwork.url}
+              target="blank"
+              title={socialNetwork.title}
+            >
               {
                 <socialNetwork.icon
                   className={`w-5 h-5 ${

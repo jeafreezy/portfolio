@@ -4,23 +4,22 @@ import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { projectCategories } from "@/utils/config";
-import { ProjectCategory } from "@/utils/enums";
+import { mediaCategories, projectCategories } from "@/utils/config";
+import { MediaCategory, ProjectCategory } from "@/utils/enums";
 import SecureIcon from "@/components/icons/SecureIcon";
 
-const BASE_ROUTE = "/projects";
+const BASE_ROUTE = "/media";
 
-export default function ProjectsPage({}) {
+export default function MediaPage({}) {
   const router = useRouter();
   const params = useSearchParams();
   // if there is no param, then it can default to 'all'
-  const currentCategory = params.get("category") ?? ProjectCategory.ALL;
-
+  const currentCategory = params.get("category") ?? MediaCategory.ALL;
   // a check to make sure the category is supported
   // otherwise, redirect to the default route
   useEffect(() => {
     if (
-      projectCategories.filter(
+      mediaCategories.filter(
         (category) => category.slug.toLocaleLowerCase() === currentCategory
       ).length > 0
     )
@@ -39,15 +38,15 @@ export default function ProjectsPage({}) {
     <div className="min-h-screen flex flex-col gap-y-20  py-10 mb-10">
       <div className="w-full space-y-8 max-w-3xl">
         <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold leading-normal md:leading-[60px]">
-          {APP_CONTENT.projects.hero.en}
+          {APP_CONTENT.media.hero.en}
         </h1>
         <div className="flex flex-col gap-y-6 brand-text text-left text-base font-light leading-normal md:leading-relaxed">
-          <p>{APP_CONTENT.projects.description}</p>
+          <p>{APP_CONTENT.media.description}</p>
         </div>
       </div>
       <div className="relative w-full">
         <div className="flex gap-x-4 overflow-x-scroll w-full">
-          {projectCategories.map((category, id) => (
+          {mediaCategories.map((category, id) => (
             <div
               key={`project-category-${id}`}
               className={`cursor-pointer whitespace-nowrap py-2 px-5 rounded-md font-normal ${
@@ -63,66 +62,20 @@ export default function ProjectsPage({}) {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {APP_CONTENT.projects.projects
-          .filter((project) =>
+        {APP_CONTENT.media.media
+          .filter((media) =>
             currentCategory === ProjectCategory.ALL
-              ? project
-              : project.categories.includes(currentCategory as ProjectCategory)
+              ? media
+              : media.category === currentCategory
           )
-          .map((project, id) => (
+          .map((media, id) => (
             <div
               key={id}
               className="flex flex-col p-4 gap-y-2 brand-text hover:ring-[0.2px] hover:shadow-md dark:hover:shadow-white/40 border duration-300 transition-all  rounded-md cursor-pointer "
             >
-              <Link
-                href={project.demoLink}
-                target="blank"
-                className="flex flex-col gap-y-2 "
-              >
-                <div className="relative h-[200px] w-full shadow-md dark:shadow-white/20">
-                  <Image
-                    src={project.image}
-                    placeholder="blur"
-                    alt={project.title}
-                    fill
-                    priority
-                    className="object-cover rounded-md bg-white"
-                    title={project.title}
-                  />
-                </div>
-                <h1 className="font-semibold hover:text-deep-purple dark:hover:text-light-purple">
-                  {project.title}
-                </h1>
-              </Link>
-              <p className="text-xs text-brand-text/50 dark:text-brand-text-light/50">
-                <p
-                  title="Protected by NDA"
-                  className="flex gap-x-1 items-center"
-                >
-                  {project.protected ? (
-                    <span>
-                      <SecureIcon className="icons icon-fill" />
-                      (Protected by NDA)
-                    </span>
-                  ) : (
-                    project.date
-                  )}
-                </p>
-              </p>
-              <p className="text-sm text-brand-text/70 dark:text-brand-text-light/70">
-                <ReadMore text={project.shortDescription} maxLength={100} />
-              </p>
-              <div className="flex flex-wrap gap-2 self-start ">
-                {project.tags.map((tag, id) => (
-                  <div
-                    key={`project-${project.title}-tag-${id}`}
-                    className="px-2 text-xs rounded-md  whitespace-nowrap py-1 bg-black text-white"
-                    title={tag}
-                  >
-                    {tag}
-                  </div>
-                ))}
-              </div>
+              {media.activities.map((activity, id) => (
+                <div>{activity.conferenceName}</div>
+              ))}
             </div>
           ))}
       </div>

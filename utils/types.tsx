@@ -42,3 +42,8 @@ export type TProjectCategory = {
   displayName: string;
   slug: string;
 };
+
+export type TMediaCategory = {
+  displayName: string;
+  slug: string;
+};

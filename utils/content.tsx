@@ -16,7 +16,14 @@ import SpatialnodeImage from "@/public/projects/spatialnode_screenshot.png";
 import LocomotiveImage from "@/public/projects/locomotive.jpeg";
 import GISFestImage from "@/public/projects/gisfest.png";
 import SotMImage from "@/public/projects/sotmafrica.png";
-import { ProjectCategory, ProjectTag } from "./enums";
+import GitHubImage from "@/public/projects/github_logo.png";
+import GeospatialAnalysisWithSQLImage from "@/public/projects/geospatial_analysis_with_sql.png";
+import PythonForGeospatialAnalysisImage from "@/public/projects/learning_python_for_geospatial_analysis.jpg";
+import SpringerPublicationImage from "@/public/projects/springer_publication.webp";
+import FOSS4GEuropeImage from "@/public/projects/foss4geurope_logo.png";
+import GoogleScholarImage from "@/public/projects/google_scholar.png";
+import OSMChangesetsImage from "@/public/projects/osm_changesets.png";
+import { MediaCategory, ProjectCategory, ProjectTag } from "./enums";
 
 export const APP_CONTENT = {
   header: {
@@ -188,187 +195,153 @@ export const APP_CONTENT = {
       articles: [],
     },
   },
-  talks: {
+  media: {
     hero: {
       en: "I've spoken at conference events all around the world, co-hosted podcasts, and facilitated workshops.",
     },
     description: `Apart from writing, another way I love to share my ideas is live on stage, where there's so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions.`,
-
-    conferenceTalks: {
-      logo: NigeriaSE4ALLLogo,
-      name: "Nigeria SE4ALL",
-      articles: [
-        {
-          date: "October 26, 2022",
-          title: "The Nigeria Se4all Off-grid Settlements Survey",
-          exceprt:
-            "Ground-truth data has always been a focus of the Nigerian Energy Support Programme (NESP) to provide a stronger basis for electrification planning in the country. Thus, NESP has partnered with Hanovia Technologies Limited to carry out field surveys in off-grid settlements to collect information about large energy consumers (businesses, productive users, and public institutions), as well as to conduct a light assessment of energy supply in selected settlements.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/10/26/the-nigeria-se-4-all-off-grid-settlements-survey",
-        },
-        {
-          date: "August 16, 2022",
-          title:
-            "Exploring Mini-grid Potential And Selecting Potential Sites For Off-grid Mini-grids In Nigeria",
-          exceprt:
-            "The Off-grid mini-grids explorer is focusing on settlements that are currently not connected to the national grid. The interactive webmap provides a nationwide view of all the surveyed settlements with distance greater than 10KM away from the national grid. These settlements are considered off-grid and thus a good fit for mini-grids project development.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/off-grid-mini-grids-explorer",
-        },
-        {
-          date: "August 16, 2022",
-          title: "Power Sector Analytics Explorer",
-          exceprt:
-            "The webmap presents infrastructures data such as: high voltage (HV) transmission lines, medium voltage (MV) grid, modelled medium voltage grid, hydropower plants, gas/steam power plants and existing mini-grids available in the country, as well as nationwide settlement clusters and building(rooftop) counts.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/power-sector-analytics-explorer",
-        },
-        {
-          date: "June 27, 2022",
-          title: "GIS For The Rest Of Us",
-          exceprt:
-            "The major barrier in the entry that many new GIS users face is figuring out the right resource and approach to getting started. They become overwhelmed with the numerous resources available online for learning GIS. How do you know which approach to learning GIS is the best? What software do you need to install? What are the fundamental concepts of GIS you need to know?",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/06/27/this-is-a-test-article-about-something-going-on-in-the-minigrid-sector",
-        },
-      ],
-    },
-    workshops: {
-      logo: NigeriaSE4ALLLogo,
-      name: "Nigeria SE4ALL",
-      articles: [
-        {
-          date: "October 26, 2022",
-          title: "The Nigeria Se4all Off-grid Settlements Survey",
-          exceprt:
-            "Ground-truth data has always been a focus of the Nigerian Energy Support Programme (NESP) to provide a stronger basis for electrification planning in the country. Thus, NESP has partnered with Hanovia Technologies Limited to carry out field surveys in off-grid settlements to collect information about large energy consumers (businesses, productive users, and public institutions), as well as to conduct a light assessment of energy supply in selected settlements.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/10/26/the-nigeria-se-4-all-off-grid-settlements-survey",
-        },
-        {
-          date: "August 16, 2022",
-          title:
-            "Exploring Mini-grid Potential And Selecting Potential Sites For Off-grid Mini-grids In Nigeria",
-          exceprt:
-            "The Off-grid mini-grids explorer is focusing on settlements that are currently not connected to the national grid. The interactive webmap provides a nationwide view of all the surveyed settlements with distance greater than 10KM away from the national grid. These settlements are considered off-grid and thus a good fit for mini-grids project development.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/off-grid-mini-grids-explorer",
-        },
-        {
-          date: "August 16, 2022",
-          title: "Power Sector Analytics Explorer",
-          exceprt:
-            "The webmap presents infrastructures data such as: high voltage (HV) transmission lines, medium voltage (MV) grid, modelled medium voltage grid, hydropower plants, gas/steam power plants and existing mini-grids available in the country, as well as nationwide settlement clusters and building(rooftop) counts.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/power-sector-analytics-explorer",
-        },
-        {
-          date: "June 27, 2022",
-          title: "GIS For The Rest Of Us",
-          exceprt:
-            "The major barrier in the entry that many new GIS users face is figuring out the right resource and approach to getting started. They become overwhelmed with the numerous resources available online for learning GIS. How do you know which approach to learning GIS is the best? What software do you need to install? What are the fundamental concepts of GIS you need to know?",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/06/27/this-is-a-test-article-about-something-going-on-in-the-minigrid-sector",
-        },
-      ],
-    },
-    webinars: {
-      logo: NigeriaSE4ALLLogo,
-      name: "Nigeria SE4ALL",
-      articles: [
-        {
-          date: "October 26, 2022",
-          title: "The Nigeria Se4all Off-grid Settlements Survey",
-          exceprt:
-            "Ground-truth data has always been a focus of the Nigerian Energy Support Programme (NESP) to provide a stronger basis for electrification planning in the country. Thus, NESP has partnered with Hanovia Technologies Limited to carry out field surveys in off-grid settlements to collect information about large energy consumers (businesses, productive users, and public institutions), as well as to conduct a light assessment of energy supply in selected settlements.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/10/26/the-nigeria-se-4-all-off-grid-settlements-survey",
-        },
-        {
-          date: "August 16, 2022",
-          title:
-            "Exploring Mini-grid Potential And Selecting Potential Sites For Off-grid Mini-grids In Nigeria",
-          exceprt:
-            "The Off-grid mini-grids explorer is focusing on settlements that are currently not connected to the national grid. The interactive webmap provides a nationwide view of all the surveyed settlements with distance greater than 10KM away from the national grid. These settlements are considered off-grid and thus a good fit for mini-grids project development.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/off-grid-mini-grids-explorer",
-        },
-        {
-          date: "August 16, 2022",
-          title: "Power Sector Analytics Explorer",
-          exceprt:
-            "The webmap presents infrastructures data such as: high voltage (HV) transmission lines, medium voltage (MV) grid, modelled medium voltage grid, hydropower plants, gas/steam power plants and existing mini-grids available in the country, as well as nationwide settlement clusters and building(rooftop) counts.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/power-sector-analytics-explorer",
-        },
-        {
-          date: "June 27, 2022",
-          title: "GIS For The Rest Of Us",
-          exceprt:
-            "The major barrier in the entry that many new GIS users face is figuring out the right resource and approach to getting started. They become overwhelmed with the numerous resources available online for learning GIS. How do you know which approach to learning GIS is the best? What software do you need to install? What are the fundamental concepts of GIS you need to know?",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/06/27/this-is-a-test-article-about-something-going-on-in-the-minigrid-sector",
-        },
-      ],
-    },
-    interviews: {
-      logo: NigeriaSE4ALLLogo,
-      name: "Nigeria SE4ALL",
-      articles: [
-        {
-          date: "October 26, 2022",
-          title: "The Nigeria Se4all Off-grid Settlements Survey",
-          exceprt:
-            "Ground-truth data has always been a focus of the Nigerian Energy Support Programme (NESP) to provide a stronger basis for electrification planning in the country. Thus, NESP has partnered with Hanovia Technologies Limited to carry out field surveys in off-grid settlements to collect information about large energy consumers (businesses, productive users, and public institutions), as well as to conduct a light assessment of energy supply in selected settlements.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/10/26/the-nigeria-se-4-all-off-grid-settlements-survey",
-        },
-        {
-          date: "August 16, 2022",
-          title:
-            "Exploring Mini-grid Potential And Selecting Potential Sites For Off-grid Mini-grids In Nigeria",
-          exceprt:
-            "The Off-grid mini-grids explorer is focusing on settlements that are currently not connected to the national grid. The interactive webmap provides a nationwide view of all the surveyed settlements with distance greater than 10KM away from the national grid. These settlements are considered off-grid and thus a good fit for mini-grids project development.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/off-grid-mini-grids-explorer",
-        },
-        {
-          date: "August 16, 2022",
-          title: "Power Sector Analytics Explorer",
-          exceprt:
-            "The webmap presents infrastructures data such as: high voltage (HV) transmission lines, medium voltage (MV) grid, modelled medium voltage grid, hydropower plants, gas/steam power plants and existing mini-grids available in the country, as well as nationwide settlement clusters and building(rooftop) counts.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/power-sector-analytics-explorer",
-        },
-        {
-          date: "June 27, 2022",
-          title: "GIS For The Rest Of Us",
-          exceprt:
-            "The major barrier in the entry that many new GIS users face is figuring out the right resource and approach to getting started. They become overwhelmed with the numerous resources available online for learning GIS. How do you know which approach to learning GIS is the best? What software do you need to install? What are the fundamental concepts of GIS you need to know?",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/06/27/this-is-a-test-article-about-something-going-on-in-the-minigrid-sector",
-        },
-      ],
-    },
-    podcasts: {
-      logo: NigeriaSE4ALLLogo,
-      name: "Nigeria SE4ALL",
-      articles: [
-        {
-          date: "October 26, 2022",
-          title: "The Nigeria Se4all Off-grid Settlements Survey",
-          exceprt:
-            "Ground-truth data has always been a focus of the Nigerian Energy Support Programme (NESP) to provide a stronger basis for electrification planning in the country. Thus, NESP has partnered with Hanovia Technologies Limited to carry out field surveys in off-grid settlements to collect information about large energy consumers (businesses, productive users, and public institutions), as well as to conduct a light assessment of energy supply in selected settlements.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/10/26/the-nigeria-se-4-all-off-grid-settlements-survey",
-        },
-        {
-          date: "August 16, 2022",
-          title:
-            "Exploring Mini-grid Potential And Selecting Potential Sites For Off-grid Mini-grids In Nigeria",
-          exceprt:
-            "The Off-grid mini-grids explorer is focusing on settlements that are currently not connected to the national grid. The interactive webmap provides a nationwide view of all the surveyed settlements with distance greater than 10KM away from the national grid. These settlements are considered off-grid and thus a good fit for mini-grids project development.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/off-grid-mini-grids-explorer",
-        },
-        {
-          date: "August 16, 2022",
-          title: "Power Sector Analytics Explorer",
-          exceprt:
-            "The webmap presents infrastructures data such as: high voltage (HV) transmission lines, medium voltage (MV) grid, modelled medium voltage grid, hydropower plants, gas/steam power plants and existing mini-grids available in the country, as well as nationwide settlement clusters and building(rooftop) counts.",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/08/16/power-sector-analytics-explorer",
-        },
-        {
-          date: "June 27, 2022",
-          title: "GIS For The Rest Of Us",
-          exceprt:
-            "The major barrier in the entry that many new GIS users face is figuring out the right resource and approach to getting started. They become overwhelmed with the numerous resources available online for learning GIS. How do you know which approach to learning GIS is the best? What software do you need to install? What are the fundamental concepts of GIS you need to know?",
-          link: "https://nigeriase4all.gov.ng/blog-post/2022/06/27/this-is-a-test-article-about-something-going-on-in-the-minigrid-sector",
-        },
-      ],
-    },
+    media: [
+      //talks
+      {
+        category: MediaCategory.CONFERENCE_TALKS,
+        activities: [
+          {
+            talkTitle: "foss4g europe",
+            abstract: "My favorite...",
+            conferenceName: "FOSS4G EUROPE academic track",
+            conferenceYear: "",
+            link: "",
+          },
+          {
+            talkTitle: "TypeScript",
+            abstract: "My favorite...",
+            conferenceName: "SOTM ON AFRICA GEOCONVO",
+            conferenceYear: "",
+            link: "",
+          },
+          {
+            talkTitle: "TypeScript",
+            abstract: "My favorite...",
+            conferenceName: "AGDIC ON ILAJE",
+            conferenceYear: "",
+            link: "",
+          },
+        ],
+      },
+      //workshops
+      {
+        category: MediaCategory.CONFERENCE_WORKSHOPS,
+        activities: [
+          {
+            talkTitle: "foss4g europe",
+            abstract: "My favorite...",
+            conferenceName: "GIS FEST",
+            conferenceYear: "",
+            link: "",
+          },
+          {
+            talkTitle: "TypeScript",
+            abstract: "My favorite...",
+            conferenceName: "NIGERIA SE4ALL TRAININGS",
+            conferenceYear: "",
+            link: "",
+          },
+          {
+            talkTitle: "TypeScript",
+            abstract: "My favorite...",
+            conferenceName: "GEOMUNDUS (COMING SOON)",
+            conferenceYear: "",
+            link: "",
+          },
+          {
+            talkTitle: "TypeScript",
+            abstract: "My favorite...",
+            conferenceName: "GEOSPATIAL DEVELOPERS",
+            conferenceYear: "",
+            link: "",
+          },
+        ],
+      },
+      //Podcasts (host)
+      {
+        category: MediaCategory.PODCAST_HOST,
+        activities: [
+          {
+            talkTitle: "foss4g europe",
+            abstract: "My favorite...",
+            podcastName: "AfricaGeoConvo Episodes i appear (use api?)",
+            conferenceYear: "",
+            link: "",
+          },
+        ],
+      },
+      //Podcast (Guest)
+      {
+        category: MediaCategory.PODCAST_GUEST,
+        activities: [
+          {
+            talkTitle: "foss4g europe",
+            abstract: "My favorite...",
+            podcastName: "GEOSPATIALLY",
+            conferenceYear: "",
+            link: "",
+          },
+          {
+            talkTitle: "TypeScript",
+            abstract: "My favorite...",
+            conferenceName: "WE DEY CODE",
+            conferenceYear: "",
+            link: "",
+          },
+        ],
+      },
+      //Webinars
+      {
+        category: MediaCategory.WEBINARS,
+        activities: [
+          {
+            talkTitle: "foss4g europe",
+            abstract: "My favorite...",
+            podcastName: "GEOSON NIGERIA",
+            conferenceYear: "",
+            link: "",
+          },
+          {
+            talkTitle: "TypeScript",
+            abstract: "My favorite...",
+            conferenceName: "UI WEBINAR",
+            conferenceYear: "",
+            link: "",
+          },
+        ],
+      },
+      // Interviews
+      {
+        category: MediaCategory.INTERVIEWS,
+        activities: [
+          {
+            talkTitle: "foss4g europe",
+            abstract: "My favorite...",
+            podcastName: "SPACE IN AFRICA",
+            conferenceYear: "",
+            link: "",
+          },
+        ],
+      },
+      //tutorial videos
+      {
+        category: MediaCategory.TUTORIAL_VIDEOS,
+        activities: [
+          {
+            talkTitle: "foss4g europe",
+            abstract: "My favorite...",
+            podcastName: "Youtube videos",
+            conferenceYear: "",
+            link: "",
+          },
+        ],
+      },
+    ],
   },
   stacks: {
     hero: {
@@ -508,6 +481,7 @@ export const APP_CONTENT = {
     },
     description: `Throughout my career, I've worked on a variety of projects ranging from webapps, ML models, data pipelines, desktop apps and more, but these are my proudest accomplishments. Many are open-source, while others are protected by NDAs. If any of these resonate with you, feel free to explore the code (if public) and/or reach out to discuss them!`,
     projects: [
+      //Projects
       {
         title: "Spatialnode",
         image: SpatialnodeImage,
@@ -594,14 +568,27 @@ export const APP_CONTENT = {
         demoLink: "",
         categories: [ProjectCategory.BACKEND],
       },
+      //Volunteering
       {
-        title: "GISfest Conference Website Development",
+        title: "Conference Volunteer (FOSS4G Europe)",
+        protected: false,
+        date: "July 2024",
+        image: FOSS4GEuropeImage,
+        shortDescription:
+          "Privildged to be a travel grant participant at the recently concluded foss4g europe. Supported ith registration desk and in sessionr ooms.",
+        tags: [ProjectTag.TeamWork],
+        demoLink: "https://2024.europe.foss4g.org/",
+        categories: [ProjectCategory.VOLUNTEERING],
+      },
+      {
+        title: "GISfest Conference Technical Lead",
         protected: false,
         image: GISFestImage,
         shortDescription:
-          "Led the development of the GISfest Conference website.",
+          "Led the technical team to develop and design promotion tools ...development of the GISfest Conference website.",
         tags: [ProjectTag.NextJS, ProjectTag.TailwindCSS],
-        demoLink: "https://github.com/gisfest/gisfest-conference-website",
+        demoLink:
+          "https://gisfest-conference-website-bdk7uhzu3-spatialnode-team.vercel.app/",
         categories: [
           ProjectCategory.FRONTEND,
           ProjectCategory.VOLUNTEERING,
@@ -609,12 +596,24 @@ export const APP_CONTENT = {
         ],
       },
       {
-        title: "State of the Map Africa Conference Website Development",
+        title: "Advanced OpenStreetMap Contributor",
+        protected: false,
+        date: "July 21, 2017 - November 07, 2023",
+        image: OSMChangesetsImage,
+        shortDescription:
+          "With over 1million changesets, I contributed to oSM. Led the technical team to develop and design promotioNowaday I rarely contribute, but my experience as a youthmapper regional ambasador, chapter president, gave me have deep understanding of the OSM ecosystem.",
+        tags: [ProjectTag.OpenStreetMap],
+        demoLink: "https://www.openstreetmap.org/user/Jolaiya%20Emmanuel",
+        categories: [ProjectCategory.VOLUNTEERING],
+      },
+      {
+        title:
+          "State of the Map Africa Conference Technical and Communications Lead",
         protected: false,
         image: SotMImage,
         shortDescription:
-          "Led the development of the State of the Map Africa Conference website.",
-        tags: [ProjectTag.React, ProjectTag.CSS3],
+          "Led the Website Development & ...development of the State of the Map Africa Conference website.We achieved x and y...",
+        tags: [ProjectTag.React, ProjectTag.CSS3, ProjectTag.Ruby],
         demoLink: "https://2023.stateofthemap.africa",
         categories: [
           ProjectCategory.FRONTEND,
@@ -623,123 +622,144 @@ export const APP_CONTENT = {
         ],
       },
       {
-        title: "Technical Reviewer - Geospatial Analysis with Python",
+        title: "Technical Reviewer - Learning Geospatial Analysis with Python",
         protected: false,
-        image: SotMImage,
+        date: "Jan 1st - Dec 21, 2023.",
+        image: PythonForGeospatialAnalysisImage,
         shortDescription:
           "While this is not supposed to be a project, but i'm proud...",
         tags: [ProjectTag.Python],
-        demoLink: "https://2023.stateofthemap.africa",
+        demoLink:
+          "https://www.packtpub.com/en-de/product/learning-geospatial-analysis-with-python-9781783281138",
         categories: [ProjectCategory.VOLUNTEERING],
       },
       {
         title: "Technical Reviewer - Geospatial Analysis with SQL",
         protected: false,
-        image: SotMImage,
+        image: GeospatialAnalysisWithSQLImage,
         shortDescription:
           "While this is not supposed to be a project, but i'm proud...",
         tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
+        demoLink:
+          "https://www.packtpub.com/en-de/product/geospatial-analysis-with-sql-9781835083147",
         categories: [ProjectCategory.VOLUNTEERING],
       },
       {
+        title: "Tutor - Geospatial Developers",
+        date: "November 2022",
+        protected: false,
+        image: GitHubImage,
+        shortDescription:
+          "Gave an introductory course to Django and React to over 300 aspiring geospatial developers in Africa.",
+        tags: [ProjectTag.Django, ProjectTag.React],
+        demoLink: "https://github.com/ernest19/Geospatial_Developers",
+        categories: [ProjectCategory.VOLUNTEERING],
+      },
+      //Open Source
+      {
         title: "PyGeoAPI",
         protected: false,
-        image: SotMImage,
+        date: "Jan 2020 - Dec. 2023",
+        image: GitHubImage,
         shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
-        categories: [ProjectCategory.OPEN_SOURCE],
-      },
-      {
-        title: "HOT Export tool API",
-        protected: false,
-        image: SotMImage,
-        shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
-        categories: [ProjectCategory.OPEN_SOURCE],
-      },
-      {
-        title: "Nigeria Geodata",
-        protected: false,
-        image: SotMImage,
-        shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
-        categories: [ProjectCategory.OPEN_SOURCE],
-      },
-      {
-        title: "RSGIS",
-        protected: false,
-        image: SotMImage,
-        shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
-        categories: [ProjectCategory.OPEN_SOURCE],
-      },
-      {
-        title: "Petroeval",
-        protected: false,
-        image: SotMImage,
-        shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
-        categories: [ProjectCategory.OPEN_SOURCE],
-      },
-      {
-        title: "Protomaps",
-        protected: false,
-        image: SotMImage,
-        shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
+          "PygeoAPI is the.... My contribution was the implementation of the OGC Processess API.",
+        tags: [ProjectTag.Python],
+        demoLink: "https://github.com/geopython/pygeoapi",
         categories: [ProjectCategory.OPEN_SOURCE],
       },
       {
         title: "Geoserver Rest",
         protected: false,
-        image: SotMImage,
+        date: "Jan 2020 - Dec. 2023",
+        image: GitHubImage,
         shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
+          "Contributed a few methods to the package. My contribution was...It aimed at making interaction with Geoserver easier.",
+        tags: [ProjectTag.Geoserver, ProjectTag.Python],
+        demoLink: "https://github.com/gicait/geoserver-rest",
         categories: [ProjectCategory.OPEN_SOURCE],
       },
       {
-        title: "Ensemble models for soil classification",
+        title: "HOTOSM Raw Data API",
         protected: false,
-        image: SotMImage,
+        date: "Jan 2020 - Dec. 2023",
+        image: GitHubImage,
+        shortDescription:
+          "Raw Data API is a set of high-performant APIs for transforming and exporting OpenStreetMap (OSM) data in different GIS file formats. My contribution was setting up the documentation for the project usin material for mkdocs.",
+        tags: [ProjectTag.FastAPI, ProjectTag.Python],
+        demoLink: "https://github.com/hotosm/raw-data-api",
+        categories: [ProjectCategory.OPEN_SOURCE],
+      },
+      {
+        title: "Rsgis",
+        protected: false,
+        date: "Jan 2020 - Dec. 2023",
+        image: GitHubImage,
+        shortDescription:
+          "My first python package aimed at making remote sensing operation with landsat easier.",
+        tags: [ProjectTag.Python],
+        demoLink: "https://github.com/jeafreezy/rsgis",
+        categories: [ProjectCategory.OPEN_SOURCE],
+      },
+      {
+        title: "Petroeval",
+        date: "Jan 2020 - Dec. 2023",
+        protected: false,
+        image: GitHubImage,
+        shortDescription:
+          "Petrol eval is the...My contribution was on reading multiple LAS files.",
+        tags: [ProjectTag.Python],
+        demoLink: "https://github.com/olawaleibrahim/petroeval",
+        categories: [ProjectCategory.OPEN_SOURCE],
+      },
+      //Publications
+      {
+        title:
+          "Mapping Soil Erosion Classes using Remote Sensing Data and Ensemble Models",
+        date: "June 2024",
+        protected: false,
+        image: GoogleScholarImage,
         shortDescription:
           "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
+        tags: [
+          ProjectTag.Python,
+          ProjectTag.RemoteSensing,
+          ProjectTag.DeepLearning,
+        ],
+        demoLink:
+          "https://isprs-archives.copernicus.org/articles/XLVIII-4-W12-2024/135/2024/",
         categories: [ProjectCategory.PUBLICATIONS],
       },
       {
-        title: "Ilaje Research",
+        title:
+          "A Spatio-Temporal Analysis of Shoreline Changes in the Ilaje Coastal Area of Ondo State, Nigeria",
         protected: false,
-        image: SotMImage,
+        date: "October 2023",
+        image: GoogleScholarImage,
         shortDescription:
           "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
+        tags: [
+          ProjectTag.ArcGIS,
+          ProjectTag.DSAS,
+          ProjectTag.GEE,
+          ProjectTag.RemoteSensing,
+        ],
+        demoLink: "https://www.mdpi.com/2077-1312/12/1/18",
         categories: [ProjectCategory.PUBLICATIONS],
       },
       {
-        title: "Mapping Electricity",
+        title: "Mapping Access to Electricity in Urban and Rural Nigeria",
+        date: "November 2022",
         protected: false,
-        image: SotMImage,
+        image: SpringerPublicationImage,
         shortDescription:
           "While this is not supposed to be a project, but i'm proud...",
-        tags: [ProjectTag.SQL],
-        demoLink: "https://2023.stateofthemap.africa",
+        tags: [
+          ProjectTag.OpenStreetMap,
+          ProjectTag.Mapathon,
+          ProjectTag.YouthMappers,
+        ],
+        demoLink:
+          "https://link.springer.com/chapter/10.1007/978-3-031-05182-1_12",
         categories: [ProjectCategory.PUBLICATIONS],
       },
     ],
