@@ -93,6 +93,6 @@ Special thanks to Vercel for their easy deployment solutions.
 
 All icons used are from [SimpleIcons](https://simpleicons.org).
 
-UI inspired by [Tailwind UI](https://spotlight.tailwindui.com/) and [Dillion](https://dillion.io/)
+UI inspired by [Tailwind UI](https://spotlight.tailwindui.com/) and [Dillion](https://dillion.io/).
 
 Feel free to reach out if you have any questions or need further information!
