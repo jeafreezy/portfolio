@@ -19,13 +19,14 @@ This portfolio website is designed to be a modern and responsive showcase of my 
 ## Features
 
 - **Responsive Design**: Optimized for both desktop and mobile devices.
-- **Project/Articles Showcase**: Displays my work and projects with details and links.
+- **Project Showcase**: Displays my work and projects with details and links.
 - **Articles Showcase**: Dynamically retrieve articles from Medium, Spatialnode, and Hashnode using RSS feeds.
 - **Media Showcase**: Displays my featured media, including podcasts, talks, videos, and others.
-- **Single file Configuration**: A single file configuration is used to enable easy site-wide update.
+- **Configuration file**: A configuration file is used to enable easy site-wide updates.
 - **Lightweight & Fast**: Built with performance in mind.
 - **Dark/Light Mode**: Toggle between dark and light themes to suit your preference.
 - **Gallery**: Toggle between dark and light themes to suit your preference.
+- **Great SEO, Accessibility and Performance**: See [https://github.com/jeafreezy/portfolio/issues/1](https://github.com/jeafreezy/portfolio/issues/1)
 
 ## Setup
 
