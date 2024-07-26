@@ -602,7 +602,7 @@ export const APP_CONTENT = {
         categories: [ProjectCategory.OPEN_SOURCE],
       },
       {
-        title: "Controbutor - HOTOSM Raw Data API",
+        title: "Contributor - HOTOSM Raw Data API",
         protected: false,
         date: "2022",
         image: GitHubImage,
