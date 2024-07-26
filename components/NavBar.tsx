@@ -99,7 +99,11 @@ export const NavRoutes = ({ isMobile }: { isMobile?: boolean }) => {
             {pathname === route.route && (
               <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
             )}
-            {!isMobile ? route.name : <route.icon className="icons" />}
+            {!isMobile ? (
+              <span className="p-1">{route.name}</span>
+            ) : (
+              <route.icon className="icons" />
+            )}
           </Link>
         </li>
       ))}

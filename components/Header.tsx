@@ -6,7 +6,7 @@ import EmmanuelAvatar from "@/public/emmanuel_jolaiya.png";
 const Header = () => {
   return (
     <header className="flex flex-col items-start gap-y-8 lg:gap-y-10">
-      <div className="h-20 md:h-24 w-20 md:w-24 relative">
+      <div className="h-20 md:h-28 w-20 md:w-28 relative">
         <Link href={"/"}>
           <Image
             src={EmmanuelAvatar}

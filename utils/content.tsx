@@ -382,7 +382,7 @@ export const APP_CONTENT = {
 
       //tutorial videos
       {
-        talkTitle: "Youtube Videos",
+        talkTitle: "YouTube Videos",
         abstract:
           "In 2020, I began recording YouTube videos and have since created a collection of helpful content on my channel.",
         organizerName: "YouTube",
