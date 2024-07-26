@@ -618,7 +618,7 @@ export const APP_CONTENT = {
         date: "2020",
         image: GitHubImage,
         shortDescription:
-          "My first Python package is designed to simplify remote sensing operations with Landsat data, making it easier to work with and analyze satellite imagery.s",
+          "My first Python package is designed to simplify remote sensing operations with Landsat data, making it easier to work with and analyze Landsat satellite imagery.",
         tags: [ProjectTag.Python],
         demoLink: "https://github.com/jeafreezy/rsgis",
         categories: [ProjectCategory.OPEN_SOURCE],
