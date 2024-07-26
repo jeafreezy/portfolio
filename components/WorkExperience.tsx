@@ -25,8 +25,8 @@ const WorkExperience = () => {
         ))}
       </div>
       <Link href={APP_CONTENT.cvLink} target="blank">
-        <button className="flex items-center justify-center gap-x-4 w-full p-3 text-brand-text dark:text-brand-text-light/50 bg-brand-bg/5 hover:bg-brand-bg/10 dark:hover:bg-brand-bg/50 transition-all duration-300 dark:bg-brand-bg rounded-md">
-          <p className="text-sm"> Download CV </p>
+        <button className="flex items-center justify-center gap-x-4 w-full p-3 text-brand-text dark:text-brand-text-light bg-brand-bg/5 hover:bg-brand-bg/10 dark:hover:bg-brand-bg/50 transition-all duration-300 dark:bg-brand-bg rounded-md">
+          <p className="text-sm p-1"> Download CV </p>
           <DownloadIcon className="icons w-4 h-4 icon-text" />
         </button>
       </Link>

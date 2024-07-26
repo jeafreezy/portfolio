@@ -17,7 +17,7 @@ export enum ProjectCategory {
 }
 export enum MediaCategory {
   ALL = "all",
-  CONFERENCE_TALKS = "conference-talks",
+  CONFERENCE_TALKS = "talks",
   WORKSHOPS = "workshops",
   PODCAST = "podcast",
   WEBINARS = "webinars",

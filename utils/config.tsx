@@ -181,7 +181,7 @@ export const mediaCategories: TMediaCategory[] = [
     slug: MediaCategory.ALL,
   },
   {
-    displayName: "Conference Talks",
+    displayName: "Talks",
     slug: MediaCategory.CONFERENCE_TALKS,
   },
   {

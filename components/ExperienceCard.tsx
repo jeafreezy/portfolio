@@ -26,10 +26,10 @@ const ExperienceCard = ({
       <div className="flex flex-col w-full space-y-1">
         <p className="text-sm font-medium ">{entityName}</p>
         <div className="flex justify-between">
-          <p className="text-sm font-light  text-brand-text/60 dark:text-brand-text-light/50 ">
+          <p className="text-sm font-light  text-brand-text dark:text-brand-text-light ">
             {role}
           </p>
-          <p className="text-sm whitespace-nowrap font-light text-brand-text/60 dark:text-brand-text-light/50 ">
+          <p className="text-sm whitespace-nowrap font-light text-brand-text dark:text-brand-text-light ">
             {period}
           </p>
         </div>
