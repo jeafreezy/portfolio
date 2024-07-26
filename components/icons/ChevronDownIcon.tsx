@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export default function CodeIcon(props: SVGProps<SVGSVGElement>) {
+export default function ChevronDownIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -9,9 +9,7 @@ export default function CodeIcon(props: SVGProps<SVGSVGElement>) {
       {...props}
     >
       <path
-        d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20"
-        stroke="currentColor"
-        strokeWidth="1"
+        d="M17 9.5L12 14.5L7 9.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

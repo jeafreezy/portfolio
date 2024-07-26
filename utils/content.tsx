@@ -26,32 +26,77 @@ import OSMChangesetsImage from "@/public/projects/osm_changesets.png";
 import { MediaCategory, ProjectCategory, ProjectTag } from "./enums";
 
 export const APP_CONTENT = {
+  //Home page content
   header: {
-    hero: {
-      en: "Earth observation & geospatial software engineer.",
-    },
-    heroBio: {
-      en: "I'm Emmanuel, a software engineer, earth observation (remote sensing) & geospatial expert and founder currently based in Germany. I'm the founder of Spatialnode, a platform that empower geospatial people to showcase their works and explore opportunities.",
-    },
+    hero: "Geospatial software engineer.",
+    heroBio:
+      "I'm Emmanuel, a geospatial software engineer, earth observation (remote sensing) expert and founder currently based in Germany. I'm the founder of Spatialnode, a platform that empower geospatial people to showcase their works and explore opportunities.",
   },
   about: {
-    hero: {
-      en: "I'm Emmanuel Jolaiya. I love to build things.",
-    },
+    hero: "I'm Emmanuel Jolaiya. I love to build.",
     content: {
-      firstBlock: `
-        I am Emmanuel Jolaiya, an Earth Observation and Geospatial Software Engineer with a special interest in open source software development, innovation, community development, and capacity building.
-        I am currently pursuing my Master's in Geospatial Technologies, a joint program between the University of Munster, Germany and UJI, Spain, through the prestigious Erasmus Mundus Scholarship.
-      `,
-      secondBlock: `My experience includes consulting for organizations such as the World Bank on the Ibadan Urban Flood Management Project, GIZ through the Nigeria Energy Support Programme. My work mostly focus on the intersection of data analysis, Web GIS, software development and automation to provide solutions to problems. My current interests are: Geospatial Algorithms, Spatial SQL, DevOps, and Web GIS.`,
-      thirdBlock: `I firmly believe in the power of democratizing access to knowledge and information to foster meaningful social and intellectual development. By empowering informed minds from diverse backgrounds, we can create transformational solutions that address real-world challenges.`,
-      lastBlock: `Today, I'm the founder of Spatialnode, where we're building tools and platforms to enrich the geospatial people in showcasing their works and exploring professional opportunities.`,
+      firstBlock: `I am Emmanuel Jolaiya, an Earth Observation and Geospatial Software Engineer with a keen interest in open-source software development, user interface design, innovation, community development, and capacity building. I am currently pursuing a Master's in Geospatial Technologies through a joint program between the University of Münster, Germany, and the University of Jaume I (UJI), Spain, supported by the prestigious Erasmus Mundus Scholarship.`,
+      secondBlock: `My professional experience includes consulting for organizations such as the World Bank on the Ibadan Urban Flood Management Project and GIZ through the Nigeria Energy Support Programme. My work primarily focuses on the intersection of data analysis, Web GIS, software development, and automation to develop solutions for complex problems. My current interests include Geospatial Algorithms, Geospatial Data Engineering, and Web GIS.`,
+      thirdBlock: `I am a strong advocate for democratizing access to knowledge and information to foster meaningful social and intellectual development. By empowering informed minds from diverse backgrounds, we can create transformational solutions to address real-world challenges.`,
+      fourthBlock: `Currently, I am the founder of Spatialnode, where we are developing tools and platforms to enable geospatial professionals to showcase their work and explore new opportunities.`,
+      lastBlock: `When I'm not on my computer, you'll likely find me doing one of the following: taking a walk while grooving to Afrobeats and Hip-Hop music, playing table tennis, hitting the gym, playing football, or watching random tutorials on YouTube. I also enjoy catching up on past conference proceedings.`,
     },
   },
-  articles: {
-    hero: {
-      en: "I love to learn, so I write.",
+  workExperience: [
+    {
+      role: "Founder",
+      roleType: "Part Time",
+      period: "2022 - Present",
+      companyName: "Spatialnode",
+      companyLogo: SpatialnodeLogo,
     },
+    {
+      role: "Geospatial Software Engineer",
+      roleType: "Part Time",
+      period: "2023",
+      companyName: "Rural Farmers Hub",
+      companyLogo: RuralFarmersHubLogo,
+    },
+    {
+      role: "Geodata Analyst",
+      roleType: "Full Time",
+      period: "2021 - 2023",
+      companyName: "Integration Environment & Energy GmbH",
+      companyLogo: IntegrationLogo,
+    },
+    {
+      role: "GIS Developer",
+      roleType: "Contract",
+      period: "2020 - 2021",
+      companyName: "Cizoti Nigeria Limited",
+      companyLogo: CizotiLogo,
+    },
+  ],
+  education: [
+    {
+      degree: "M.sc in Geospatial Technologies",
+      period: "2023 - Present",
+      schoolName: "University of Muenster, Munster, Germany",
+      schoolLogo: UniMunsterLogo,
+    },
+    {
+      degree: "M.sc in Geospatial Technologies",
+      period: "2023 - Present",
+      schoolName: "Jaume I University, Castelló de la Plana, Spain",
+      schoolLogo: UJILogo,
+    },
+    {
+      degree: "B.Tech. in Remote Sensing & GIS",
+      period: "2015 - 2021",
+      schoolName: "The Federal University of Technology, Akure, Nigeria",
+      schoolLogo: FUTALogo,
+    },
+  ],
+  cvLink:
+    "https://drive.google.com/file/d/1E5kxIZwaZFpdvVT49j3Jc-7Ifo9gJPgF/view",
+  // Articles page content.
+  articles: {
+    hero: "I love to learn, so I write.",
     description: `All of my long and short-form thoughts on software development, programming, capacity building, community development, and more, collected in chronological order.`,
     spatialnode: {
       logo: SpatialnodeLogo,
@@ -184,6 +229,7 @@ export const APP_CONTENT = {
         },
       ],
     },
+    // dynamically retrieve from RSS Feed
     hashnode: {
       logo: HashnodeLogo,
       name: "Hashnode",
@@ -195,299 +241,170 @@ export const APP_CONTENT = {
       articles: [],
     },
   },
+
+  // media page content.
   media: {
-    hero: {
-      en: "I've spoken at conference events all around the world, co-hosted podcasts, and facilitated workshops.",
-    },
-    description: `Apart from writing, another way I love to share my ideas is live on stage, where there's so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions.`,
+    hero: "Global speaker, podcast host, workshop leader.",
+    description: `Apart from writing, I enjoy sharing my ideas with others. I do this via speaking at conferences, facilitating workshops, podcasts, and webinars.`,
     media: [
-      //talks
+      //chronological ordering
       {
+        talkTitle:
+          "Advanced Technique for Soil Erosion Classification via Remote Sensing and Ensemble Learning",
+        abstract:
+          "In this session, starting at 5:32 in the video, we present our research on soil erosion classification using ensemble models, highlighting key methodologies and insights.",
+        organizerName: "FOSS4G Europe",
+        year: "2024",
+        link: "https://foss4ge.television.ee/stream/2024-07-03-OMICUM",
         category: MediaCategory.CONFERENCE_TALKS,
-        activities: [
-          {
-            talkTitle: "foss4g europe",
-            abstract: "My favorite...",
-            conferenceName: "FOSS4G EUROPE academic track",
-            conferenceYear: "",
-            link: "",
-          },
-          {
-            talkTitle: "TypeScript",
-            abstract: "My favorite...",
-            conferenceName: "SOTM ON AFRICA GEOCONVO",
-            conferenceYear: "",
-            link: "",
-          },
-          {
-            talkTitle: "TypeScript",
-            abstract: "My favorite...",
-            conferenceName: "AGDIC ON ILAJE",
-            conferenceYear: "",
-            link: "",
-          },
-        ],
       },
       //workshops
       {
-        category: MediaCategory.CONFERENCE_WORKSHOPS,
-        activities: [
-          {
-            talkTitle: "foss4g europe",
-            abstract: "My favorite...",
-            conferenceName: "GIS FEST",
-            conferenceYear: "",
-            link: "",
-          },
-          {
-            talkTitle: "TypeScript",
-            abstract: "My favorite...",
-            conferenceName: "NIGERIA SE4ALL TRAININGS",
-            conferenceYear: "",
-            link: "",
-          },
-          {
-            talkTitle: "TypeScript",
-            abstract: "My favorite...",
-            conferenceName: "GEOMUNDUS (COMING SOON)",
-            conferenceYear: "",
-            link: "",
-          },
-          {
-            talkTitle: "TypeScript",
-            abstract: "My favorite...",
-            conferenceName: "GEOSPATIAL DEVELOPERS",
-            conferenceYear: "",
-            link: "",
-          },
-        ],
+        talkTitle:
+          "Developing an Air Quality Monitoring Dashboard with React (Next JS), TypeScript, Tailwind CSS, MapLibre GL JS, and Deck.GL",
+        abstract:
+          "The goal of this workshop is to explore the development of dashboards to convey decision making insights using best practices and open source tools.",
+        organizerName: "Geomundus",
+        year: "2024",
+        link: "https://geomundus.org/2024/speakers.html#workshops",
+        category: MediaCategory.WORKSHOPS,
       },
-      //Podcasts (host)
+
       {
-        category: MediaCategory.PODCAST_HOST,
-        activities: [
-          {
-            talkTitle: "foss4g europe",
-            abstract: "My favorite...",
-            podcastName: "AfricaGeoConvo Episodes i appear (use api?)",
-            conferenceYear: "",
-            link: "",
-          },
-        ],
+        talkTitle: "Introduction to GIS",
+        abstract:
+          "In this workshop, I introduced newcomers to the world of GIS, to support the development of their skills and nurturing professionals who can tackle environmental and societal challenges using GIS technology.",
+        organizerName: "University of Ibadan GIS",
+        year: "2023",
+        link: "https://youtu.be/IUi-dyHWJUg?si=x7AXhjys6duqX-e6",
+        category: MediaCategory.WORKSHOPS,
       },
-      //Podcast (Guest)
       {
-        category: MediaCategory.PODCAST_GUEST,
-        activities: [
-          {
-            talkTitle: "foss4g europe",
-            abstract: "My favorite...",
-            podcastName: "GEOSPATIALLY",
-            conferenceYear: "",
-            link: "",
-          },
-          {
-            talkTitle: "TypeScript",
-            abstract: "My favorite...",
-            conferenceName: "WE DEY CODE",
-            conferenceYear: "",
-            link: "",
-          },
-        ],
+        talkTitle: "QGIS Trainings and Humanitarian Mapping with JOSM",
+        abstract:
+          "While at Integration, I co-faciliated over 12 physical workshops and mapathons across various locations (and vitually) in the country. These sessions focused on using QGIS for GIS analysis and humanitarian mapping with JOSM.",
+        organizerName: "Nigeria Se4all",
+        year: "2021-2023",
+        link: "https://learning.nigeriase4all.gov.ng/",
+        category: MediaCategory.WORKSHOPS,
       },
-      //Webinars
       {
+        talkTitle:
+          "Building a Custom Geocoding Service using Open Source Tools",
+        abstract:
+          "In this workshop, I explored an approach to creating a custom geocoding service with open source tools.",
+        organizerName: "GISfest",
+        year: "2022",
+        link: "https://youtu.be/_YISLCVMC0o?si=nF92fodVrN5xWHN_",
+        category: MediaCategory.WORKSHOPS,
+      },
+
+      {
+        talkTitle: "Introduction to Django Rest Framework",
+        abstract:
+          "I had the privilege of facilitating a three-day workshop that introduced participants to Django for backend development.",
+        organizerName: "Geospatial Developers",
+        year: "2022",
+        link: "https://youtu.be/LjozbdU9hbw?si=uzpI_wwYqaznx_Pi",
+        category: MediaCategory.WORKSHOPS,
+      },
+      {
+        talkTitle: "Introduction to React JS",
+        abstract:
+          "I had the privilege of facilitating a three-day workshop that introduced participants to React for frontend development.",
+        organizerName: "Geospatial Developers",
+        year: "2022",
+        link: "https://youtu.be/JYvL-ObiRw0?si=UV8UepnF7F1alxe2",
+        category: MediaCategory.WORKSHOPS,
+      },
+      {
+        talkTitle: "Podcast Host - Africa GeoConvo Podcast",
+        abstract:
+          "I was a co-host of an innovative podcast focused on all things geospatial in Africa. Though we haven't had time to continue due to much workload recently, I'm  excited about the impact we made through this endeavor.",
+        organizerName: "AfricaGeoConvo",
+        year: "2020-2022",
+        link: "https://linktr.ee/AfricaGeoConvo",
+        category: MediaCategory.PODCAST,
+      },
+
+      {
+        talkTitle: "Spatialnode - A portfolio platform for geospatial people",
+        abstract:
+          "In this episode, I had a conversation with Opeyemi and Iniobong about Spatialnode.",
+        organizerName: "Geospatially Podcast",
+        year: "2022",
+        link: "https://geospatiallyafrica.com/episodes/spatialnode-a-portfolio-platform-for-geospatial-people",
+        category: MediaCategory.PODCAST,
+      },
+
+      {
+        talkTitle:
+          "WHY Geospatial? What to do to become a force in the GIS Industry",
+        abstract:
+          "I was privileged to be a keynote speaker at the GEOSON Lagos workshop series. In my session, I discussed the importance of GIS and why it remains a dynamic field worth exploring.",
+        organizerName: "GEOSON Lagos Chapter",
+        year: "2022",
+        link: "https://drive.google.com/file/d/1v_XF3VZof1owcUxkmyQRvm_K-GOb4h-G/view?usp=sharing",
         category: MediaCategory.WEBINARS,
-        activities: [
-          {
-            talkTitle: "foss4g europe",
-            abstract: "My favorite...",
-            podcastName: "GEOSON NIGERIA",
-            conferenceYear: "",
-            link: "",
-          },
-          {
-            talkTitle: "TypeScript",
-            abstract: "My favorite...",
-            conferenceName: "UI WEBINAR",
-            conferenceYear: "",
-            link: "",
-          },
-        ],
+        slides: true,
       },
+      {
+        talkTitle: "Podcasting: Promoting Awareness of Open Geo in Africa",
+        abstract:
+          "In this session, we discuss how our podcast has advanced awareness and engagement with open source geospatial technology in Africa. Unfortunately it's not recorded :(",
+        organizerName: "State of the Map Africa",
+        year: "2021",
+        link: "https://docs.google.com/presentation/d/1QshLkkmbI-8ESruCvfR78bIRJ3SLrwD-uE2fQ68FkJY/edit?usp=drivesdk",
+        category: MediaCategory.CONFERENCE_TALKS,
+        slides: true,
+      },
+
+      {
+        talkTitle: "GIS Technology in Africa",
+        abstract:
+          "In this interview, I shared a bit about my journey and how GIS helps in our everyday lives.",
+        organizerName: "WeDeyCode",
+        year: "2020",
+        link: "https://youtu.be/oip7_dC2uyY?si=_I31aL4PhE21iVQW",
+        category: MediaCategory.PODCAST,
+      },
+
       // Interviews
       {
+        talkTitle: "A Discussion with Spatialnode's Emmanuel Jolaiya",
+        abstract:
+          "Had an interview with the Space in Africa team to discusss about Spatialnode, including its offerings, aims and objectives, and plans for the future.",
+        organizerName: "Space in Africa",
+        year: "2022",
+        link: "https://spaceinafrica.com/2022/07/25/a-discussion-with-spatialnodes-emmanuel-jolaiya/",
         category: MediaCategory.INTERVIEWS,
-        activities: [
-          {
-            talkTitle: "foss4g europe",
-            abstract: "My favorite...",
-            podcastName: "SPACE IN AFRICA",
-            conferenceYear: "",
-            link: "",
-          },
-        ],
       },
+
       //tutorial videos
       {
+        talkTitle: "Youtube Videos",
+        abstract:
+          "In 2020, I began recording YouTube videos and have since created a collection of helpful content on my channel.",
+        organizerName: "YouTube",
+        year: "2020",
+        link: "https://www.youtube.com/channel/UCdYaK054HlTq49qOJDTh2oA",
         category: MediaCategory.TUTORIAL_VIDEOS,
-        activities: [
-          {
-            talkTitle: "foss4g europe",
-            abstract: "My favorite...",
-            podcastName: "Youtube videos",
-            conferenceYear: "",
-            link: "",
-          },
-        ],
       },
     ],
   },
-  stacks: {
-    hero: {
-      en: "I love to learn, so I write.",
-    },
-    description: `All of my long and short-form thoughts on software development, programming, capacity building, community development, and more, collected in chronological order.`,
-    stacks: [
-      {
-        title: "Frontend",
-        tools: [
-          {
-            title: "TypeScript",
-            exceprt: "My favorite...",
-          },
-          {
-            title: "Javascript",
-            exceprt: "",
-          },
-          {
-            title: "React",
-            exceprt: ".",
-          },
-          {
-            title: "Next JS",
-            exceprt: "",
-          },
-        ],
-      },
-      {
-        title: "Backend",
-        tools: [
-          {
-            title: "Django",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "FastAPI",
-            exceprt: "My second favourite...",
-          },
-          {
-            title: "Node",
-            exceprt: "Lorem  ipsum...",
-          },
-        ],
-      },
-      {
-        title: "Styling",
-        tools: [
-          {
-            title: "Tailwind CSS",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "CSS3",
-            exceprt: "My second favourite...",
-          },
-          {
-            title: "Boostrap, Material UI, Shadcn, Chakra UI etc",
-            exceprt: "Lorem  ipsum...",
-          },
-        ],
-      },
-      {
-        title: "Design",
-        tools: [
-          {
-            title: "Figma",
-            exceprt: "My favourite...",
-          },
-        ],
-      },
-      {
-        title: "Architecture",
-        tools: [
-          {
-            title: "Draw.io",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "Excalli Draw",
-            exceprt: "My favourite...",
-          },
-        ],
-      },
-      {
-        title: "Web-GIS",
-        tools: [
-          {
-            title: "MapLlibre GL",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "Mapbox GL",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "Deck.GL",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "Leaflet",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "Openlayers",
-            exceprt: "My favourite...",
-          },
-        ],
-      },
-      {
-        title: "Data Analysis",
-        tools: [
-          {
-            title: "Pandas",
-            exceprt: "My favourite...",
-          },
-        ],
-      },
-      {
-        title: "GIS",
-        tools: [
-          {
-            title: "QGIS",
-            exceprt: "My favourite...",
-          },
-          {
-            title: "ArcGIS",
-            exceprt: "My favourite...",
-          },
-        ],
-      },
-    ],
-  },
+  // projects page content.
   projects: {
-    hero: {
-      en: "I love to build things.",
-    },
-    description: `Throughout my career, I've worked on a variety of projects ranging from webapps, ML models, data pipelines, desktop apps and more, but these are my proudest accomplishments. Many are open-source, while others are protected by NDAs. If any of these resonate with you, feel free to explore the code (if public) and/or reach out to discuss them!`,
+    hero: "Innovative projects showcase.",
+    description: `Throughout my career, I've worked on a diverse range of projects, with some being open-source and others proprietary. On this page, I'm showcasing my projects, research papers, volunteering roles, and open-source contributions. These represent some of my proudest accomplishments. If any of these resonate with you, feel free to explore the code (where available) or reach out to discuss them!`,
     projects: [
       //Projects
       {
         title: "Spatialnode",
+        date: "2022 - present",
         image: SpatialnodeImage,
         protected: false,
         shortDescription:
-          "A side project turned to a startup :) I work every weekend on developing Spatialnode for the geospatial community to create an online portfolio of their works in 2 minutes or less and explore geospatial opportunities. This single project alone, has exposed me to the full spectrum of developing a product that works and scale. Not only did I improve on the technical side of things, but also my soft skills (project management, team work, ideating, solving problems, etc).",
+          "A side project that turned into a startup! I work every weekend on developing Spatialnode, a platform designed for the geospatial community to create an online portfolio of their work in 2 minutes or less and explore geospatial opportunities. This project has exposed me to the entire process of developing a product that works and scales. Through this endeavor, I’ve not only honed my technical skills but also enhanced my soft skills, including project management, teamwork, ideation, and problem-solving.",
         tags: [
           ProjectTag.React,
           ProjectTag.PostGIS,
@@ -512,11 +429,12 @@ export const APP_CONTENT = {
         ],
       },
       {
-        title: "Real-time Locomotive Tracker",
+        title: "Real-time Train Tracker",
+        date: "2023",
         image: LocomotiveImage,
         protected: true,
         shortDescription:
-          "Recently developed for a client (representing a Government agency). This was my first time developing a cross platform desktop application. I developed it full-stack (backend, DevOps, and desktop) development.",
+          "I recently developed a cross-platform desktop application for a client representing a government agency. This was my first experience with cross-platform desktop development. I handled the project end-to-end, including backend development, DevOps, and desktop application development.",
         tags: [
           ProjectTag.NextJS,
           ProjectTag.FastAPI,
@@ -536,10 +454,11 @@ export const APP_CONTENT = {
       },
       {
         title: "Nigeria SE4ALL WebMap V3.0",
+        date: "2021-2023",
         image: NigeriaSE4ALLImage,
         protected: false,
         shortDescription:
-          "While at Integration, I worked with on team that developed the Nigeria SE4ALL v3.0 webmaps. The platform is developed for project developers to find potential sites quickly for mini-grid and support electrification planning in Nigeria.",
+          "While at Integration, I worked with a team that developed the Nigeria SE4ALL v3.0 webmaps. This platform is designed to help project developers quickly identify potential sites for mini-grid installations and support electrification planning across Nigeria.",
         tags: [
           ProjectTag.React,
           ProjectTag.PostGIS,
@@ -554,9 +473,10 @@ export const APP_CONTENT = {
       {
         title: "Automated Earth Observation Data Pipeline",
         protected: true,
+        date: "2023",
         image: EarthObservationImage,
         shortDescription:
-          "While at Rural Farmers Hub, I worked on developing an automated earth observation data pipeline. The project retriees remote sensing data leveraging STAC, preprocesses it, compute vegetation indices, and export the result as a PNG for mobile application rendering.",
+          "While at Rural Farmers Hub, I developed an automated Earth observation data pipeline. This project retrieves remote sensing data using STAC, preprocesses it, computes vegetation indices, and exports the results as PNG files for rendering in mobile applications.",
         tags: [
           ProjectTag.GDAL,
           ProjectTag.Python,
@@ -570,22 +490,23 @@ export const APP_CONTENT = {
       },
       //Volunteering
       {
-        title: "Conference Volunteer (FOSS4G Europe)",
+        title: "Travel Grant Participant",
         protected: false,
-        date: "July 2024",
+        date: "2024",
         image: FOSS4GEuropeImage,
         shortDescription:
-          "Privildged to be a travel grant participant at the recently concluded foss4g europe. Supported ith registration desk and in sessionr ooms.",
+          "I was privileged to receive a travel grant and participate in the recently concluded FOSS4G Europe. I supported the event by assisting at the registration desk and in the session rooms.",
         tags: [ProjectTag.TeamWork],
         demoLink: "https://2024.europe.foss4g.org/",
         categories: [ProjectCategory.VOLUNTEERING],
       },
       {
-        title: "GISfest Conference Technical Lead",
+        title: "Technical Lead - GISfest Conference",
         protected: false,
+        date: "2022",
         image: GISFestImage,
         shortDescription:
-          "Led the technical team to develop and design promotion tools ...development of the GISfest Conference website.",
+          "I led the technical team in developing and designing promotional tools for the GISfest Conference, including the development of the conference website.",
         tags: [ProjectTag.NextJS, ProjectTag.TailwindCSS],
         demoLink:
           "https://gisfest-conference-website-bdk7uhzu3-spatialnode-team.vercel.app/",
@@ -598,21 +519,22 @@ export const APP_CONTENT = {
       {
         title: "Advanced OpenStreetMap Contributor",
         protected: false,
-        date: "July 21, 2017 - November 07, 2023",
+        date: "2017 -  2023",
         image: OSMChangesetsImage,
         shortDescription:
-          "With over 1million changesets, I contributed to oSM. Led the technical team to develop and design promotioNowaday I rarely contribute, but my experience as a youthmapper regional ambasador, chapter president, gave me have deep understanding of the OSM ecosystem.",
+          "With over 1 million changesets, I have made significant contributions to OpenStreetMap (OSM). Although I contribute less frequently now, my experience as a YouthMappers regional ambassador and chapter president has provided me with a deep understanding of the OSM ecosystem.",
         tags: [ProjectTag.OpenStreetMap],
         demoLink: "https://www.openstreetmap.org/user/Jolaiya%20Emmanuel",
         categories: [ProjectCategory.VOLUNTEERING],
       },
       {
         title:
-          "State of the Map Africa Conference Technical and Communications Lead",
+          "Technical and Communications Lead - State of the Map Africa Conference",
         protected: false,
         image: SotMImage,
+        date: "2023",
         shortDescription:
-          "Led the Website Development & ...development of the State of the Map Africa Conference website.We achieved x and y...",
+          "I led the technical and communications team in developing and designing promotional tools for the conference, including the development of the conference website.",
         tags: [ProjectTag.React, ProjectTag.CSS3, ProjectTag.Ruby],
         demoLink: "https://2023.stateofthemap.africa",
         categories: [
@@ -624,10 +546,10 @@ export const APP_CONTENT = {
       {
         title: "Technical Reviewer - Learning Geospatial Analysis with Python",
         protected: false,
-        date: "Jan 1st - Dec 21, 2023.",
+        date: "2023",
         image: PythonForGeospatialAnalysisImage,
         shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
+          "As a Technical Reviewer, I evaluated book for accuracy, clarity, and technical depth. My role involved ensuring that the material effectively teaches geospatial analysis concepts using Python, and that it aligns with industry best practices. I provided feedback to enhance the learning experience and ensure the course meets high standards of quality and relevance.",
         tags: [ProjectTag.Python],
         demoLink:
           "https://www.packtpub.com/en-de/product/learning-geospatial-analysis-with-python-9781783281138",
@@ -636,9 +558,10 @@ export const APP_CONTENT = {
       {
         title: "Technical Reviewer - Geospatial Analysis with SQL",
         protected: false,
+        date: "2023",
         image: GeospatialAnalysisWithSQLImage,
         shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
+          "As a Technical Reviewer, I evaluated book for accuracy, clarity, and technical depth. My role involved ensuring that the material effectively teaches geospatial analysis concepts using SQL, and that it aligns with industry best practices. I provided feedback to enhance the learning experience and ensure the course meets high standards of quality and relevance.",
         tags: [ProjectTag.SQL],
         demoLink:
           "https://www.packtpub.com/en-de/product/geospatial-analysis-with-sql-9781835083147",
@@ -646,67 +569,67 @@ export const APP_CONTENT = {
       },
       {
         title: "Tutor - Geospatial Developers",
-        date: "November 2022",
+        date: "2022",
         protected: false,
         image: GitHubImage,
         shortDescription:
-          "Gave an introductory course to Django and React to over 300 aspiring geospatial developers in Africa.",
+          "Delivered an introductory course on Django and React to over 300 aspiring geospatial developers across Africa.",
         tags: [ProjectTag.Django, ProjectTag.React],
         demoLink: "https://github.com/ernest19/Geospatial_Developers",
         categories: [ProjectCategory.VOLUNTEERING],
       },
       //Open Source
       {
-        title: "PyGeoAPI",
+        title: "Contributor - PyGeoAPI",
         protected: false,
-        date: "Jan 2020 - Dec. 2023",
+        date: "2024",
         image: GitHubImage,
         shortDescription:
-          "PygeoAPI is the.... My contribution was the implementation of the OGC Processess API.",
+          "PygeoAPI is the open-source project that provides a framework for serving geospatial data in compliance with OGC standards. My contribution involved implementing the OGC Processes API, which enables the execution and management of geospatial processing workflows.",
         tags: [ProjectTag.Python],
         demoLink: "https://github.com/geopython/pygeoapi",
         categories: [ProjectCategory.OPEN_SOURCE],
       },
       {
-        title: "Geoserver Rest",
+        title: "Contributor - Geoserver Rest",
         protected: false,
-        date: "Jan 2020 - Dec. 2023",
+        date: "2022",
         image: GitHubImage,
         shortDescription:
-          "Contributed a few methods to the package. My contribution was...It aimed at making interaction with Geoserver easier.",
+          "GeoServer REST is a Python library for managing geospatial data in GeoServer. I contributed by resolving several issues to enhance the library's functionality.",
         tags: [ProjectTag.Geoserver, ProjectTag.Python],
         demoLink: "https://github.com/gicait/geoserver-rest",
         categories: [ProjectCategory.OPEN_SOURCE],
       },
       {
-        title: "HOTOSM Raw Data API",
+        title: "Controbutor - HOTOSM Raw Data API",
         protected: false,
-        date: "Jan 2020 - Dec. 2023",
+        date: "2022",
         image: GitHubImage,
         shortDescription:
-          "Raw Data API is a set of high-performant APIs for transforming and exporting OpenStreetMap (OSM) data in different GIS file formats. My contribution was setting up the documentation for the project usin material for mkdocs.",
+          "Raw Data API is a set of high-performant APIs for transforming and exporting OpenStreetMap (OSM) data in different GIS file formats. My contribution was setting up the documentation for the project using material for mkdocs.",
         tags: [ProjectTag.FastAPI, ProjectTag.Python],
         demoLink: "https://github.com/hotosm/raw-data-api",
         categories: [ProjectCategory.OPEN_SOURCE],
       },
       {
-        title: "Rsgis",
+        title: "Author - Rsgis",
         protected: false,
-        date: "Jan 2020 - Dec. 2023",
+        date: "2020",
         image: GitHubImage,
         shortDescription:
-          "My first python package aimed at making remote sensing operation with landsat easier.",
+          "My first Python package is designed to simplify remote sensing operations with Landsat data, making it easier to work with and analyze satellite imagery.s",
         tags: [ProjectTag.Python],
         demoLink: "https://github.com/jeafreezy/rsgis",
         categories: [ProjectCategory.OPEN_SOURCE],
       },
       {
-        title: "Petroeval",
-        date: "Jan 2020 - Dec. 2023",
+        title: "Contributor - Petroeval",
+        date: "2020",
         protected: false,
         image: GitHubImage,
         shortDescription:
-          "Petrol eval is the...My contribution was on reading multiple LAS files.",
+          "Petrol Eval is a tool for evaluating and analyzing petroleum data. My contribution involved implementing functionality for reading and processing multiple LAS files.",
         tags: [ProjectTag.Python],
         demoLink: "https://github.com/olawaleibrahim/petroeval",
         categories: [ProjectCategory.OPEN_SOURCE],
@@ -715,11 +638,11 @@ export const APP_CONTENT = {
       {
         title:
           "Mapping Soil Erosion Classes using Remote Sensing Data and Ensemble Models",
-        date: "June 2024",
+        date: "2024",
         protected: false,
         image: GoogleScholarImage,
         shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
+          "We explored innovative approaches to classifying soil erosion using remote sensing data combined with ensemble modeling techniques.",
         tags: [
           ProjectTag.Python,
           ProjectTag.RemoteSensing,
@@ -733,10 +656,10 @@ export const APP_CONTENT = {
         title:
           "A Spatio-Temporal Analysis of Shoreline Changes in the Ilaje Coastal Area of Ondo State, Nigeria",
         protected: false,
-        date: "October 2023",
+        date: "2023",
         image: GoogleScholarImage,
         shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
+          "The study utilizes remote sensing data and spatio-temporal analysis techniques to assess the extent and impact of shoreline changes, providing critical insights for coastal management and conservation efforts in Ondo State.",
         tags: [
           ProjectTag.ArcGIS,
           ProjectTag.DSAS,
@@ -748,11 +671,11 @@ export const APP_CONTENT = {
       },
       {
         title: "Mapping Access to Electricity in Urban and Rural Nigeria",
-        date: "November 2022",
+        date: "2022",
         protected: false,
         image: SpringerPublicationImage,
         shortDescription:
-          "While this is not supposed to be a project, but i'm proud...",
+          "We employed data collection to analyze electricity access disparities between the FUTA campus and its surrounding communities. The study provides valuable insights for improving energy infrastructure and informing policy planning.",
         tags: [
           ProjectTag.OpenStreetMap,
           ProjectTag.Mapathon,
@@ -764,56 +687,4 @@ export const APP_CONTENT = {
       },
     ],
   },
-  workExperience: [
-    {
-      role: "Founder",
-      roleType: "Part Time",
-      period: "2022 - Present",
-      companyName: "Spatialnode",
-      companyLogo: SpatialnodeLogo,
-    },
-    {
-      role: "Geospatial Software Engineer",
-      roleType: "Part Time",
-      period: "2023",
-      companyName: "Rural Farmers Hub",
-      companyLogo: RuralFarmersHubLogo,
-    },
-    {
-      role: "Geodata Analyst",
-      roleType: "Full Time",
-      period: "2021 - 2023",
-      companyName: "Integration Environment & Energy GmbH",
-      companyLogo: IntegrationLogo,
-    },
-    {
-      role: "GIS Developer",
-      roleType: "Contract",
-      period: "2020 - 2021",
-      companyName: "Cizoti Nigeria Limited",
-      companyLogo: CizotiLogo,
-    },
-  ],
-  education: [
-    {
-      degree: "M.sc in Geospatial Technologies",
-      period: "2023 - Present",
-      schoolName: "University of Muenster, Munster, Germany",
-      schoolLogo: UniMunsterLogo,
-    },
-    {
-      degree: "M.sc in Geospatial Technologies",
-      period: "2023 - Present",
-      schoolName: "Jaume I University, Castelló de la Plana, Spain",
-      schoolLogo: UJILogo,
-    },
-    {
-      degree: "B.Tech. in Remote Sensing & GIS",
-      period: "2015 - 2021",
-      schoolName: "The Federal University of Technology, Akure, Nigeria",
-      schoolLogo: FUTALogo,
-    },
-  ],
-  cvLink:
-    "https://drive.google.com/file/d/1E5kxIZwaZFpdvVT49j3Jc-7Ifo9gJPgF/view",
 };

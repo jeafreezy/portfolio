@@ -30,19 +30,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="text-center font-light text-xs sm:text-sm text-brand-text/50 dark:text-brand-text-light/50">
-        &copy; {new Date().getFullYear()} Emmanuel Jolaiya. Design inspired by{" "}
-        <span>
-          <Link href={"https://spotlight.tailwindui.com/"} target="blank">
-            Tailwind UI
-          </Link>
-        </span>{" "}
-        and{" "}
-        <span>
-          <Link href={"https://dillion.io/"} target="blank">
-            Dillion
-          </Link>
-        </span>
-        .
+        &copy; {new Date().getFullYear()} Emmanuel Jolaiya.
       </div>
     </footer>
   );

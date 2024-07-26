@@ -1,12 +1,14 @@
 "use client";
 import { APP_CONTENT } from "@/utils/content";
-import Image from "next/image";
+
 import { useRouter, useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect } from "react";
+
+import { mediaCategories } from "@/utils/config";
+import { MediaCategory } from "@/utils/enums";
 import Link from "next/link";
-import { mediaCategories, projectCategories } from "@/utils/config";
-import { MediaCategory, ProjectCategory } from "@/utils/enums";
-import SecureIcon from "@/components/icons/SecureIcon";
+import CategoriesNav from "@/components/CategoriesNav";
+import DropdownSelect from "@/components/DropdownSelect";
 
 const BASE_ROUTE = "/media";
 
@@ -38,73 +40,65 @@ export default function MediaPage({}) {
     <div className="min-h-screen flex flex-col gap-y-20  py-10 mb-10">
       <div className="w-full space-y-8 max-w-3xl">
         <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold leading-normal md:leading-[60px]">
-          {APP_CONTENT.media.hero.en}
+          {APP_CONTENT.media.hero}
         </h1>
+
         <div className="flex flex-col gap-y-6 brand-text text-left text-base font-light leading-normal md:leading-relaxed">
           <p>{APP_CONTENT.media.description}</p>
         </div>
       </div>
       <div className="relative w-full">
-        <div className="flex gap-x-4 overflow-x-scroll w-full">
-          {mediaCategories.map((category, id) => (
-            <div
-              key={`project-category-${id}`}
-              className={`cursor-pointer whitespace-nowrap py-2 px-5 rounded-md font-normal ${
-                currentCategory === category.slug
-                  ? "bg-black dark:bg-white text-white dark:text-brand-text transition-colors duration-300"
-                  : "text-brand-text/80 hover:text-brand-text dark:text-brand-text-light/80 dark:hover:text-brand-text-light"
-              }`}
-              onClick={() => updateRouteWithSelectedCategory(category.slug)}
-            >
-              {category.displayName}
-            </div>
-          ))}
+        <div className="relative w-full">
+          {/* Web category selector  */}
+          <CategoriesNav
+            categories={mediaCategories}
+            currentCategory={currentCategory}
+            onClick={updateRouteWithSelectedCategory}
+          />
+          {/* Mobile category selector  */}
+          <DropdownSelect
+            categories={mediaCategories}
+            onClick={updateRouteWithSelectedCategory}
+          />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {APP_CONTENT.media.media
           .filter((media) =>
-            currentCategory === ProjectCategory.ALL
+            currentCategory === MediaCategory.ALL
               ? media
               : media.category === currentCategory
           )
           .map((media, id) => (
             <div
               key={id}
-              className="flex flex-col p-4 gap-y-2 brand-text hover:ring-[0.2px] hover:shadow-md dark:hover:shadow-white/40 border duration-300 transition-all  rounded-md cursor-pointer "
+              className="flex flex-col gap-y-4 w-full -ml-4 md:ml-0 md:-mt-9 pl-4 py-4 md:p-8 cursor-pointer transition-colors hover:bg-opacity-100 bg-opacity-0 transform duration-100 rounded-2xl hover:bg-brand-bg/5 dark:hover:bg-brand-bg/50 "
             >
-              {media.activities.map((activity, id) => (
-                <div>{activity.conferenceName}</div>
-              ))}
+              <span className="font-light text-xs text-brand-text dark:text-brand-text-light/80">
+                {media.organizerName} | {media.year}
+              </span>
+
+              <p className="text-black dark:text-brand-text-light text-base font-semibold tracking-tight">
+                {media.talkTitle}
+              </p>
+              <p className="text-brand-text dark:text-brand-text-light/80 text-sm font-light">
+                {media.abstract}
+              </p>
+              <Link href={media.link} target="blank" title={media.talkTitle}>
+                <p className="text-deep-purple text-sm dark:text-light-purple">
+                  {media.category == MediaCategory.PODCAST
+                    ? "Listent to podcast"
+                    : media.slides
+                    ? "View slides"
+                    : media.category == MediaCategory.INTERVIEWS
+                    ? "Read"
+                    : "Watch video"}
+                  {` >`}
+                </p>
+              </Link>
             </div>
           ))}
       </div>
     </div>
   );
 }
-
-const ReadMore = ({ text, maxLength }: { text: string; maxLength: number }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpansion = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  if (text.length <= maxLength) {
-    return <p>{text}</p>;
-  }
-
-  return (
-    <div>
-      <p>
-        {isExpanded ? `${text} ` : `${text.substring(0, maxLength)}... `}
-        <button
-          onClick={toggleExpansion}
-          className="text-deep-purple dark:text-light-purple focus:outline-none cursor-pointer"
-        >
-          {isExpanded ? " read less" : "read more"}
-        </button>
-      </p>
-    </div>
-  );
-};

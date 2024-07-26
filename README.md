@@ -1,51 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+Welcome to the repository for my [portfolio](emmanueljolaiya.com) website! This site showcases my projects, skills, and experience. It was built using Next.js, styled with Tailwind CSS, and deployed on Vercel.
 
-First, run the development server:
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Setup](#setup)
+- [Libraries Used](#libraries-used)
+- [Deployment](#deployment)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+This portfolio website is designed to be a modern and responsive showcase of my work and capabilities.
+
+## Features
+
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Project/Articles Showcase**: Displays my work and projects with details and links.
+- **Articles Showcase**: Dynamically retrieve articles from Medium, Spatialnode, and Hashnode using RSS feeds.
+- **Media Showcase**: Displays my featured media, including podcasts, talks, videos, and others.
+- **Single file Configuration**: A single file configuration is used to enable easy site-wide update.
+- **Lightweight & Fast**: Built with performance in mind.
+- **Dark/Light Mode**: Toggle between dark and light themes to suit your preference.
+- **Gallery**: Toggle between dark and light themes to suit your preference.
+
+## Setup
+
+To get started with the project locally, follow these steps:
+
+1. **Clone the Repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/jeafreezy/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Dependencies**
+   Make sure you have Node.js installed. Then run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Run the Development Server
 
-## Learn More
+```bash
+  yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+The website will be available at http://localhost:3000.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To create a production build of the site, run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  yarn build
+```
 
-## Deploy on Vercel
+Then start the production server with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  yarn start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Libraries Used
 
-- icons from https://simpleicons.org
-  concepts
+1. **[Next.js](https://nextjs.org/)**: A React framework for building server-side rendered and static websites.
+2. **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for designing custom UIs.
+3. **[rss-parser](https://www.npmjs.com/package/rss-parser)**: Parses RSS feeds to retrieve articles and updates.
+4. **[htmlparser2](https://www.npmjs.com/package/htmlparser2)**: Parses HTML content within RSS feeds.
+5. **[tailwind-merge](https://www.npmjs.com/package/tailwind-merge)**: Merges Tailwind CSS classes to avoid conflicts.
+6. **[framer-motion](https://www.framer.com/api/motion/)**: Provides animations and transitions for React components.
+7. **[@headlessui/react](https://headlessui.dev/)**: Provides UI components like modals for building accessible user interfaces, such as image galleries.
+8. **[@next/third-parties](https://nextjs.org/docs/messages/next-script-for-ga)**: Provide support to easily add Google Analytics to the application.
 
-- when they scroll up, the dynamic island moves down
-- the dynamic island shows the country of the last visit
-- get some map concepts from the old ui design
-- make the images easily updatable from
-- use rss feed from spatialnode for articles
-- make the images zoom out on hover or click
-- maybe add a map background
-- Speaking will host podcasts, talks, youtube videos.
-- show icon on mobile in dynamic island, then show the title as tooltip
-- Publication will be a section under projects.
-- Use stack section to highlight tools. Here I can use some components from Magic UI to highlight my teck stack and tools I use.
+## Deployment
+
+The website is deployed using [Vercel](vercel.com). Every push to the main branch triggers an automatic deployment.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Acknowledgments
+
+Thanks to the Next.js documentation and Tailwind CSS documentation for their comprehensive guides and resources.
+
+Special thanks to Vercel for their easy deployment solutions.
+
+All icons used are from [SimpleIcons](https://simpleicons.org).
+
+UI inspired by [Tailwind UI](https://spotlight.tailwindui.com/) and [Dillion](https://dillion.io/)
+
+Feel free to reach out if you have any questions or need further information!

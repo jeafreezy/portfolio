@@ -1,8 +1,3 @@
-export enum GalleryMode {
-  MAP = "map",
-  GRID = "grid",
-}
-
 export enum PreferredColorScheme {
   LIGHT = "light",
   DARK = "dark",
@@ -23,9 +18,8 @@ export enum ProjectCategory {
 export enum MediaCategory {
   ALL = "all",
   CONFERENCE_TALKS = "conference-talks",
-  CONFERENCE_WORKSHOPS = "conference-workshops",
-  PODCAST_HOST = "podcast-host",
-  PODCAST_GUEST = "podcast-guest",
+  WORKSHOPS = "workshops",
+  PODCAST = "podcast",
   WEBINARS = "webinars",
   INTERVIEWS = "interviews",
   TUTORIAL_VIDEOS = "tutorial-videos",

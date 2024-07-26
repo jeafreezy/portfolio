@@ -7,6 +7,13 @@ export const MEDIUM_RSS_FEED_URL = 'https://medium.com/@jolaiyaemmanuel/feed'
 export const HASHNODE_RSS_FEED_URL = 'https://jeafreezy.hashnode.dev/rss.xml'
 
 const parser = new Parser();
+/**
+ *This function retrives the xml from the rss feed and parses it using rss-parser lib.
+ *
+ * url: The url to the rss feed.
+ *
+ * @returns: The parsed rss feed.
+ */
 async function fetchAndParseRSSFeed(url:string) {
     try {
         const response = await fetch(url);

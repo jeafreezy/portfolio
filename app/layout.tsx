@@ -3,12 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/context/ThemeProvider";
 import AppLayout from "@/components/AppLayout";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title:
-    "Emmanuel Jolaiya - Earth observation, geospatial software engineer, and founder.",
+  title: "Emmanuel Jolaiya - Geospatial Software Engineer.",
   description:
     "Emmanuel is an earth observation and geospatial software engineer...",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
@@ -26,6 +25,9 @@ export default function RootLayout({
           <AppLayout>{children}</AppLayout>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics
+        gaId={String(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID)}
+      />
     </html>
   );
 }

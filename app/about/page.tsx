@@ -10,12 +10,13 @@ export default function AboutPage() {
     <div className="grid grid-cols-1  lg:grid-rows-2 lg:grid-cols-2 min-h-screen gap-x-10 py-10 gap-y-10 mb-10">
       <div className="w-full space-y-10 row-span-1 lg:row-span-2">
         <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold">
-          {APP_CONTENT.about.hero.en}
+          {APP_CONTENT.about.hero}
         </h1>
         <div className="flex flex-col gap-y-6 text-brand-text text-left dark:text-brand-text-light/80 text-base font-light leading-normal md:leading-relaxed">
           <p>{APP_CONTENT.about.content.firstBlock}</p>
           <p>{APP_CONTENT.about.content.secondBlock}</p>
           <p>{APP_CONTENT.about.content.thirdBlock}</p>
+          <p>{APP_CONTENT.about.content.fourthBlock}</p>
           <p>{APP_CONTENT.about.content.lastBlock}</p>
         </div>
       </div>
@@ -46,7 +47,7 @@ export default function AboutPage() {
                     {
                       <socialNetwork.icon
                         className={`w-5 h-5 ${
-                          socialNetwork.title === "Fiverr" && "w-8 h-8"
+                          socialNetwork.title === "Fiverr" && "w-6 h-6"
                         } stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
                       />
                     }

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/_next/", "/public/"],
     },
-    // sitemap: "https://emmanueljolaiya.com/sitemap.xml",
+    sitemap: "https://emmanueljolaiya.com/sitemap.xml",
   };
 }

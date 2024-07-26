@@ -12,16 +12,20 @@ import { formatDate } from "@/utils/formatter";
 import { extractFirst100Words } from "@/utils/parser";
 import { sortDateInDescendingOrder } from "@/utils/sorter";
 
+/**
+ *This async function fetches the articles in the server from the RSS feeds.
+ * @returns: The parsed articles.
+ */
 const fetchArticles = async () => {
-  // fetch spatialnode articles from RSS Feed
+  // fetch Spatialnode articles from RSS Feed
   const spatialnodeArticles = await AppService.fetchAndParseRSSFeed(
     SPATIALNODE_RSS_FEED_URL
   );
-  // fetch medium articles from RSS Feed
+  // fetch Medium articles from RSS Feed
   const mediumArticles = await AppService.fetchAndParseRSSFeed(
     MEDIUM_RSS_FEED_URL
   );
-  // fetch hashnode articles
+  // fetch Hashnode articles from RSS Feed
   const hashnodeArticles = await AppService.fetchAndParseRSSFeed(
     HASHNODE_RSS_FEED_URL
   );
@@ -36,7 +40,7 @@ export default async function ArticlesPage({}) {
     <div className="min-h-screen flex flex-col gap-y-20  py-10 mb-10">
       <div className="w-full space-y-8 max-w-3xl">
         <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold leading-normal md:leading-[60px]">
-          {APP_CONTENT.articles.hero.en}
+          {APP_CONTENT.articles.hero}
         </h1>
         <div className="flex flex-col gap-y-6 text-brand-text text-left dark:text-brand-text-light/80 text-base font-light leading-normal md:leading-relaxed">
           <p>{APP_CONTENT.articles.description}</p>

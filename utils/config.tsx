@@ -5,16 +5,15 @@ import LinkedInIcon from "@/components/icons/LinkedInIcon";
 import TwitterIcon from "@/components/icons/TwitterIcon";
 import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import { TGalleryObj, TMediaCategory, TProjectCategory } from "@/utils/types";
-import Gallery1 from "@/public/gallery/1.jpg";
-import Gallery2 from "@/public/gallery/2.jpeg";
+import Gallery1 from "@/public/gallery/1.jpeg";
+import Gallery2 from "@/public/gallery/2.jpg";
 import Gallery3 from "@/public/gallery/3.jpg";
 import Gallery4 from "@/public/gallery/4.jpg";
-import Gallery6 from "@/public/gallery/6.jpg";
-import Gallery7 from "@/public/gallery/7.jpg";
 import Gallery5 from "@/public/gallery/5.jpg";
+import Gallery6 from "@/public/gallery/6.jpg";
+
 import PersonIcon from "@/components/icons/PersonIcon";
 import ArticleIcon from "@/components/icons/ArticleIcon";
-import CodeIcon from "@/components/icons/CodeIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
 import MicrophoneIcon from "@/components/icons/MicrophoneIcon";
 import GridIcon from "@/components/icons/GridIcon";
@@ -50,11 +49,6 @@ export const navRoutes: {
     name: "Media",
     icon: MicrophoneIcon,
     route: "/media",
-  },
-  {
-    name: "Stack",
-    icon: CodeIcon,
-    route: "/stack",
   },
 ];
 
@@ -102,52 +96,45 @@ export const galleryImages: TGalleryObj[] = [
   {
     width: 600,
     height: 800,
-    path: Gallery4,
+    path: Gallery3,
     description:
-      "A portrait with the UEFA Cup at Santiago Bernabéu Stadium, Madrid.",
+      "A selfie with Vincent Sarago, one of my geospatial heroes. Met him at the FOSS4G 2021 Conference at Firenze, Italy, and he was kind to take a selfie with me.",
   },
   {
     width: 800,
     height: 600,
-    path: Gallery6,
-    description:
-      "A quick portrait after a late night gym session. Yeah, I love to hit the gym!",
-  },
-
-  {
-    width: 800,
-    height: 600,
-    path: Gallery2,
+    path: Gallery1,
     description: "A clean shot from the #FOSS4G Europe in Tartu, Estonia.",
   },
   {
     width: 600,
     height: 800,
-    path: Gallery3,
+    path: Gallery2,
     description:
-      "A quick selfie with Tom Kralidis, one of my geospatial heroes. Met him at the 2024 OGC Hackhathon in Evora, Portugal.",
+      "A selfie with Tom Kralidis, one of my geospatial heroes. Met him at the 2024 OGC Hackhathon in Evora, Portugal and he was kind to take a selfie with me.",
   },
 
   {
     width: 600,
     height: 800,
-    path: Gallery7,
+    path: Gallery4,
     description:
       "My best shot yet with Dart. This was two days after I learned it, so I'm proud of it!",
   },
+
   {
     width: 600,
     height: 800,
     path: Gallery5,
-    description: "I love football too!",
+    description:
+      "A selfie with Geoffrey Kateregga and Feye Andal, at the dinner night of the FOSS4G 2021 Conference.",
   },
-
   {
     width: 600,
     height: 800,
-    path: Gallery1,
+    path: Gallery6,
     description:
-      "Happy mood. A quick portrait after submitting my final data science assignment at UJI, Spain.",
+      "A portrait with Kurt Menke after getting a signed copy of his book -- Discover QGIS 3.X.",
   },
 ];
 
@@ -175,7 +162,7 @@ export const projectCategories: TProjectCategory[] = [
     slug: ProjectCategory.FRONTEND,
   },
   {
-    displayName: "Open Source",
+    displayName: "Open source",
     slug: ProjectCategory.OPEN_SOURCE,
   },
   {
@@ -198,16 +185,12 @@ export const mediaCategories: TMediaCategory[] = [
     slug: MediaCategory.CONFERENCE_TALKS,
   },
   {
-    displayName: "Conference Workshops",
-    slug: MediaCategory.CONFERENCE_WORKSHOPS,
+    displayName: "Workshops",
+    slug: MediaCategory.WORKSHOPS,
   },
   {
-    displayName: "Podcasts (Guest)",
-    slug: MediaCategory.PODCAST_GUEST,
-  },
-  {
-    displayName: "Podcasts (Host)",
-    slug: MediaCategory.PODCAST_HOST,
+    displayName: "Podcasts",
+    slug: MediaCategory.PODCAST,
   },
   {
     displayName: "Interviews",

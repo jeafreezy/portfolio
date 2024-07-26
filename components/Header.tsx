@@ -14,17 +14,17 @@ const Header = () => {
             alt="Emmanuel Jolaiya Avatar"
             fill
             priority
-            className="absolute rounded-full p-0.5 h-9 w-9 ring-1 ring-border-light  dark:ring-border-dark"
+            className="absolute rounded-full p-0.5 ring-1 ring-border-light  dark:ring-border-dark"
             title="Emmanuel Jolaiya"
           />
         </Link>
       </div>
       <div className="flex flex-col gap-y-4 md:gap-y-6 max-w-3xl">
         <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold tracking-tight leading-normal md:leading-relaxed">
-          {APP_CONTENT.header.hero.en}
+          {APP_CONTENT.header.hero}
         </h1>
         <p className="text-brand-text dark:text-brand-text-light/80 text-base font-light leading-normal md:leading-relaxed">
-          {APP_CONTENT.header.heroBio.en}
+          {APP_CONTENT.header.heroBio}
         </p>
       </div>
       <div className="flex gap-x-4 md:gap-x-6 items-center">
@@ -41,7 +41,7 @@ const Header = () => {
               {
                 <socialNetwork.icon
                   className={`w-5 h-5 ${
-                    socialNetwork.title === "Fiverr" && "w-8 h-8"
+                    socialNetwork.title === "Fiverr" && "w-6 h-6"
                   } stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
                 />
               }

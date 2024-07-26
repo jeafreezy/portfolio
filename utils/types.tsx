@@ -33,11 +33,6 @@ export type TArticle = {
   link?: any;
 };
 
-export type TStackItem = {
-  exceprt: string;
-  title: string;
-};
-
 export type TProjectCategory = {
   displayName: string;
   slug: string;
@@ -46,4 +41,13 @@ export type TProjectCategory = {
 export type TMediaCategory = {
   displayName: string;
   slug: string;
+};
+
+export type TMediaItem = {
+  talkTitle: string;
+  abstract: string;
+  conferenceName: string;
+  conferenceYear: string;
+  link: string;
+  category: TMediaCategory;
 };
