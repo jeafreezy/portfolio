@@ -25,7 +25,6 @@ This portfolio website is designed to be a modern and responsive showcase of my 
 - **Configuration file**: A configuration file is used to enable easy site-wide updates.
 - **Lightweight & Fast**: Built with performance in mind.
 - **Dark/Light Mode**: Toggle between dark and light themes to suit your preference.
-- **Gallery**: Toggle between dark and light themes to suit your preference.
 - **Great SEO, Accessibility and Performance**: See [https://github.com/jeafreezy/portfolio/issues/1](https://github.com/jeafreezy/portfolio/issues/1)
 
 ## Setup
