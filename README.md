@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to the repository for my [portfolio](emmanueljolaiya.com) website! This site showcases my projects, skills, and experience. It was built using Next.js, styled with Tailwind CSS, and deployed on Vercel.
+Welcome to the repository for my [portfolio](https://emmanueljolaiya.com) website! This site showcases my projects, skills, and experience. It was built using Next.js, styled with Tailwind CSS, and deployed on Vercel.
 
 ## Table of Contents
 
