@@ -78,7 +78,7 @@ Then start the production server with:
 
 ## Deployment
 
-The website is deployed using [Vercel](vercel.com). Every push to the main branch triggers an automatic deployment.
+The website is deployed using [Vercel](https://vercel.com). Every push to the main branch triggers an automatic deployment.
 
 ## License
 
