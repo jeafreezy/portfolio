@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Disable horizontal scrolling */
+
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar:horizontal {
+    width: 6px; /* Required for Firefox */
+    height: 6px; /* Required for Firefox */
+}
+  
+::-webkit-scrollbar-thumb:horizontal {
+display: none;
+}
+  
+/* For Firefox */
+* {
+scrollbar-width: none; /* Remove both horizontal and vertical scrollbars */
+}
 
 @layer components{
     .icons {
