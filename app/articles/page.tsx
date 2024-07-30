@@ -63,7 +63,7 @@ export default async function ArticlesPage({}) {
                     article={{
                       title: article.title,
                       link: article.link,
-                      exceprt: extractFirst100Words(article.content),
+                      summary: extractFirst100Words(article.content),
                       date: formatDate(article.isoDate),
                     }}
                   />
@@ -111,7 +111,7 @@ export default async function ArticlesPage({}) {
                     article={{
                       title: article.title,
                       link: article.link,
-                      exceprt: extractFirst100Words(article["content:encoded"]),
+                      summary: extractFirst100Words(article["content:encoded"]),
                       date: formatDate(article.isoDate),
                     }}
                   />
@@ -148,7 +148,7 @@ export default async function ArticlesPage({}) {
                     article={{
                       title: article.title,
                       link: article.link,
-                      exceprt: extractFirst100Words(article.content),
+                      summary: extractFirst100Words(article.content),
                       date: formatDate(article.isoDate),
                     }}
                   />
@@ -173,7 +173,7 @@ const ArticleCard = ({ article }: { article: TArticle }) => {
             {article.title}
           </p>
           <p className="text-brand-text dark:text-brand-text-light/80 text-sm font-light">
-            {article.exceprt}
+            {article.summary}
           </p>
           <p className="text-deep-purple text-sm dark:text-light-purple">
             Read article {`>`}
