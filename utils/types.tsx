@@ -29,7 +29,7 @@ export type TEducation = {
 export type TArticle = {
   date?: string;
   title?: string;
-  exceprt?: string;
+  summary?: string;
   link?: any;
 };
 
