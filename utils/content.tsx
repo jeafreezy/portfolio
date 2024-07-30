@@ -282,7 +282,7 @@ export const APP_CONTENT = {
       {
         talkTitle: "QGIS Trainings and Humanitarian Mapping with JOSM",
         abstract:
-          "While at Integration, I co-faciliated over 12 physical workshops and mapathons across various locations (and vitually) in the country. These sessions focused on using QGIS for GIS analysis and humanitarian mapping with JOSM.",
+          "While at Integration, I co-facilitated over 12 physical workshops and mapathons across various locations (and vitually) in the country. These sessions focused on using QGIS for GIS analysis and humanitarian mapping with JOSM.",
         organizerName: "Nigeria Se4all",
         year: "2021-2023",
         link: "https://learning.nigeriase4all.gov.ng/",
