@@ -592,6 +592,17 @@ export const APP_CONTENT = {
       },
       //Open Source
       {
+        title: "Developer - Nigeria Geodata",
+        protected: false,
+        date: "2024",
+        image: GitHubImage,
+        shortDescription:
+          "I developed a lightweight and efficient Python package designed to streamline access to geospatial data specific to Nigeria. This library is tailored to simplify the work of developers by providing fast, reliable, and easy-to-use tools for geospatial data management. Beyond creating a useful tool for the developer community, this project served as an opportunity to deepen my understanding of the end-to-end process involved in developing and releasing a Python package. From initial design and coding to documentation, testing, and distribution, I gained valuable insights into the complete lifecycle of a Python package.",
+        tags: [ProjectTag.Python],
+        demoLink: "https://github.com/jeafreezy/nigeria_geodata",
+        categories: [ProjectCategory.OPEN_SOURCE],
+      },
+      {
         title: "Contributor - PyGeoAPI",
         protected: false,
         date: "2024",
