@@ -308,6 +308,7 @@ export const APP_CONTENT = {
         link: "https://youtu.be/LjozbdU9hbw?si=uzpI_wwYqaznx_Pi",
         category: MediaCategory.WORKSHOPS,
       },
+
       {
         talkTitle: "Introduction to React JS",
         abstract:
@@ -317,6 +318,7 @@ export const APP_CONTENT = {
         link: "https://youtu.be/JYvL-ObiRw0?si=UV8UepnF7F1alxe2",
         category: MediaCategory.WORKSHOPS,
       },
+      //Podcasts
       {
         talkTitle: "Podcast Host - Africa GeoConvo Podcast",
         abstract:
@@ -326,7 +328,6 @@ export const APP_CONTENT = {
         link: "https://linktr.ee/AfricaGeoConvo",
         category: MediaCategory.PODCAST,
       },
-
       {
         talkTitle: "Spatialnode - A portfolio platform for geospatial people",
         abstract:
@@ -336,7 +337,18 @@ export const APP_CONTENT = {
         link: "https://geospatiallyafrica.com/episodes/spatialnode-a-portfolio-platform-for-geospatial-people",
         category: MediaCategory.PODCAST,
       },
-
+      //Webinars
+      {
+        talkTitle:
+          "R Package Development and Deployment",
+        abstract:
+          "Upon learning that my classmates were facing challenges with an assignment on R package deployment, I organized and led a webinar to support them. I invited Dennis Irorere, an expert in R programming, as a guest speaker to share his insights on package structure, version control, documentation, and deployment to CRAN. The session provided valuable guidance, enabling my peers to overcome difficulties and complete their assignments successfully.",
+        organizerName: "Emmanuel Jolaiya",
+        year: "2024",
+        link: "https://www.youtube.com/watch?v=PohUwQNhq0U",
+        category: MediaCategory.WEBINARS,
+        slides: false,
+      },
       {
         talkTitle:
           "WHY Geospatial? What to do to become a force in the GIS Industry",
