@@ -252,10 +252,10 @@ export const APP_CONTENT = {
         talkTitle:
           "Advanced Technique for Soil Erosion Classification via Remote Sensing and Ensemble Learning",
         abstract:
-          "In this session, starting at 5:32 in the video, we present our research on soil erosion classification using ensemble models, highlighting key methodologies and insights.",
+          "In this session, we present our research on soil erosion classification using ensemble models, highlighting key methodologies and insights.",
         organizerName: "FOSS4G Europe",
         year: "2024",
-        link: "https://foss4ge.television.ee/stream/2024-07-03-OMICUM",
+        link: "https://youtu.be/WH9O6qQUlDs?si=2DH5eN-xfZV6ICYp",
         category: MediaCategory.CONFERENCE_TALKS,
       },
       //workshops
@@ -591,6 +591,17 @@ export const APP_CONTENT = {
         categories: [ProjectCategory.VOLUNTEERING],
       },
       //Open Source
+      {
+        title: "Developer - Webmap Compare",
+        protected: false,
+        date: "2024",
+        image: GitHubImage,
+        shortDescription:
+          "Quickly and interactively compare performace of GeoJSON features on major webmap libraries.",
+        tags: [ProjectTag.MaplibreGLJS, ProjectTag.Leaflet],
+        demoLink: "https://github.com/jeafreezy/webmap-compare",
+        categories: [ProjectCategory.OPEN_SOURCE],
+      },
       {
         title: "Developer - Nigeria Geodata",
         protected: false,
