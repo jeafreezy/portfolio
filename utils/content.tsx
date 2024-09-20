@@ -93,7 +93,7 @@ export const APP_CONTENT = {
     },
   ],
   cvLink:
-    "https://drive.google.com/file/d/1E5kxIZwaZFpdvVT49j3Jc-7Ifo9gJPgF/view",
+    "https://drive.google.com/file/d/1Mfb31T2qYW9WmJExg0UG2skKW4jRxZm3/view?usp=sharing",
   // Articles page content.
   articles: {
     hero: "I love to learn, so I write.",
