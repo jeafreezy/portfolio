@@ -22,24 +22,23 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         {children}
         <Footer />
         <div
-          className={`fixed md:hidden bottom-2 left-1/2 transform -translate-x-1/2 transition-transform duration-300 ${
-            isPastOffset ? "translate-y-0" : "translate-y-full"
-          }`}
+          className={`fixed md:hidden bottom-2 left-1/2 transform -translate-x-1/2 transition-transform duration-300 ${isPastOffset ? "translate-y-0" : "translate-y-full"
+            }`}
         >
           <NavRoutes isMobile />
         </div>
         {/* Scroll to top button  */}
-        <div
-          className={`fixed hidden cursor-pointer border w-10 h-10 md:w-14 md:h-14 rounded-full bottom-0 right-2 md:right-10 transform transition-transform duration-300 md:flex items-center justify-center ${
-            isPastOffset
-              ? "translate-y-0 bottom-16 md:bottom-10"
-              : "translate-y-full"
-          }`}
+        <button
+          className={`fixed hidden cursor-pointer border w-10 h-10 md:w-14 md:h-14 rounded-full bottom-0 right-2 md:right-10 transform transition-transform duration-300 md:flex items-center justify-center ${isPastOffset
+            ? "translate-y-0 bottom-16 md:bottom-10"
+            : "translate-y-full"
+            }`}
           onClick={scrollToTop}
           title="Scroll to top"
+          aria-label="Scroll to top"
         >
           <ScrollToTopIcon className="icons icon-fill size-10" />
-        </div>
+        </button>
       </div>
     </main>
   );

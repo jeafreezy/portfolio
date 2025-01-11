@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="flex flex-col items-start gap-y-8 lg:gap-y-10">
       <div className="h-20 md:h-28 w-20 md:w-28 relative">
-        <Link href={"/"}>
+        <Link href={"/"} aria-label="Emmanuel Jolaiya Avatar">
           <Image
             src={EmmanuelAvatar}
             placeholder="blur"
@@ -36,7 +36,8 @@ const Header = () => {
             <Link
               href={socialNetwork.url}
               target="blank"
-              title={socialNetwork.title}
+              title={`Check out my ${socialNetwork.title}`}
+              aria-label={`Check out my ${socialNetwork.title}`}
             >
               {
                 <socialNetwork.icon

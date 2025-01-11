@@ -29,15 +29,16 @@ export default function GalleryImageDialog({
             className="w-full h-full space-y-4 p-4"
             onClick={onClose}
           >
-            <DialogTitle className="flex items-center justify-between text-black dark:text-white">
-              <p> {imgObj.description}</p>
-              <span
-                className="cursor-pointer text-xl hidden md:block"
+            <DialogTitle className="flex items-center justify-between gap-x-6 text-black dark:text-white">
+              <p>{imgObj.description}</p>
+              <button
+                className="hidden rounded-full w-8 h-8  md:flex items-center justify-center border p-3 "
                 title="Close"
                 onClick={onClose}
+                aria-label="Close"
               >
-                X
-              </span>
+                <span>&#x2715;</span>
+              </button>
             </DialogTitle>
             <div className="relative h-full w-full rounded-2xl">
               <Image
