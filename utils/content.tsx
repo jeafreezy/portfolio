@@ -1,15 +1,16 @@
-import CizotiLogo from "@/public/cizoti_logo.png";
-import IntegrationLogo from "@/public/integration_environment_energy_gmbh_logo.jpeg";
-import SpatialnodeLogo from "@/public/spatialnode_logo.jpeg";
-import RuralFarmersHubLogo from "@/public/rural_farmers_hub.png";
-import UniMunsterLogo from "@/public/Logo_WWU_Munster.png";
-import FUTALogo from "@/public/futa_logo.png";
-import UJILogo from "@/public/UJI_logo.jpeg";
-import YouthMappersLogo from "@/public/youthmappers_logo.png";
-import MediumLogo from "@/public/medium_logo.webp";
-import HashnodeLogo from "@/public/hashnode_logo.png";
-import NigeriaSE4ALLLogo from "@/public/nigeria_se4all_logo.jpg";
-import GISLoungeLogo from "@/public/gislounge_logo.jpg";
+import CizotiLogo from "@/public/organizations/cizoti_logo.png";
+import IntegrationLogo from "@/public/organizations/integration_environment_energy_gmbh_logo.jpeg";
+import SpatialnodeLogo from "@/public/organizations/spatialnode_logo.jpeg";
+import RuralFarmersHubLogo from "@/public/organizations/rural_farmers_hub.png";
+import UniMunsterLogo from "@/public/schools/uni_munster_logo.png";
+import FUTALogo from "@/public/schools/futa_logo.png";
+import UJILogo from "@/public/schools/uji_logo.jpeg";
+import YouthMappersLogo from "@/public/organizations/youthmappers_logo.png";
+import HOTLogo from "@/public/organizations/hot_logo.png";
+import MediumLogo from "@/public/blogs/medium_logo.webp";
+import HashnodeLogo from "@/public/blogs/hashnode_logo.png";
+import NigeriaSE4ALLLogo from "@/public/organizations/nigeria_se4all_logo.jpg";
+import GISLoungeLogo from "@/public/blogs/gislounge_logo.jpg";
 import EarthObservationImage from "@/public/projects/kc_earth_oberservation.jpg";
 import NigeriaSE4ALLImage from "@/public/projects/nigeriase4all_screenshot.png";
 import SpatialnodeImage from "@/public/projects/spatialnode_screenshot.png";
@@ -23,6 +24,7 @@ import SpringerPublicationImage from "@/public/projects/springer_publication.web
 import FOSS4GEuropeImage from "@/public/projects/foss4geurope_logo.png";
 import GoogleScholarImage from "@/public/projects/google_scholar.png";
 import OSMChangesetsImage from "@/public/projects/osm_changesets.png";
+import fAIrImage from "@/public/projects/fair_ui.png";
 import { MediaCategory, ProjectCategory, ProjectTag } from "./enums";
 
 export const APP_CONTENT = {
@@ -30,7 +32,7 @@ export const APP_CONTENT = {
   header: {
     hero: "Geospatial software engineer.",
     heroBio:
-      "I'm Emmanuel, a geospatial software engineer, earth observation (remote sensing) expert and founder currently based in Spain. I'm the founder of Spatialnode, a platform that empowers geospatial people to showcase their works and explore opportunities.",
+      "I'm Emmanuel, a geospatial software engineer, earth observation (remote sensing) expert and founder currently based in Spain. I'm the founder of Spatialnode, a platform that empower geospatial professionals to create an online portfolio of their works in a minute or less.",
   },
   about: {
     hero: "I'm Emmanuel Jolaiya. I love to build.",
@@ -43,6 +45,13 @@ export const APP_CONTENT = {
     },
   },
   workExperience: [
+    {
+      role: "UI/UX Developer",
+      roleType: "Contract",
+      period: "2024 - Present",
+      companyName: "Humanitarian OpenStreetMap Team (HOT)",
+      companyLogo: HOTLogo,
+    },
     {
       role: "Founder",
       roleType: "Part Time",
@@ -261,12 +270,12 @@ export const APP_CONTENT = {
       //workshops
       {
         talkTitle:
-          "Developing an Air Quality Monitoring Dashboard with React (Next JS), TypeScript, Tailwind CSS, MapLibre GL JS, and Deck.GL",
+          "Developing an Air Quality Monitoring Dashboard with React (Next JS), TypeScript, Tailwind CSS, and MapLibre GL JS.",
         abstract:
           "The goal of this workshop is to explore the development of dashboards to convey decision making insights using best practices and open source tools.",
         organizerName: "Geomundus",
         year: "2024",
-        link: "https://geomundus.org/2024/speakers.html#workshops",
+        link: "https://github.com/jeafreezy/workshops/tree/main/2024/airquality-monitoring-dashboard",
         category: MediaCategory.WORKSHOPS,
       },
 
@@ -410,6 +419,26 @@ export const APP_CONTENT = {
     description: `Throughout my career, I've worked on a diverse range of projects, with some being open-source and others proprietary. On this page, I'm showcasing my projects, research papers, volunteering roles, and open-source contributions. These represent some of my proudest accomplishments. If any of these resonate with you, feel free to explore the code (where available) or reach out to discuss them!`,
     projects: [
       //Projects
+      {
+        title: "fAIr - An AI assisted mapping platform",
+        date: "2024 - present",
+        image: fAIrImage,
+        protected: false,
+        shortDescription:
+          "I'm working as the frontend engineer in a team dedicated to revamping the UI/UX of fAIr, to make the mapping experience smoother for the community.",
+        tags: [
+          ProjectTag.React,
+          ProjectTag.TailwindCSS,
+          ProjectTag.MaplibreGLJS,
+          ProjectTag.ReactQuery,
+          ProjectTag.PMTiles,
+          ProjectTag.More,
+        ],
+        demoLink: "https://fair.hotosm.org",
+        categories: [
+          ProjectCategory.FRONTEND,
+        ],
+      },
       {
         title: "Spatialnode",
         date: "2022 - present",
