@@ -270,12 +270,12 @@ export const APP_CONTENT = {
       //workshops
       {
         talkTitle:
-          "Developing an Air Quality Monitoring Dashboard with React (Next JS), TypeScript, Tailwind CSS, MapLibre GL JS, and Deck.GL",
+          "Developing an Air Quality Monitoring Dashboard with React (Next JS), TypeScript, Tailwind CSS, and MapLibre GL JS.",
         abstract:
           "The goal of this workshop is to explore the development of dashboards to convey decision making insights using best practices and open source tools.",
         organizerName: "Geomundus",
         year: "2024",
-        link: "https://geomundus.org/2024/speakers.html#workshops",
+        link: "https://github.com/jeafreezy/workshops/tree/main/2024/airquality-monitoring-dashboard",
         category: MediaCategory.WORKSHOPS,
       },
 
