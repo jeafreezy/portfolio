@@ -21,6 +21,7 @@ const ExperienceCard = ({
           fill
           className="rounded-full p-0.5 brand-ring object-cover"
           alt={entityName}
+          aria-hidden
         />
       </div>
       <div className="flex flex-col w-full space-y-1">
