@@ -40,9 +40,8 @@ const Header = () => {
             >
               {
                 <socialNetwork.icon
-                  className={`w-5 h-5 ${
-                    socialNetwork.title === "Fiverr" && "w-6 h-6"
-                  } stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
+                  className={`w-5 h-5 ${socialNetwork.title === "Fiverr" && "w-6 h-6"
+                    } stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
                 />
               }
             </Link>

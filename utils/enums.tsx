@@ -35,6 +35,8 @@ export enum ProjectTag {
   Geoserver = "Geoserver",
   React = "React",
   MaplibreGLJS = "Maplibre GL JS",
+  PMTiles = "PMTiles",
+  ReactQuery = "React Query",
   Leaflet = "Leaflet",
   Django = "Django",
   NextJS = "Next JS",
