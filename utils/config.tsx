@@ -11,6 +11,7 @@ import Gallery3 from "@/public/gallery/3.jpg";
 import Gallery4 from "@/public/gallery/4.jpg";
 import Gallery5 from "@/public/gallery/5.jpg";
 import Gallery6 from "@/public/gallery/6.jpg";
+import Gallery7 from "@/public/gallery/7.jpg";
 
 import PersonIcon from "@/components/icons/PersonIcon";
 import ArticleIcon from "@/components/icons/ArticleIcon";
@@ -25,32 +26,32 @@ export const navRoutes: {
   icon: any;
   route: string;
 }[] = [
-  {
-    name: "Home",
-    icon: HomeIcon,
-    route: "/",
-  },
-  {
-    name: "About",
-    icon: PersonIcon,
-    route: "/about",
-  },
-  {
-    name: "Articles",
-    icon: ArticleIcon,
-    route: "/articles",
-  },
-  {
-    name: "Projects",
-    icon: GridIcon,
-    route: "/projects",
-  },
-  {
-    name: "Media",
-    icon: MicrophoneIcon,
-    route: "/media",
-  },
-];
+    {
+      name: "Home",
+      icon: HomeIcon,
+      route: "/",
+    },
+    {
+      name: "About",
+      icon: PersonIcon,
+      route: "/about",
+    },
+    {
+      name: "Articles",
+      icon: ArticleIcon,
+      route: "/articles",
+    },
+    {
+      name: "Projects",
+      icon: GridIcon,
+      route: "/projects",
+    },
+    {
+      name: "Media",
+      icon: MicrophoneIcon,
+      route: "/media",
+    },
+  ];
 
 // Social media links
 export const socials: {
@@ -58,37 +59,37 @@ export const socials: {
   title: string;
   icon: any;
 }[] = [
-  {
-    icon: GitHubIcon,
-    url: "https://github.com/jeafreezy",
-    title: "GitHub",
-  },
-  {
-    icon: LinkedInIcon,
-    url: "https://www.linkedin.com/in/emmanueljolaiya",
-    title: "LinkedIn",
-  },
-  {
-    icon: TwitterIcon,
-    url: "https://twitter.com/jeafreezy",
-    title: "Twitter",
-  },
-  {
-    icon: YouTubeIcon,
-    url: "https://www.youtube.com/channel/UCdYaK054HlTq49qOJDTh2oA",
-    title: "YouTube",
-  },
-  {
-    icon: GoogleScholarIcon,
-    url: "https://scholar.google.com/citations?user=TAkvVMUAAAAJ&hl=en",
-    title: "Google Scholar",
-  },
-  {
-    icon: FiverrIcon,
-    url: "https://www.fiverr.com/jolaiyaemmanuel",
-    title: "Fiverr",
-  },
-];
+    {
+      icon: GitHubIcon,
+      url: "https://github.com/jeafreezy",
+      title: "GitHub",
+    },
+    {
+      icon: LinkedInIcon,
+      url: "https://www.linkedin.com/in/emmanueljolaiya",
+      title: "LinkedIn",
+    },
+    {
+      icon: TwitterIcon,
+      url: "https://twitter.com/jeafreezy",
+      title: "Twitter",
+    },
+    {
+      icon: YouTubeIcon,
+      url: "https://www.youtube.com/channel/UCdYaK054HlTq49qOJDTh2oA",
+      title: "YouTube",
+    },
+    {
+      icon: GoogleScholarIcon,
+      url: "https://scholar.google.com/citations?user=TAkvVMUAAAAJ&hl=en",
+      title: "Google Scholar",
+    },
+    {
+      icon: FiverrIcon,
+      url: "https://www.fiverr.com/jolaiyaemmanuel",
+      title: "Fiverr",
+    },
+  ];
 
 // Gallery images for the landing page
 
@@ -136,7 +137,14 @@ export const galleryImages: TGalleryObj[] = [
     description:
       "A portrait with Kurt Menke after getting a signed copy of his book -- Discover QGIS 3.X.",
   },
-];
+  {
+    width: 600,
+    height: 800,
+    path: Gallery7,
+    description:
+      "Team picture at the 2025 GeoAI (https://geoaihack.com/) Hackathon - 2nd Place Winners in Paris! 🎉🌍🧠",
+  },
+].reverse();
 
 // Projects Tags
 
