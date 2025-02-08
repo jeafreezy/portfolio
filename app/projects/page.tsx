@@ -12,7 +12,7 @@ import CategoriesNav from "@/components/CategoriesNav";
 
 const BASE_ROUTE = "/projects";
 
-export default function ProjectsPage({}) {
+export default function ProjectsPage({ }) {
   const router = useRouter();
   const params = useSearchParams();
   // if there is no param, then it can default to 'all'
@@ -92,6 +92,7 @@ export default function ProjectsPage({}) {
                   href={project.demoLink}
                   target="blank"
                   className="flex flex-col gap-y-2 "
+                  title={project.title}
                 >
                   <h1 className="font-semibold hover:text-deep-purple dark:hover:text-light-purple">
                     {project.title}
@@ -99,14 +100,14 @@ export default function ProjectsPage({}) {
                 </Link>
               )}
 
-              <div className="text-xs text-brand-text/50 dark:text-brand-text-light/50">
+              <div className="text-xs text-brand-text dark:text-brand-text-light">
                 <p
                   title="Protected by NDA"
                   className="flex gap-x-1 items-center"
                 >
                   {project.protected ? (
                     <span>
-                      <SecureIcon className="icons icon-fill" />
+                      <SecureIcon className="icons icon-fill" aria-hidden />
                       (Protected by NDA)
                     </span>
                   ) : (
@@ -115,7 +116,7 @@ export default function ProjectsPage({}) {
                 </p>
               </div>
 
-              <p className="text-sm text-brand-text/70 dark:text-brand-text-light/70">
+              <p className="text-sm text-brand-text dark:text-brand-text-light">
                 <ReadMore text={project.shortDescription} maxLength={100} />
               </p>
               <div className="flex flex-wrap gap-2 self-start ">

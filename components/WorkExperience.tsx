@@ -8,7 +8,7 @@ const WorkExperience = () => {
   return (
     <div className=" w-full flex flex-col gap-y-6 rounded-xl col-span-1  p-3 md:p-6 brand-ring  backdrop-blur dark:text-brand-text-light ">
       <div className="flex items-center gap-x-4">
-        <WorkIcon className="icons icon-text fill-none" />
+        <WorkIcon className="icons icon-text fill-none" aria-hidden />
         <p className="text-sm font-medium text-brand-text dark:text-brand-text-light">
           Work Experience
         </p>
@@ -24,10 +24,10 @@ const WorkExperience = () => {
           />
         ))}
       </div>
-      <Link href={APP_CONTENT.cvLink} target="blank">
+      <Link href={APP_CONTENT.cvLink} target="blank" title="Download CV">
         <button className="flex items-center justify-center gap-x-4 w-full p-3 text-brand-text dark:text-brand-text-light bg-brand-bg/5 hover:bg-brand-bg/10 dark:hover:bg-brand-bg/50 transition-all duration-300 dark:bg-brand-bg rounded-md">
-          <p className="text-sm p-1"> Download CV </p>
-          <DownloadIcon className="icons w-4 h-4 icon-text" />
+          <p className="text-sm p-1" aria-label="Download CV"> Download CV </p>
+          <DownloadIcon className="icons w-4 h-4 icon-text" aria-hidden />
         </button>
       </Link>
     </div>

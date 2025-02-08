@@ -11,17 +11,19 @@ const NavBar = () => {
   const { togglePreferredColorScheme, preferredColorScheme } =
     useThemeContext();
   const pathname = usePathname();
-
+  const themeSwitcherButtonLabel = `Switch to ${preferredColorScheme === PreferredColorScheme.DARK
+    ? PreferredColorScheme.LIGHT
+    : PreferredColorScheme.DARK
+    } mode`
   return (
     <nav className="sticky md:top-0 z-10 flex w-full items-center justify-between pt-6">
       <div
-        className={`${
-          pathname !== "/"
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 -translate-y-2"
-        } h-12 w-12 relative  rounded-full transform transition-all duration-300`}
+        className={`${pathname !== "/"
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-2"
+          } h-12 w-12 relative  rounded-full transform transition-all duration-300`}
       >
-        <Link href={"/"}>
+        <Link href={"/"} title="Emmanuel Jolaiya Avatar">
           <Image
             src={EmmanuelAvatar}
             placeholder="blur"
@@ -37,17 +39,13 @@ const NavBar = () => {
         <NavRoutes />
       </div>
       <button
-        className={`h-10 w-12 cursor-pointer  ${
-          preferredColorScheme === PreferredColorScheme.DARK
-            ? "bg-brand-bg"
-            : "bg-white"
-        } rounded-2xl p-3  hover:dark:ring-white/20 brand-ring flex items-center justify-center`}
+        className={`h-10 w-12 cursor-pointer  ${preferredColorScheme === PreferredColorScheme.DARK
+          ? "bg-brand-bg"
+          : "bg-white"
+          } rounded-2xl p-3  hover:dark:ring-white/20 brand-ring flex items-center justify-center`}
         onClick={togglePreferredColorScheme}
-        title={`Switch to ${
-          preferredColorScheme === PreferredColorScheme.DARK
-            ? PreferredColorScheme.LIGHT
-            : PreferredColorScheme.DARK
-        } mode`}
+        title={themeSwitcherButtonLabel}
+        aria-label={themeSwitcherButtonLabel}
       >
         {preferredColorScheme === PreferredColorScheme.DARK ? (
           <svg
@@ -81,21 +79,19 @@ export const NavRoutes = ({ isMobile }: { isMobile?: boolean }) => {
       rounded-full bg-white/90 px-4 md:px-8 py-1 text-sm font-medium 
       text-brand-text ring-1
       ring-border-darker backdrop-blur dark:bg-brand-bg 
-      dark:text-brand-text-light dark:ring-white/10 ${
-        isMobile
+      dark:text-brand-text-light dark:ring-white/10 ${isMobile
           ? "shadow-2xl shadow-black dark:shadow-white"
           : "shadow-lg shadow-brand-shadow"
-      }`}
+        }`}
     >
       {navRoutes.map((route, key) => (
         <li
-          className={`relative flex items-center cursor-pointer px-2 py-2 transition hover:text-deep-purple dark:hover:text-light-purple ${
-            pathname === route.route &&
+          className={`relative flex items-center cursor-pointer px-2 py-2 transition hover:text-deep-purple dark:hover:text-light-purple ${pathname === route.route &&
             "text-deep-purple dark:text-light-purple"
-          } `}
+            } `}
           key={`nav-item-${key}`}
         >
-          <Link href={route.route}>
+          <Link href={route.route} title={route.name}>
             {pathname === route.route && (
               <span className="transition duration-1000 h-px absolute -bottom-[5px] bg-gradient-to-r from-light-purple/20  via-deep-purple  to-light-purple/20 dark:from-light-purple/20 dark:via-light-purple dark:to-light-purple/20 inset-x-1"></span>
             )}
