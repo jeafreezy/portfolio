@@ -27,6 +27,8 @@ export enum MediaCategory {
 
 export enum ProjectTag {
   Ruby = "Ruby",
+  Cesium = "Cesium",
+  OpenDataCube = "OpenDataCube",
   GDAL = "Gdal",
   Python = "Python",
   FastAPI = "FastAPI",
@@ -67,4 +69,5 @@ export enum ProjectTag {
   RemoteSensing = "Remote Sensing",
   DeepLearning = "Deep Learning",
   TeamWork = "Team Work",
+  MobX = 'MobX'
 }

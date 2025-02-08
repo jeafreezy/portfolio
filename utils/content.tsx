@@ -19,6 +19,7 @@ import GISFestImage from "@/public/projects/gisfest.png";
 import SotMImage from "@/public/projects/sotmafrica.png";
 import GitHubImage from "@/public/projects/github_logo.png";
 import GeospatialAnalysisWithSQLImage from "@/public/projects/geospatial_analysis_with_sql.png";
+import LimpopoDTImage from "@/public/projects/limpopo.png";
 import PythonForGeospatialAnalysisImage from "@/public/projects/learning_python_for_geospatial_analysis.jpg";
 import SpringerPublicationImage from "@/public/projects/springer_publication.webp";
 import FOSS4GEuropeImage from "@/public/projects/foss4geurope_logo.png";
@@ -32,13 +33,13 @@ export const APP_CONTENT = {
   header: {
     hero: "Geospatial software engineer.",
     heroBio:
-      "I'm Emmanuel, a geospatial software engineer, earth observation (remote sensing) expert and founder currently based in Spain. I'm the founder of Spatialnode, a platform that empower geospatial professionals to create an online portfolio of their works in a minute or less.",
+      "Hello 👋, I'm Emmanuel, a geospatial software engineer, earth observation (remote sensing) expert and founder currently based in Spain.",
   },
   about: {
     hero: "I'm Emmanuel Jolaiya. I love to build solutions.",
     content: {
       firstBlock: `Hello, I'm Emmanuel Jolaiya—a passionate Earth Observation and Geospatial Software Engineer with expertise in open-source development, innovative and accessible user interface design, and community engagement. Currently, I'm advancing my skills by pursuing a Master's in Geospatial Technologies (https://mastergeotech.info/) to deepen my understanding of cutting-edge geospatial tools and methods to enable me to contribute meaningfully to geospatial innovation and research. I'm honored to be supported by the prestigious Erasmus Mundus Scholarship.`,
-      secondBlock: `My professional experience revolves around developing earth observation pipelines to enhance food security, improving data availability in Africa to support electrification planning, and developing web applications that makes AI accessible and supports humanitarian crises. My current technical interests include Sustainable Mobility, Geospatial Algorithms, GeoAI, Big Data Quality, Geospatial Data Engineering, and Web GIS.`,
+      secondBlock: `My professional experience revolves around developing earth observation pipelines to enhance food security, improving data availability in Africa to support electrification planning via open data and collaborative mapping, developing digital twin portal for water management, and developing web applications that makes AI accessible and supports humanitarian crises. My current technical interests include Sustainable Mobility, Geospatial Algorithms, GeoAI, Big Data Quality, Geospatial Data Engineering, and Web GIS.`,
       thirdBlock: `I am a strong advocate for democratizing access to knowledge and information to foster meaningful social and intellectual development. By empowering informed minds from diverse backgrounds, we can create transformational solutions to address real-world challenges.`,
       lastBlock: `When I'm not on my computer, you'll likely find me doing one of the following: taking a walk while grooving to Afrobeats and Hip-Hop music, playing table tennis, hitting the gym, playing football, or watching random tutorials on YouTube. I also enjoy catching up on past conference proceedings.`,
     },
@@ -436,6 +437,31 @@ export const APP_CONTENT = {
         demoLink: "https://fair.hotosm.org",
         categories: [
           ProjectCategory.FRONTEND,
+        ],
+      },
+      {
+        title: "Limpopo Basin Digital Twin",
+        date: "2024",
+        image: LimpopoDTImage,
+        protected: false,
+        shortDescription:
+          "As a Full Stack Engineer, I contributed to the project by aggregating diverse geospatial and remote sensing datasets, developing efficient data pipelines, and visualizing insights using TerriaJS. I also customized TerriaJS codebase to integrate advanced charting tools and embed an AI-powered chatbot. Deployments of configuration files were automated using Python and AWS.",
+        tags: [
+          ProjectTag.React,
+          ProjectTag.Leaflet,
+          ProjectTag.MobX,
+          ProjectTag.AWS,
+          ProjectTag.CSS3,
+          ProjectTag.Python,
+          ProjectTag.Cesium,
+          ProjectTag.Geoserver,
+          ProjectTag.OpenDataCube,
+          ProjectTag.More,
+        ],
+        demoLink: "https://digitaltwins.demos-only.iwmi.org",
+        categories: [
+          ProjectCategory.FRONTEND,
+          ProjectCategory.BACKEND,
         ],
       },
       {
