@@ -35,12 +35,11 @@ export const APP_CONTENT = {
       "I'm Emmanuel, a geospatial software engineer, earth observation (remote sensing) expert and founder currently based in Spain. I'm the founder of Spatialnode, a platform that empower geospatial professionals to create an online portfolio of their works in a minute or less.",
   },
   about: {
-    hero: "I'm Emmanuel Jolaiya. I love to build.",
+    hero: "I'm Emmanuel Jolaiya. I love to build solutions.",
     content: {
-      firstBlock: `I am Emmanuel Jolaiya, an Earth Observation and Geospatial Software Engineer with a keen interest in open-source software development, user interface design, innovation, community development, and capacity building. I am currently pursuing a Master's in Geospatial Technologies through a joint program between the University of Münster, Germany, and the University of Jaume I (UJI), Spain, supported by the prestigious Erasmus Mundus Scholarship.`,
-      secondBlock: `My professional experience includes consulting for organizations such as the World Bank on the Ibadan Urban Flood Management Project and GIZ through the Nigeria Energy Support Programme. My work primarily focuses on the intersection of data analysis, Web GIS, software development, and automation to develop solutions for complex problems. My current interests include Sustainable Mobility, Geospatial Algorithms, Big Data Quality, Geospatial Data Engineering, and Web GIS.`,
+      firstBlock: `Hello, I'm Emmanuel Jolaiya—a passionate Earth Observation and Geospatial Software Engineer with expertise in open-source development, innovative and accessible user interface design, and community engagement. Currently, I'm advancing my skills by pursuing a Master's in Geospatial Technologies (https://mastergeotech.info/) to deepen my understanding of cutting-edge geospatial tools and methods to enable me to contribute meaningfully to geospatial innovation and research. I'm honored to be supported by the prestigious Erasmus Mundus Scholarship.`,
+      secondBlock: `My professional experience revolves around developing earth observation pipelines to enhance food security, improving data availability in Africa to support electrification planning, and developing web applications that makes AI accessible and supports humanitarian crises. My current technical interests include Sustainable Mobility, Geospatial Algorithms, GeoAI, Big Data Quality, Geospatial Data Engineering, and Web GIS.`,
       thirdBlock: `I am a strong advocate for democratizing access to knowledge and information to foster meaningful social and intellectual development. By empowering informed minds from diverse backgrounds, we can create transformational solutions to address real-world challenges.`,
-      fourthBlock: `Currently, I am the founder of Spatialnode, where we are developing tools and platforms to enable geospatial professionals to showcase their work and explore new opportunities.`,
       lastBlock: `When I'm not on my computer, you'll likely find me doing one of the following: taking a walk while grooving to Afrobeats and Hip-Hop music, playing table tennis, hitting the gym, playing football, or watching random tutorials on YouTube. I also enjoy catching up on past conference proceedings.`,
     },
   },
@@ -102,7 +101,7 @@ export const APP_CONTENT = {
     },
   ],
   cvLink:
-    "https://drive.google.com/file/d/1Mfb31T2qYW9WmJExg0UG2skKW4jRxZm3/view?usp=sharing",
+    "https://drive.google.com/file/d/1S5JjIyGHjSpjXcIWcUn_-6Q5YG0tinu-/view?usp=sharing",
   // Articles page content.
   articles: {
     hero: "I love to learn, so I write.",

@@ -16,7 +16,6 @@ export default function AboutPage() {
           <p>{APP_CONTENT.about.content.firstBlock}</p>
           <p>{APP_CONTENT.about.content.secondBlock}</p>
           <p>{APP_CONTENT.about.content.thirdBlock}</p>
-          <p>{APP_CONTENT.about.content.fourthBlock}</p>
           <p>{APP_CONTENT.about.content.lastBlock}</p>
         </div>
       </div>
