@@ -5,11 +5,13 @@ const ExperienceCard = ({
   entityLogo,
   period,
   role,
+  grade
 }: {
   entityName: string;
   role: string;
   period: string;
   entityLogo: StaticImageData;
+  grade?: string
 }) => {
   return (
     <div className="flex w-full gap-x-2 md:gap-x-4">
@@ -26,6 +28,7 @@ const ExperienceCard = ({
       </div>
       <div className="flex flex-col w-full space-y-1">
         <p className="text-sm font-medium ">{entityName}</p>
+
         <div className="flex justify-between">
           <p className="text-sm font-light  text-brand-text dark:text-brand-text-light ">
             {role}
@@ -33,7 +36,9 @@ const ExperienceCard = ({
           <p className="text-sm whitespace-nowrap font-light text-brand-text dark:text-brand-text-light ">
             {period}
           </p>
+
         </div>
+        {grade && <small className="italic">{grade}</small>}
       </div>
     </div>
   );

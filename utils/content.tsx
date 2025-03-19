@@ -2,6 +2,7 @@ import CizotiLogo from "@/public/organizations/cizoti_logo.png";
 import IntegrationLogo from "@/public/organizations/integration_environment_energy_gmbh_logo.jpeg";
 import SpatialnodeLogo from "@/public/organizations/spatialnode_logo.jpeg";
 import RuralFarmersHubLogo from "@/public/organizations/rural_farmers_hub.png";
+import IWMILogo from "@/public/organizations/iwmi_logo.png";
 import UniMunsterLogo from "@/public/schools/uni_munster_logo.png";
 import FUTALogo from "@/public/schools/futa_logo.png";
 import UJILogo from "@/public/schools/uji_logo.jpeg";
@@ -38,19 +39,26 @@ export const APP_CONTENT = {
   about: {
     hero: "I'm Emmanuel Jolaiya. I love to build solutions.",
     content: {
-      firstBlock: `Hello, I'm Emmanuel Jolaiya—a passionate Earth Observation and Geospatial Software Engineer with expertise in open-source development, innovative and accessible user interface design, and community engagement. Currently, I'm advancing my skills by pursuing a Master's in Geospatial Technologies (https://mastergeotech.info/) to deepen my understanding of cutting-edge geospatial tools and methods to enable me to contribute meaningfully to geospatial innovation and research. I'm honored to be supported by the prestigious Erasmus Mundus Scholarship.`,
+      firstBlock: `Hello, I'm Emmanuel Jolaiya—a passionate Earth Observation and Geospatial Software Engineer with expertise in open-source development, innovative and accessible user interface design, and community engagement.`,
       secondBlock: `My professional experience revolves around developing earth observation pipelines to enhance food security, improving data availability in Africa to support electrification planning via open data and collaborative mapping, developing digital twin portal for water management, and developing web applications that makes AI accessible and supports humanitarian crises. My current technical interests include Sustainable Mobility, Geospatial Algorithms, GeoAI, Big Data Quality, Geospatial Data Engineering, and Web GIS.`,
       thirdBlock: `I am a strong advocate for democratizing access to knowledge and information to foster meaningful social and intellectual development. By empowering informed minds from diverse backgrounds, we can create transformational solutions to address real-world challenges.`,
-      lastBlock: `When I'm not on my computer, you'll likely find me doing one of the following: taking a walk while grooving to Afrobeats and Hip-Hop music, playing table tennis, hitting the gym, playing football, or watching random tutorials on YouTube. I also enjoy catching up on past conference proceedings.`,
+      lastBlock: `When I'm not on my computer, you'll likely find me doing one of the following: taking a walk while grooving to music, playing table tennis, hitting the gym, playing football, or watching random tutorials on YouTube. I also enjoy catching up on past conference proceedings.`,
     },
   },
   workExperience: [
     {
-      role: "UI/UX Developer",
+      role: "Frontend Engineer (UI/UX Developer)",
       roleType: "Contract",
       period: "2024 - Present",
       companyName: "Humanitarian OpenStreetMap Team (HOT)",
       companyLogo: HOTLogo,
+    },
+    {
+      role: "Geospatial Software Engineer",
+      roleType: "Contract",
+      period: "2024",
+      companyName: "Internation Water Management Institute (IWMI)",
+      companyLogo: IWMILogo,
     },
     {
       role: "Founder",
@@ -84,25 +92,28 @@ export const APP_CONTENT = {
   education: [
     {
       degree: "M.sc in Geospatial Technologies",
-      period: "2023 - Present",
+      period: "2023 - 2025",
       schoolName: "University of Muenster, Munster, Germany",
       schoolLogo: UniMunsterLogo,
+      grade: 'Excellent'
     },
     {
       degree: "M.sc in Geospatial Technologies",
-      period: "2023 - Present",
+      period: "2023 - 2025",
       schoolName: "Jaume I University, Castelló de la Plana, Spain",
       schoolLogo: UJILogo,
+      grade: 'Excellent'
     },
     {
       degree: "B.Tech. in Remote Sensing & GIS",
       period: "2015 - 2021",
       schoolName: "The Federal University of Technology, Akure, Nigeria",
       schoolLogo: FUTALogo,
+      grade: '1st Class Honors'
     },
   ],
   cvLink:
-    "https://drive.google.com/file/d/1S5JjIyGHjSpjXcIWcUn_-6Q5YG0tinu-/view?usp=sharing",
+    "https://drive.google.com/file/d/1nCpqPYSasdCN99LZiP8GRoe2lDnQ3Srm/view?usp=sharing",
   // Articles page content.
   articles: {
     hero: "I love to learn, so I write.",

@@ -18,6 +18,7 @@ const Education = () => {
             entityName={education.schoolName}
             period={education.period}
             role={education.degree}
+            grade={education.grade}
             key={id}
           />
         ))}
