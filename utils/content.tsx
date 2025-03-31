@@ -32,15 +32,15 @@ import { MediaCategory, ProjectCategory, ProjectTag } from "./enums";
 export const APP_CONTENT = {
   //Home page content
   header: {
-    hero: "Geospatial software engineer.",
+    hero: "Software Engineer.",
     heroBio:
-      "Hello 👋, I’m Emmanuel, a geospatial software engineer and Earth observation (remote sensing) expert based in Spain. With a strong foundation in geospatial technologies, data science, and AI, I specialize in developing innovative solutions for environmental monitoring, sustainable mobility systems, agriculture, and humanitarian applications.",
+      "Hello 👋, I'm Emmanuel. I love building things, solving complex problems, and creating well-designed software.",
   },
   about: {
     hero: "About me",
     content: {
-      firstBlock: `I'm Emmanuel Jolaiya, a Geospatial Software/Data Engineer and Earth Observation specialist, passionate about developing innovative solutions to address global challenges. With expertise in software development, data science and engineering, geospatial analysis, and remote sensing, I focus on creating impactful solutions in agriculture, environmental sustainability, sustainable mobility, and humanitarian efforts.`,
-      secondBlock: `My professional experience includes developing Earth observation pipelines to enhance food security, improving data availability in Africa for electrification planning through open data and collaborative mapping, contributing to the development of a digital twin portal for water management, and creating web applications that make AI accessible for humanitarian applications. My current technical interests include sustainable mobility, DevOps, geospatial algorithms, GeoAI, big data quality, geospatial data engineering, and Web GIS.`,
+      firstBlock: "I'm Emmanuel, a software engineer who loves building things and solving complex problems. I've worked on projects spanning Earth observation, geospatial data, and applications in environmental monitoring, sustainable mobility, agriculture, energy, and humanitarian efforts. As a data science and machine learning enthusiast, I'm always exploring new ways to apply technology to real-world challenges.",
+      secondBlock: "My experience includes developing Earth observation pipelines to enhance food security, improving data accessibility in Africa for electrification planning through open data and collaborative mapping, contributing to a digital twin portal for water management, and building web applications that make AI more accessible for humanitarian use. My current technical interests include DevOps, algorithms, deep learning, big data quality, and data engineering.",
       thirdBlock: `I hold an Erasmus Mundus Joint Master's degree in Geospatial Technologies, with a thesis on data quality assessment and enhancement for sustainable water management in IoT-enabled peacekeeping missions in collaboration with the UNGSC. Prior to this, I earned a First-Class Bachelor's degree in Remote Sensing & Geoscience Information Systems, where I developed a geospatial methodology for landfill site identification using night-light satellite imagery.`,
       lastBlock: `Outside of my professional work, I enjoy engaging in physical activities such as playing table tennis, football, and working out at the gym. I also make time to stay updated on the latest developments in geospatial research and enjoy watching conference proceedings and educational tutorials.`,
     }
@@ -54,7 +54,7 @@ export const APP_CONTENT = {
       companyLogo: HOTLogo,
     },
     {
-      role: "Geospatial Software Engineer",
+      role: "Software Engineer",
       roleType: "Contract",
       period: "2024",
       companyName: "Internation Water Management Institute (IWMI)",
@@ -68,7 +68,7 @@ export const APP_CONTENT = {
       companyLogo: SpatialnodeLogo,
     },
     {
-      role: "Geospatial Software Engineer",
+      role: "Software Engineer",
       roleType: "Part Time",
       period: "2023",
       companyName: "Rural Farmers Hub",

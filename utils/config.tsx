@@ -84,11 +84,11 @@ export const socials: {
       url: "https://scholar.google.com/citations?user=TAkvVMUAAAAJ&hl=en",
       title: "Google Scholar",
     },
-    {
-      icon: FiverrIcon,
-      url: "https://www.fiverr.com/jolaiyaemmanuel",
-      title: "Fiverr",
-    },
+    // {
+    //   icon: FiverrIcon,
+    //   url: "https://www.fiverr.com/jolaiyaemmanuel",
+    //   title: "Fiverr",
+    // },
   ];
 
 // Gallery images for the landing page
