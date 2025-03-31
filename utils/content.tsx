@@ -34,16 +34,16 @@ export const APP_CONTENT = {
   header: {
     hero: "Geospatial software engineer.",
     heroBio:
-      "Hello 👋, I'm Emmanuel, a geospatial software engineer, earth observation (remote sensing) expert and founder currently based in Spain.",
+      "Hello 👋, I’m Emmanuel, a geospatial software engineer and Earth observation (remote sensing) expert based in Spain. With a strong foundation in geospatial technologies, data science, and AI, I specialize in developing innovative solutions for environmental monitoring, sustainable mobility systems, agriculture, and humanitarian applications.",
   },
   about: {
-    hero: "I'm Emmanuel Jolaiya. I love to build solutions.",
+    hero: "About me",
     content: {
-      firstBlock: `Hello, I'm Emmanuel Jolaiya—a passionate Earth Observation and Geospatial Software Engineer with expertise in open-source development, innovative and accessible user interface design, and community engagement.`,
-      secondBlock: `My professional experience revolves around developing earth observation pipelines to enhance food security, improving data availability in Africa to support electrification planning via open data and collaborative mapping, developing digital twin portal for water management, and developing web applications that makes AI accessible and supports humanitarian crises. My current technical interests include Sustainable Mobility, Geospatial Algorithms, GeoAI, Big Data Quality, Geospatial Data Engineering, and Web GIS.`,
-      thirdBlock: `I am a strong advocate for democratizing access to knowledge and information to foster meaningful social and intellectual development. By empowering informed minds from diverse backgrounds, we can create transformational solutions to address real-world challenges.`,
-      lastBlock: `When I'm not on my computer, you'll likely find me doing one of the following: taking a walk while grooving to music, playing table tennis, hitting the gym, playing football, or watching random tutorials on YouTube. I also enjoy catching up on past conference proceedings.`,
-    },
+      firstBlock: `I'm Emmanuel Jolaiya, a Geospatial Software/Data Engineer and Earth Observation specialist, passionate about developing innovative solutions to address global challenges. With expertise in software development, data science and engineering, geospatial analysis, and remote sensing, I focus on creating impactful solutions in agriculture, environmental sustainability, sustainable mobility, and humanitarian efforts.`,
+      secondBlock: `My professional experience includes developing Earth observation pipelines to enhance food security, improving data availability in Africa for electrification planning through open data and collaborative mapping, contributing to the development of a digital twin portal for water management, and creating web applications that make AI accessible for humanitarian applications. My current technical interests include sustainable mobility, DevOps, geospatial algorithms, GeoAI, big data quality, geospatial data engineering, and Web GIS.`,
+      thirdBlock: `I hold an Erasmus Mundus Joint Master's degree in Geospatial Technologies, with a thesis on data quality assessment and enhancement for sustainable water management in IoT-enabled peacekeeping missions in collaboration with the UNGSC. Prior to this, I earned a First-Class Bachelor's degree in Remote Sensing & Geoscience Information Systems, where I developed a geospatial methodology for landfill site identification using night-light satellite imagery.`,
+      lastBlock: `Outside of my professional work, I enjoy engaging in physical activities such as playing table tennis, football, and working out at the gym. I also make time to stay updated on the latest developments in geospatial research and enjoy watching conference proceedings and educational tutorials.`,
+    }
   },
   workExperience: [
     {
