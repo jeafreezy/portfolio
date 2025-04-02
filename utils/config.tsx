@@ -1,4 +1,3 @@
-import FiverrIcon from "@/components/icons/FiverrIcon";
 import GitHubIcon from "@/components/icons/GitHubIcon";
 import GoogleScholarIcon from "@/components/icons/GoogleScholarIcon";
 import LinkedInIcon from "@/components/icons/LinkedInIcon";
@@ -11,8 +10,6 @@ import Gallery3 from "@/public/gallery/3.jpg";
 import Gallery4 from "@/public/gallery/4.jpg";
 import Gallery5 from "@/public/gallery/5.jpg";
 import Gallery6 from "@/public/gallery/6.jpg";
-import Gallery7 from "@/public/gallery/7.jpg";
-
 import PersonIcon from "@/components/icons/PersonIcon";
 import ArticleIcon from "@/components/icons/ArticleIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
@@ -122,25 +119,17 @@ export const galleryImages: TGalleryObj[] = [
     description:
       "My best shot yet with Dart. This was two days after I learned it, so I'm proud of it!",
   },
-
   {
     width: 600,
     height: 800,
     path: Gallery5,
-    description:
-      "A selfie with Geoffrey Kateregga and Feye Andal, at the dinner night of the FOSS4G 2021 Conference.",
-  },
-  {
-    width: 600,
-    height: 800,
-    path: Gallery6,
     description:
       "A portrait with Kurt Menke after getting a signed copy of his book -- Discover QGIS 3.X.",
   },
   {
     width: 600,
     height: 800,
-    path: Gallery7,
+    path: Gallery6,
     description:
       "Team picture at the 2025 GeoAI (https://geoaihack.com/) Hackathon - 2nd Place Winners in Paris! 🎉🌍🧠",
   },
