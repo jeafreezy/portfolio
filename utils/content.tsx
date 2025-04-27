@@ -54,7 +54,7 @@ export const APP_CONTENT = {
       companyLogo: HOTLogo,
     },
     {
-      role: "Software Engineer",
+      role: "Geospatial Software Engineer",
       roleType: "Contract",
       period: "2024",
       companyName: "Internation Water Management Institute (IWMI)",
@@ -68,7 +68,7 @@ export const APP_CONTENT = {
       companyLogo: SpatialnodeLogo,
     },
     {
-      role: "Software Engineer",
+      role: "Geospatial Software Engineer",
       roleType: "Part Time",
       period: "2023",
       companyName: "Rural Farmers Hub",
@@ -113,7 +113,7 @@ export const APP_CONTENT = {
     },
   ],
   cvLink:
-    "https://drive.google.com/file/d/1S7B5kcAVdrXZMTfmRp742qCArXCbX9fW/view?usp=sharing",
+    "https://drive.google.com/file/d/1zyQhbyzvWm9MrjuKjEWVZCFydrK0Ei2H/view?usp=sharing",
   // Articles page content.
   articles: {
     hero: "I love to learn, so I write.",
