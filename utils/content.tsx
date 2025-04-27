@@ -32,7 +32,7 @@ import { MediaCategory, ProjectCategory, ProjectTag } from "./enums";
 export const APP_CONTENT = {
   //Home page content
   header: {
-    hero: "Software Engineer.",
+    hero: "Senior Software Engineer.",
     heroBio:
       "Hello 👋, I'm Emmanuel. I love building things, solving complex problems, and creating well-designed software.",
   },
