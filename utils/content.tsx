@@ -7,6 +7,7 @@ import UniMunsterLogo from "@/public/schools/uni_munster_logo.png";
 import FUTALogo from "@/public/schools/futa_logo.png";
 import UJILogo from "@/public/schools/uji_logo.jpeg";
 import YouthMappersLogo from "@/public/organizations/youthmappers_logo.png";
+import RivnauticsImage from "@/public/projects/ship_image.png";
 import HOTLogo from "@/public/organizations/hot_logo.png";
 import MediumLogo from "@/public/blogs/medium_logo.webp";
 import HashnodeLogo from "@/public/blogs/hashnode_logo.png";
@@ -451,6 +452,27 @@ export const APP_CONTENT = {
         ],
       },
       {
+        title: "Rivnautics - Real-time Ship Tracking Application",
+        date: "2024 - present",
+        image: RivnauticsImage,
+        protected: true,
+        shortDescription:
+          "A cross-platform desktop application tailored for inland navigation in Bangladesh. Rivnautics supports real-time monitoring of vessels using AIS, GPS, Compass, and sonar data retrieved via serial ports at seconds interval. I built it from the ground up and contributed to efficient data streaming and marine visualization tailored to the country's riverine ecosystem. Developed for the same client as Locotrack.",
+        tags: [
+          ProjectTag.Rust,
+          ProjectTag.TypeScript,
+          ProjectTag.DeckGL,
+          ProjectTag.React,
+          ProjectTag.MaplibreGLJS,
+          ProjectTag.More
+        ],
+        demoLink: "",
+        categories: [
+          ProjectCategory.DESKTOP,
+          ProjectCategory.FRONTEND,
+        ],
+      },
+      {
         title: "Limpopo Basin Digital Twin",
         date: "2024",
         image: LimpopoDTImage,
@@ -506,7 +528,7 @@ export const APP_CONTENT = {
         ],
       },
       {
-        title: "Real-time Train Tracker",
+        title: "Locotrack - Real-time Train Tracking Application",
         date: "2023",
         image: LocomotiveImage,
         protected: true,
@@ -599,7 +621,7 @@ export const APP_CONTENT = {
         date: "2017 -  2023",
         image: OSMChangesetsImage,
         shortDescription:
-          "With over 1 million changesets, I have made significant contributions to OpenStreetMap (OSM). Although I contribute less frequently now, my experience as a YouthMappers regional ambassador and chapter president has provided me with a deep understanding of the OSM ecosystem.",
+          "With over 1 million changesets, I have made significant contributions to OpenStreetMap (OSM). Although I contribute less frequently now, my experience as a YouthMappers chapter president and research fellow has provided me with a deep understanding of the OSM ecosystem.",
         tags: [ProjectTag.OpenStreetMap],
         demoLink: "https://www.openstreetmap.org/user/Jolaiya%20Emmanuel",
         categories: [ProjectCategory.VOLUNTEERING],
@@ -609,7 +631,7 @@ export const APP_CONTENT = {
           "Technical and Communications Lead - State of the Map Africa Conference",
         protected: false,
         image: SotMImage,
-        date: "2023",
+        date: "2023 - Present",
         shortDescription:
           "I led the technical and communications team in developing and designing promotional tools for the conference, including the development of the conference website.",
         tags: [ProjectTag.React, ProjectTag.CSS3, ProjectTag.Ruby],
