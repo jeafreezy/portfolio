@@ -103,15 +103,16 @@ export default function ProjectsPage({ }) {
               <div className="text-xs text-brand-text dark:text-brand-text-light">
                 <p
                   title="Protected by NDA"
-                  className="flex gap-x-1 items-center"
+                  className="flex flex-col gap-1"
                 >
-                  {project.protected ? (
+                  <span>
+                    {project.date}
+                  </span>
+                  {project.protected && (
                     <span>
                       <SecureIcon className="icons icon-fill" aria-hidden />
                       (Protected by NDA)
                     </span>
-                  ) : (
-                    project.date
                   )}
                 </p>
               </div>
