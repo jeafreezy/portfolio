@@ -437,7 +437,7 @@ export const APP_CONTENT = {
         image: fAIrImage,
         protected: false,
         shortDescription:
-          "I'm working as the frontend engineer in a team dedicated to revamping the UI/UX of fAIr, to make the mapping experience smoother for the community.",
+          "I'm contributing as the frontend engineer in a team dedicated to revamping the UI/UX of fAIr, to make the mapping experience smoother for the community.",
         tags: [
           ProjectTag.React,
           ProjectTag.TailwindCSS,
