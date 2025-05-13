@@ -449,29 +449,30 @@ export const APP_CONTENT = {
         demoLink: "https://fair.hotosm.org",
         categories: [
           ProjectCategory.FRONTEND,
+          ProjectCategory.OPEN_SOURCE,
         ],
       },
-      {
-        title: "Rivnautics - Real-time Ship Tracking Application",
-        date: "2024 - present",
-        image: RivnauticsImage,
-        protected: true,
-        shortDescription:
-          "A cross-platform desktop application tailored for inland navigation in Bangladesh. Rivnautics supports real-time monitoring of vessels using AIS, GPS, Compass, and sonar data retrieved via serial ports at seconds interval. I built it from the ground up and contributed to efficient data streaming and marine visualization tailored to the country's riverine ecosystem. Developed for the same client as Locotrack.",
-        tags: [
-          ProjectTag.Rust,
-          ProjectTag.TypeScript,
-          ProjectTag.DeckGL,
-          ProjectTag.React,
-          ProjectTag.MaplibreGLJS,
-          ProjectTag.More
-        ],
-        demoLink: "",
-        categories: [
-          ProjectCategory.DESKTOP,
-          ProjectCategory.FRONTEND,
-        ],
-      },
+      // {
+      //   title: "Rivnautics - Real-time Ship Tracking Application",
+      //   date: "2024 - present",
+      //   image: RivnauticsImage,
+      //   protected: true,
+      //   shortDescription:
+      //     "A cross-platform desktop application tailored for inland navigation in Bangladesh. Rivnautics supports real-time monitoring of vessels using AIS, GPS, Compass, and sonar data retrieved via serial ports at seconds interval. I built it from the ground up and contributed to efficient data streaming and marine visualization tailored to the country's riverine ecosystem. Developed for the same client as Locotrack.",
+      //   tags: [
+      //     ProjectTag.Rust,
+      //     ProjectTag.TypeScript,
+      //     ProjectTag.DeckGL,
+      //     ProjectTag.React,
+      //     ProjectTag.MaplibreGLJS,
+      //     ProjectTag.More
+      //   ],
+      //   demoLink: "",
+      //   categories: [
+      //     ProjectCategory.DESKTOP,
+      //     ProjectCategory.FRONTEND,
+      //   ],
+      // },
       {
         title: "Limpopo Basin Digital Twin",
         date: "2024",
