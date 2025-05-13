@@ -47,13 +47,13 @@ export const APP_CONTENT = {
     }
   },
   workExperience: [
-    {
-      role: "Software Engineer (UI/UX Developer)",
-      roleType: "Contract",
-      period: "2024 - Present",
-      companyName: "Humanitarian OpenStreetMap Team (HOT)",
-      companyLogo: HOTLogo,
-    },
+    // {
+    //   role: "Software Engineer (UI/UX Developer)",
+    //   roleType: "Contract",
+    //   period: "2024 - Present",
+    //   companyName: "Humanitarian OpenStreetMap Team (HOT)",
+    //   companyLogo: HOTLogo,
+    // },
     {
       role: "Geospatial Software Engineer",
       roleType: "Contract",
