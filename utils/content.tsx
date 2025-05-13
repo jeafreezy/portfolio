@@ -558,7 +558,7 @@ export const APP_CONTENT = {
         image: NigeriaSE4ALLImage,
         protected: false,
         shortDescription:
-          "While at Integration, I worked with a team that developed the Nigeria SE4ALL v3.0 webmaps. This platform is designed to help project developers quickly identify potential sites for mini-grid installations and support electrification planning across Nigeria.",
+          "While at Integration, I worked with a team that developed the Nigeria SE4ALL v3.0 webmaps. This platform is designed to help project developers quickly identify potential sites for mini-grid installations and support electrification planning across Nigeria. I also worked on the data quality pipeline for semi-automated upload of surveyed electrification data to OpenStreetMap.",
         tags: [
           ProjectTag.React,
           ProjectTag.PostGIS,
