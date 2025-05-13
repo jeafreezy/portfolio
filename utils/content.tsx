@@ -1,4 +1,4 @@
-import CizotiLogo from "@/public/organizations/cizoti_logo.png";
+
 import IntegrationLogo from "@/public/organizations/integration_environment_energy_gmbh_logo.jpeg";
 import SpatialnodeLogo from "@/public/organizations/spatialnode_logo.jpeg";
 import RuralFarmersHubLogo from "@/public/organizations/rural_farmers_hub.png";
@@ -78,16 +78,9 @@ export const APP_CONTENT = {
     {
       role: "Geodata Analyst",
       roleType: "Full Time",
-      period: "2021 - 2023",
+      period: "2020 - 2023",
       companyName: "Integration Environment & Energy GmbH",
       companyLogo: IntegrationLogo,
-    },
-    {
-      role: "GIS Developer",
-      roleType: "Contract",
-      period: "2020 - 2021",
-      companyName: "Cizoti Nigeria Limited",
-      companyLogo: CizotiLogo,
     },
   ],
   education: [
