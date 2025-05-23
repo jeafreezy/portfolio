@@ -752,6 +752,24 @@ export const APP_CONTENT = {
       //Publications
       {
         title:
+          "An improved methodology for locating and ranking potential hazardous landfill sites at a regional scale using night-time imagery",
+        date: "2025",
+        protected: false,
+        image: GoogleScholarImage,
+        shortDescription:
+          "Our goal is to develop an improved approach to reducing adminstrative (e.g State or LGA) level suitability analyses, which tend to produce many small, fragmented dump sites. To achieve this, we proposed an approach to regionalize the process, to use fewer, better-located facilities, and achieve a healthier environment using night-light time imagery.”",
+        tags: [
+          ProjectTag.Python,
+          ProjectTag.RemoteSensing,
+          ProjectTag.ArcGIS,
+          ProjectTag.GEE,
+        ],
+        demoLink:
+          "https://rdcu.be/enexk",
+        categories: [ProjectCategory.PUBLICATIONS],
+      },
+      {
+        title:
           "Mapping Soil Erosion Classes using Remote Sensing Data and Ensemble Models",
         date: "2024",
         protected: false,
