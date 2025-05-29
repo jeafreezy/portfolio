@@ -54,7 +54,7 @@ export const APP_CONTENT = {
       //companyName: "Humanitarian OpenStreetMap Team (HOT)",
       //companyLogo: HOTLogo,
     //
-    },
+    //},
     {
       role: "Geospatial Software Engineer",
       roleType: "Freelance",
