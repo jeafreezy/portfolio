@@ -424,7 +424,7 @@ export const APP_CONTENT = {
     hero: "Innovative projects showcase.",
     description: `Throughout my career, I've worked on a diverse range of projects, with some being open-source and others proprietary. On this page, I'm showcasing my projects, research papers, volunteering roles, and open-source contributions. These represent some of my proudest accomplishments. If any of these resonate with you, feel free to explore the code (where available) or reach out to discuss them!`,
     projects: [
-      Projects
+     // Projects
      {
         title: "fAIr - An AI assisted mapping platform",
         date: "2024 - present",
