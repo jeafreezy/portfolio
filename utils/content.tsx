@@ -445,7 +445,7 @@ export const APP_CONTENT = {
          ProjectCategory.FRONTEND,
          ProjectCategory.OPEN_SOURCE,
        ],
-      //},
+      },
       // {
       //   title: "Rivnautics - Real-time Ship Tracking Application",
       //   date: "2024 - present",
