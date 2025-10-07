@@ -36,6 +36,7 @@ export enum ProjectTag {
   PostGIS = "PostGIS",
   Geoserver = "Geoserver",
   React = "React",
+  Astro='Astro',
   MaplibreGLJS = "Maplibre GL JS",
   PMTiles = "PMTiles",
   ReactQuery = "React Query",

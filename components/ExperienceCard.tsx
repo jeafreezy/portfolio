@@ -1,17 +1,20 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 const ExperienceCard = ({
   entityName,
   entityLogo,
   period,
   role,
-  grade
+  grade,
+  entityWebsite
 }: {
   entityName: string;
   role: string;
   period: string;
   entityLogo: StaticImageData;
   grade?: string
+  entityWebsite?:string 
 }) => {
   return (
     <div className="flex w-full gap-x-2 md:gap-x-4">
@@ -27,8 +30,13 @@ const ExperienceCard = ({
         />
       </div>
       <div className="flex flex-col w-full space-y-1">
-        <p className="text-sm font-medium ">{entityName}</p>
-
+       {
+          entityWebsite ? 
+            <Link href={entityWebsite} title={entityName} target="_blank">
+              <p className="text-sm font-medium ">{entityName}</p>
+            </Link>
+            : <p className="text-sm font-medium ">{entityName}</p>
+        }
         <div className="flex justify-between">
           <p className="text-sm font-light  text-brand-text dark:text-brand-text-light ">
             {role}
