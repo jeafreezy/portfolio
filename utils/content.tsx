@@ -6,14 +6,16 @@ import IWMILogo from "@/public/organizations/iwmi_logo.png";
 import UniMunsterLogo from "@/public/schools/uni_munster_logo.png";
 import FUTALogo from "@/public/schools/futa_logo.png";
 import UJILogo from "@/public/schools/uji_logo.jpeg";
+import UNGSCLogo from "@/public/organizations/ungsc_logo.jpeg";
 import YouthMappersLogo from "@/public/organizations/youthmappers_logo.png";
 import RivnauticsImage from "@/public/projects/ship_image.png";
-import HOTLogo from "@/public/organizations/hot_logo.png";
+// import HOTLogo from "@/public/organizations/hot_logo.png";
 import MediumLogo from "@/public/blogs/medium_logo.webp";
 import HashnodeLogo from "@/public/blogs/hashnode_logo.png";
 import NigeriaSE4ALLLogo from "@/public/organizations/nigeria_se4all_logo.jpg";
 import GISLoungeLogo from "@/public/blogs/gislounge_logo.jpg";
 import EarthObservationImage from "@/public/projects/kc_earth_oberservation.jpg";
+import UseOSMImage from '@/public/projects/useosm_og.png';
 import NigeriaSE4ALLImage from "@/public/projects/nigeriase4all_screenshot.png";
 import SpatialnodeImage from "@/public/projects/spatialnode_screenshot.png";
 import LocomotiveImage from "@/public/projects/locomotive.jpeg";
@@ -33,17 +35,17 @@ import { MediaCategory, ProjectCategory, ProjectTag } from "./enums";
 export const APP_CONTENT = {
   //Home page content
   header: {
-    hero: "Senior Software Engineer.",
+    hero: "Geospatial. Data. Software. That's me.",
     heroBio:
-      "Hello 👋, I'm Emmanuel. I love building things, solving complex problems, and creating well-designed software.",
+      "Hello 👋, I'm Emmanuel. I build geospatial and full-stack software, lead teams, and automate workflows. I guide projects from concept to deployment and turn data into actionable insight, with a strong appreciation for clean, well-crafted design and attention to detail. I currently consult for the UN Global Service Centre, creating geospatial, data, and software solutions for real-world challenges.",
   },
   about: {
     hero: "About me",
     content: {
-      firstBlock: "I'm Emmanuel, a software engineer who loves building things and solving complex problems. I've worked on projects spanning Earth observation, geospatial data, and applications in environmental monitoring, sustainable mobility, agriculture, energy, and humanitarian efforts.",
-      secondBlock: "My experience includes developing Earth observation pipelines to enhance food security, improving data accessibility in Africa for electrification planning through open data and collaborative mapping, contributing to a digital twin portal for water management, and building web applications that make AI more accessible for humanitarian use. My current technical interests include DevOps, algorithms, deep learning, big data quality, and data engineering.",
-      thirdBlock: `I hold an Erasmus Mundus Joint Master's degree in Geospatial Technologies, with a thesis on data quality assessment and enhancement for sustainable water management in IoT-enabled peacekeeping missions in collaboration with the UNGSC. Prior to this, I earned a First-Class Bachelor's degree in Remote Sensing & Geoscience Information Systems, where I developed a geospatial methodology for landfill site identification using night-light satellite imagery.`,
-      lastBlock: `Outside of my professional work, I enjoy engaging in physical activities such as playing table tennis, football, and working out at the gym. I also make time to stay updated on the latest developments in geospatial research and enjoy watching conference proceedings and educational tutorials.`,
+      firstBlock: "I'm Emmanuel, a software engineer passionate about building impactful solutions and solving complex problems. My work spans Earth observation, geospatial data, and applications in environmental monitoring, sustainable mobility, agriculture, energy, and humanitarian projects.",
+      secondBlock: "I have developed Earth observation pipelines to enhance food security, improved data accessibility in Africa for electrification planning through open data and collaborative mapping, contributed to a digital twin portal for water management, and built web applications that make AI more accessible for humanitarian use. My current technical interests include DevOps, algorithms, deep learning, big data quality, and data engineering.",
+      thirdBlock: `I hold an Erasmus Mundus Joint Master's degree in Geospatial Technologies, with a thesis on data quality assessment and enhancement for sustainable water management in IoT-enabled peacekeeping missions in collaboration with the UNGSC. I also earned a First-Class Bachelor's degree in Remote Sensing & Geoscience Information Systems, where I developed a geospatial methodology for landfill site identification using night-light satellite imagery.`,
+      lastBlock: `Outside work, I enjoy physical activities like table tennis, football, gym workouts and listening to global news. I also stay updated on the latest geospatial research and enjoy watching conference proceedings, self improvement videos, and educational tutorials.`,
     }
   },
   workExperience: [
@@ -56,11 +58,20 @@ export const APP_CONTENT = {
     //
     //},
     {
+      role: "GIS Consultant",
+      roleType: "Part Time",
+      period: "2025 - Present",
+      companyName: "United Nations Global Service Centre (UNGSC)",
+      companyLogo: UNGSCLogo,
+      companyWebsite: 'https://ungsc.org'
+    },
+    {
       role: "Geospatial Software Engineer",
       roleType: "Freelance",
       period: "2024",
       companyName: "Internation Water Management Institute (IWMI)",
       companyLogo: IWMILogo,
+      companyWebsite: 'https://iwmi.org'
     },
     {
       role: "Founder",
@@ -68,6 +79,7 @@ export const APP_CONTENT = {
       period: "2022 - Present",
       companyName: "Spatialnode",
       companyLogo: SpatialnodeLogo,
+      companyWebsite: 'https://spatialnode.tech'
     },
     {
       role: "Geospatial Software Engineer",
@@ -75,6 +87,7 @@ export const APP_CONTENT = {
       period: "2023",
       companyName: "Rural Farmers Hub",
       companyLogo: RuralFarmersHubLogo,
+      companyWebsite: 'https://ruralfarmershub.com'
     },
     {
       role: "Geodata Analyst",
@@ -82,6 +95,7 @@ export const APP_CONTENT = {
       period: "2020 - 2023",
       companyName: "Integration Environment & Energy GmbH",
       companyLogo: IntegrationLogo,
+      companyWebsite: 'https://integration.org/environment-energy/'
     },
   ],
   education: [
@@ -265,10 +279,21 @@ export const APP_CONTENT = {
       //chronological ordering
       {
         talkTitle:
+          "fAIr - Building an AI Mapping Partner with Django",
+        abstract:
+          "In this session, I presented fAIr, demonstrating how Django and AI enable smarter, human-assisted mapping.",
+        organizerName: "DjangoCon US - Chicago",
+        year: "2025",
+        link: "https://docs.google.com/presentation/d/1a2A5T7Db6f6EoV7MAH_Xwwwkmt5TiPugZySSOuhCzsU/edit?usp=sharing",
+        category: MediaCategory.CONFERENCE_TALKS,
+        slides: true,
+      },
+      {
+        talkTitle:
           "Advanced Technique for Soil Erosion Classification via Remote Sensing and Ensemble Learning",
         abstract:
           "In this session, we present our research on soil erosion classification using ensemble models, highlighting key methodologies and insights.",
-        organizerName: "FOSS4G Europe",
+        organizerName: "FOSS4G Europe - Estonia",
         year: "2024",
         link: "https://youtu.be/WH9O6qQUlDs?si=2DH5eN-xfZV6ICYp",
         category: MediaCategory.CONFERENCE_TALKS,
@@ -279,7 +304,7 @@ export const APP_CONTENT = {
           "Developing an Air Quality Monitoring Dashboard with React (Next JS), TypeScript, Tailwind CSS, and MapLibre GL JS.",
         abstract:
           "The goal of this workshop is to explore the development of dashboards to convey decision making insights using best practices and open source tools.",
-        organizerName: "Geomundus",
+        organizerName: "Geomundus - Germany",
         year: "2024",
         link: "https://github.com/jeafreezy/workshops/tree/main/2024/airquality-monitoring-dashboard",
         category: MediaCategory.WORKSHOPS,
@@ -426,6 +451,27 @@ export const APP_CONTENT = {
     projects: [
      // Projects
      {
+        title: "UseOSM",
+        date: "2025 - present",
+        image: UseOSMImage,
+        protected: false,
+        shortDescription:
+         "Leading and contributing as the frontend engineer on UseOSM, a community-driven platform that makes OpenStreetMap data easier to discover, understand, and apply, providing tools, use cases, and guides to empower students, NGOs, planners, and developers worldwide.",
+        tags: [
+         ProjectTag.React,
+         ProjectTag.TailwindCSS,
+         ProjectTag.Astro,
+         ProjectTag.OpenStreetMap,
+         ProjectTag.More,
+       ],
+       demoLink: "https://useosm-odly.vercel.app/",
+       categories: [
+         ProjectCategory.FRONTEND,
+         ProjectCategory.OPEN_SOURCE,
+        ,
+       ],
+      },
+     {
         title: "fAIr - An AI assisted mapping platform",
         date: "2024 - present",
         image: fAIrImage,
@@ -446,27 +492,27 @@ export const APP_CONTENT = {
          ProjectCategory.OPEN_SOURCE,
        ],
       },
-      // {
-      //   title: "Rivnautics - Real-time Ship Tracking Application",
-      //   date: "2024 - present",
-      //   image: RivnauticsImage,
-      //   protected: true,
-      //   shortDescription:
-      //     "A cross-platform desktop application tailored for inland navigation in Bangladesh. Rivnautics supports real-time monitoring of vessels using AIS, GPS, Compass, and sonar data retrieved via serial ports at seconds interval. I built it from the ground up and contributed to efficient data streaming and marine visualization tailored to the country's riverine ecosystem. Developed for the same client as Locotrack.",
-      //   tags: [
-      //     ProjectTag.Rust,
-      //     ProjectTag.TypeScript,
-      //     ProjectTag.DeckGL,
-      //     ProjectTag.React,
-      //     ProjectTag.MaplibreGLJS,
-      //     ProjectTag.More
-      //   ],
-      //   demoLink: "",
-      //   categories: [
-      //     ProjectCategory.DESKTOP,
-      //     ProjectCategory.FRONTEND,
-      //   ],
-      // },
+      {
+        title: "Rivnautics - Real-time Ship Tracking Application",
+        date: "2024 - present",
+        image: RivnauticsImage,
+        protected: true,
+        shortDescription:
+          "A cross-platform desktop application tailored for inland navigation in Bangladesh. Rivnautics supports real-time monitoring of vessels using AIS, GPS, Compass, and sonar data retrieved via serial ports at seconds interval. I built it from the ground up and contributed to efficient data streaming and marine visualization tailored to the country's riverine ecosystem. Developed for the same client as Locotrack.",
+        tags: [
+          ProjectTag.Rust,
+          ProjectTag.TypeScript,
+          ProjectTag.DeckGL,
+          ProjectTag.React,
+          ProjectTag.MaplibreGLJS,
+          ProjectTag.More
+        ],
+        demoLink: "",
+        categories: [
+          ProjectCategory.DESKTOP,
+          ProjectCategory.FRONTEND,
+        ],
+      },
       {
         title: "Limpopo Basin Digital Twin",
         date: "2024",

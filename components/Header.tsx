@@ -19,7 +19,7 @@ const Header = () => {
           />
         </Link>
       </div>
-      <div className="flex flex-col gap-y-4 md:gap-y-6 max-w-3xl">
+      <div className="flex flex-col gap-y-4 md:gap-y-6 max-w-4xl">
         <h1 className="text-black dark:text-brand-text-light text-3xl sm:text-5xl font-bold tracking-tight leading-normal md:leading-relaxed">
           {APP_CONTENT.header.hero}
         </h1>

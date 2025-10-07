@@ -10,6 +10,7 @@ import Gallery3 from "@/public/gallery/3.jpg";
 import Gallery4 from "@/public/gallery/4.jpg";
 import Gallery5 from "@/public/gallery/5.jpg";
 import Gallery6 from "@/public/gallery/6.jpg";
+import Gallery7 from "@/public/gallery/7.jpg";
 import PersonIcon from "@/components/icons/PersonIcon";
 import ArticleIcon from "@/components/icons/ArticleIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
@@ -132,6 +133,13 @@ export const galleryImages: TGalleryObj[] = [
     path: Gallery6,
     description:
       "Team picture at the 2025 GeoAI (https://geoaihack.com/) Hackathon - 2nd Place Winners in Paris! 🎉🌍🧠",
+  },
+   {
+    width: 600,
+    height: 800,
+    path: Gallery7,
+    description:
+      "Captured in action at DjangoCon US 2025 in Chicago, presenting fAIr (fair.hotosm.org)!",
   },
 ].reverse();
 

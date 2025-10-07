@@ -21,6 +21,7 @@ const WorkExperience = () => {
             period={workExperience.period}
             role={workExperience.role}
             key={id}
+            entityWebsite={workExperience.companyWebsite}
           />
         ))}
       </div>
