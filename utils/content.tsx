@@ -464,7 +464,7 @@ export const APP_CONTENT = {
          ProjectTag.OpenStreetMap,
          ProjectTag.More,
        ],
-       demoLink: "https://useosm-odly.vercel.app/",
+       demoLink: "https://useosm.org",
        categories: [
          ProjectCategory.FRONTEND,
          ProjectCategory.OPEN_SOURCE,
