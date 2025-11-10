@@ -69,7 +69,7 @@ export const APP_CONTENT = {
       role: "Geospatial Software Engineer",
       roleType: "Freelance",
       period: "2024",
-      companyName: "Internation Water Management Institute (IWMI)",
+      companyName: "International Water Management Institute (IWMI)",
       companyLogo: IWMILogo,
       companyWebsite: 'https://iwmi.org'
     },
