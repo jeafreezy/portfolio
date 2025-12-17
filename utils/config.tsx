@@ -6,11 +6,12 @@ import YouTubeIcon from "@/components/icons/YouTubeIcon";
 import { TGalleryObj, TMediaCategory, TProjectCategory } from "@/utils/types";
 import Gallery1 from "@/public/gallery/1.jpeg";
 import Gallery2 from "@/public/gallery/2.jpg";
-import Gallery3 from "@/public/gallery/3.jpg";
+import Gallery3 from "@/public/gallery/3.jpeg";
 import Gallery4 from "@/public/gallery/4.jpg";
-import Gallery5 from "@/public/gallery/5.jpg";
+import Gallery5 from "@/public/gallery/5.jpeg";
 import Gallery6 from "@/public/gallery/6.jpg";
 import Gallery7 from "@/public/gallery/7.jpg";
+import Gallery8 from "@/public/gallery/8.jpeg";
 import PersonIcon from "@/components/icons/PersonIcon";
 import ArticleIcon from "@/components/icons/ArticleIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
@@ -97,13 +98,13 @@ export const galleryImages: TGalleryObj[] = [
     height: 800,
     path: Gallery3,
     description:
-      "A selfie with Vincent Sarago, one of my geospatial heroes. Met him at the FOSS4G 2021 Conference at Firenze, Italy, and he was kind to take a selfie with me.",
+      "A selfie with Hector Ochoa Ortiz, Director OSM Foundation and President of OSM España. Met him at the GeoCamp/SotMes 2025 Conference in Zaragoza, Spain, and he was kind to take a selfie with me and Einstein :).",
   },
   {
     width: 800,
     height: 600,
     path: Gallery1,
-    description: "A clean shot from the #FOSS4G Europe in Tartu, Estonia.",
+    description: "A clean shot from the FOSS4G Europe 2025 Conference in Tartu, Estonia.",
   },
   {
     width: 600,
@@ -125,7 +126,7 @@ export const galleryImages: TGalleryObj[] = [
     height: 800,
     path: Gallery5,
     description:
-      "A portrait with Kurt Menke after getting a signed copy of his book -- Discover QGIS 3.X.",
+      "A portrait with Salim A. Baidoun after meeting him at the SotMes/GeoCamp 2025 Conference, Zaragoza Spain. He's so cool!",
   },
   {
     width: 600,
@@ -140,6 +141,13 @@ export const galleryImages: TGalleryObj[] = [
     path: Gallery7,
     description:
       "Captured in action at DjangoCon US 2025 in Chicago, presenting fAIr (fair.hotosm.org)!",
+  },
+  {
+    width: 600,
+    height: 800,
+    path: Gallery8,
+    description:
+      "A clean shot from the SotMes/GeoCamp 2025 Conference in Zaragoza, Spain.",
   },
 ].reverse();
 
