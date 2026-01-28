@@ -532,7 +532,7 @@ export const APP_CONTENT = {
           ProjectTag.OpenDataCube,
           ProjectTag.More,
         ],
-        demoLink: "https://digitaltwins.demos-only.iwmi.org",
+        demoLink: "https://limpopo.digitaltwins.iwmi.org/",
         categories: [
           ProjectCategory.FRONTEND,
           ProjectCategory.BACKEND,
