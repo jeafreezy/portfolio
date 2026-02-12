@@ -35,7 +35,7 @@ import { MediaCategory, ProjectCategory, ProjectTag } from "./enums";
 export const APP_CONTENT = {
   //Home page content
   header: {
-    hero: "Geospatial. Data. Software. That's me.",
+    hero: "Geospatial Engineer",
     heroBio:
       "Hello 👋, I'm Emmanuel. I build geospatial and full-stack software, lead teams, and automate workflows. I guide projects from concept to deployment and turn data into actionable insight, with a strong appreciation for clean, well-crafted design and attention to detail. I currently consult for the UN Global Service Centre, creating geospatial, data, and software solutions for real-world challenges.",
   },
@@ -58,7 +58,7 @@ export const APP_CONTENT = {
     //
     //},
     {
-      role: "GIS Consultant",
+      role: "Geospatial Data Engineer",
       roleType: "Part Time",
       period: "2025 - Present",
       companyName: "United Nations Global Service Centre (UNGSC)",
