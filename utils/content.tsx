@@ -74,12 +74,12 @@ export const APP_CONTENT = {
       companyWebsite: 'https://iwmi.org'
     },
     {
-      role: "Founder",
+      role: "Founder & CEO",
       roleType: "Part Time",
       period: "2022 - Present",
       companyName: "Spatialnode",
       companyLogo: SpatialnodeLogo,
-      companyWebsite: 'https://spatialnode.tech'
+      companyWebsite: 'https://spatialnode.com'
     },
     {
       role: "Geospatial Software Engineer",
