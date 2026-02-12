@@ -1,6 +1,6 @@
 import { APP_CONTENT } from "@/utils/content";
 import Image from "next/image";
-import EmmanuelAvatar from "@/public/emmanuel_jolaiya.png";
+import EmmanuelAvatar from "@/public/emmanuel_jolaiya.jpeg";
 import { socials } from "@/utils/config";
 import Link from "next/link";
 import EmailIcon from "@/components/icons/EmailIcon";

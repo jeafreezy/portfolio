@@ -2,7 +2,7 @@ import { socials } from "@/utils/config";
 import { APP_CONTENT } from "@/utils/content";
 import Image from "next/image";
 import Link from "next/link";
-import EmmanuelAvatar from "@/public/emmanuel_jolaiya.png";
+import EmmanuelAvatar from "@/public/emmanuel_jolaiya.jpeg";
 const Header = () => {
   return (
     <header className="flex flex-col items-start gap-y-8 lg:gap-y-10">

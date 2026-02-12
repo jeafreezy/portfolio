@@ -4,7 +4,7 @@ import { useThemeContext } from "@/context/ThemeProvider";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import EmmanuelAvatar from "@/public/emmanuel_jolaiya.png";
+import EmmanuelAvatar from "@/public/emmanuel_jolaiya.jpeg";
 import { navRoutes } from "@/utils/config";
 import { PreferredColorScheme } from "@/utils/enums";
 const NavBar = () => {
