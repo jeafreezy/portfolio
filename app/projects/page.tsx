@@ -75,7 +75,7 @@ export default function ProjectsPage({ }) {
               <div className="relative h-[200px] w-full">
                 <Image
                   src={project.image}
-                  placeholder="blur"
+                  placeholder={typeof project.image === "string" ? "empty" : "blur"}
                   alt={project.title}
                   fill
                   priority

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="48" y1="28" x2="1146" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F6FF"/>
+      <stop offset="1" stop-color="#E8ECFF"/>
+    </linearGradient>
+    <linearGradient id="line" x1="262" y1="384" x2="922" y2="384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A6B0F5"/>
+      <stop offset="1" stop-color="#172A9B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="34" fill="url(#bg)"/>
+  <circle cx="1065" cy="122" r="182" fill="#DAE0FF"/>
+  <circle cx="112" cy="635" r="190" fill="#E1E6FF"/>
+  <g opacity=".45" stroke="#C3CCF8">
+    <path d="M0 520H1200M0 570H1200M0 620H1200M0 670H1200"/>
+    <path d="M150 0V700M200 0V700M250 0V700M300 0V700"/>
+  </g>
+  <rect x="66" y="63" width="1068" height="574" rx="28" fill="white" fill-opacity=".82" stroke="#D8DEFA" stroke-width="2"/>
+  <text x="112" y="157" fill="#14218D" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="2">SPATIALNODE</text>
+  <text x="108" y="282" fill="#10162E" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">SuperSTAC</text>
+  <text x="112" y="333" fill="#46506B" font-family="Arial, Helvetica, sans-serif" font-size="30">Many catalogs. One search.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="111" y="395" width="254" height="57" rx="15" fill="#F0F2FF" stroke="#D6DDFB"/>
+    <circle cx="139" cy="423" r="8" fill="#596BE0"/>
+    <text x="160" y="432" fill="#283354" font-size="19" font-weight="600">Earth Search</text>
+    <rect x="111" y="468" width="254" height="57" rx="15" fill="#F0F2FF" stroke="#D6DDFB"/>
+    <circle cx="139" cy="496" r="8" fill="#596BE0"/>
+    <text x="160" y="505" fill="#283354" font-size="19" font-weight="600">Planetary Computer</text>
+    <rect x="111" y="541" width="254" height="57" rx="15" fill="#F0F2FF" stroke="#D6DDFB"/>
+    <circle cx="139" cy="569" r="8" fill="#596BE0"/>
+    <text x="160" y="578" fill="#283354" font-size="19" font-weight="600">Your STAC API</text>
+    <rect x="836" y="430" width="253" height="127" rx="20" fill="#14218D"/>
+    <text x="867" y="478" fill="#C8D0FF" font-size="16" font-weight="700" letter-spacing="1.5">ONE QUERY</text>
+    <text x="867" y="521" fill="white" font-size="26" font-weight="700">Combined results</text>
+  </g>
+  <path d="M393 423H490Q514 423 514 447V483Q514 507 538 507H633Q657 507 657 483V458Q657 434 681 434H790" stroke="url(#line)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m780 418 20 16-20 16" stroke="#172A9B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="514" cy="447" r="9" fill="#7887E8"/>
+  <circle cx="657" cy="483" r="9" fill="#485BCF"/>
+  <rect x="111" y="180" width="144" height="34" rx="17" fill="#E9EDFF"/>
+  <text x="132" y="203" fill="#283A9A" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1">STAC SEARCH</text>
+</svg>

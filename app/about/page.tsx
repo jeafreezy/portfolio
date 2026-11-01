@@ -60,8 +60,8 @@ export default function AboutPage() {
             <EmailIcon
               className={`w-5 h-5  stroke-1  fill-brand-text/60 dark:fill-brand-text-light/50 dark:hover:fill-brand-text-light/80 transition duration-75`}
             />
-            <Link href={"mailto:emmanuel.jolaiya@un.org"} title="emmanuel.jolaiya[at]un.org">
-              emmanuel.jolaiya[at]un.org
+            <Link href={"mailto:emmanuel@spatialnode.com"} title="emmanuel@spatialnode.com">
+              emmanuel@spatialnode.com
             </Link>
           </span>
         </div>

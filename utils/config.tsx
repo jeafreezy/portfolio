@@ -12,6 +12,9 @@ import Gallery5 from "@/public/gallery/5.jpeg";
 import Gallery6 from "@/public/gallery/6.jpg";
 import Gallery7 from "@/public/gallery/7.jpg";
 import Gallery8 from "@/public/gallery/8.jpeg";
+import RisingStarImage from "@/public/gallery/rising-star-2026.jpg";
+import GWFPresentationImage from "@/public/gallery/gwf-2026-presentation.jpg";
+import GeomundusPanelImage from "@/public/gallery/geomundus-2026-alumni-panel.jpg";
 import PersonIcon from "@/components/icons/PersonIcon";
 import ArticleIcon from "@/components/icons/ArticleIcon";
 import HomeIcon from "@/components/icons/HomeIcon";
@@ -148,6 +151,27 @@ export const galleryImages: TGalleryObj[] = [
     path: Gallery8,
     description:
       "A clean shot from the SotMes/GeoCamp 2025 Conference in Zaragoza, Spain.",
+  },
+  {
+    width: 799,
+    height: 533,
+    path: GWFPresentationImage,
+    description:
+      "Presenting the Geospatial Data Quality Management Framework at Geospatial World Forum 2026 in Amsterdam.",
+  },
+  {
+    width: 799,
+    height: 533,
+    path: RisingStarImage,
+    description:
+      "Receiving the Top 50 Geospatial Rising Star Award at Geospatial World Forum 2026 in Amsterdam.",
+  },
+  {
+    width: 4592,
+    height: 3448,
+    path: GeomundusPanelImage,
+    description:
+      "Speaking on the Navigating Geospatial Careers alumni panel at Geomundus Conference 2026 in Castellón, Spain.",
   },
 ].reverse();
 
