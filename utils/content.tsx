@@ -37,7 +37,7 @@ export const APP_CONTENT = {
   header: {
     hero: "Geospatial Engineer",
     heroBio:
-      "Hello 👋, I'm Emmanuel. I build geospatial and full-stack software, lead teams, and automate workflows. I guide projects from concept to deployment and turn data into actionable insight, with a strong appreciation for clean, well-crafted design and attention to detail. I currently consult for the UN Global Service Centre, creating geospatial, data, and software solutions for real-world challenges.",
+      "Hello 👋, I'm Emmanuel, a geospatial software engineering leader who builds geospatial and full-stack products and leads teams. I currently serve as Digital & Information Technology Manager - Geospatial Software Engineering at IWMI.",
   },
   about: {
     hero: "About me",
@@ -58,9 +58,16 @@ export const APP_CONTENT = {
     //
     //},
     {
+      role: "Digital & Information Technology Manager - Geospatial Software Engineering",
+      period: "October 2026 - Present",
+      companyName: "International Water Management Institute (IWMI)",
+      companyLogo: IWMILogo,
+      companyWebsite: 'https://iwmi.org'
+    },
+    {
       role: "Geospatial Data Engineer",
       roleType: "Part Time",
-      period: "2025 - Present",
+      period: "2025 - October 2026",
       companyName: "United Nations Global Service Centre (UNGSC)",
       companyLogo: UNGSCLogo,
       companyWebsite: 'https://ungsc.org'
@@ -278,6 +285,36 @@ export const APP_CONTENT = {
     media: [
       //chronological ordering
       {
+        talkTitle: "Navigating Geospatial Careers",
+        abstract:
+          "As an Erasmus Mundus Geospatial Technologies alumnus, I joined the Geomundus 2026 alumni panel to discuss geospatial career opportunities, the transition from academia to industry, and finding a path in the profession.",
+        organizerName: "Geomundus Conference - Castellón, Spain",
+        year: "2026",
+        link: "https://geomundus.org/speakers",
+        linkLabel: "View speaker page",
+        category: MediaCategory.CONFERENCE_TALKS,
+      },
+      {
+        talkTitle: "Geospatial Data Quality Management Framework",
+        abstract:
+          "I presented on geospatial data quality management at Geospatial World Forum 2026 in Amsterdam, where I received the Top 50 Geospatial Rising Star Award.",
+        organizerName: "Geospatial World Forum - Amsterdam",
+        year: "2026",
+        link: "https://geospatialworld.net/gwf/2026/data-science.php",
+        linkLabel: "View session and event information",
+        category: MediaCategory.CONFERENCE_TALKS,
+      },
+      {
+        talkTitle: "fAIr: Community AI-Assisted Mapping for Humanitarian Response",
+        abstract:
+          "I presented fAIr, a community AI-assisted mapping tool for humanitarian response, at State of the Map Europe 2025.",
+        organizerName: "State of the Map Europe",
+        year: "2025",
+        link: "https://youtu.be/tyciwFwCvtM?si=E2D-EEGpqFzL1qNL",
+        linkLabel: "Watch presentation",
+        category: MediaCategory.CONFERENCE_TALKS,
+      },
+      {
         talkTitle:
           "fAIr - Building an AI Mapping Partner with Django",
         abstract:
@@ -450,6 +487,17 @@ export const APP_CONTENT = {
     description: `Throughout my career, I've worked on a diverse range of projects, with some being open-source and others proprietary. On this page, I'm showcasing my projects, research papers, volunteering roles, and open-source contributions. These represent some of my proudest accomplishments. If any of these resonate with you, feel free to explore the code (where available) or reach out to discuss them!`,
     projects: [
      // Projects
+     {
+        title: "SuperSTAC",
+        date: "2026 - present",
+        image: "/projects/superstac.svg",
+        protected: false,
+        shortDescription:
+          "A geospatial search toolkit for Python, Rust, and the command line. Search multiple compatible STAC catalogs with one query, combine results, and save catalog metadata to GeoParquet for reuse.",
+        tags: [ProjectTag.STAC, ProjectTag.Python, ProjectTag.Rust],
+        demoLink: "https://spatialnode.com/superstac",
+        categories: [ProjectCategory.BACKEND, ProjectCategory.OPEN_SOURCE],
+      },
      {
         title: "UseOSM",
         date: "2025 - present",

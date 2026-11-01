@@ -49,5 +49,6 @@ export type TMediaItem = {
   conferenceName: string;
   conferenceYear: string;
   link: string;
+  linkLabel?: string;
   category: TMediaCategory;
 };

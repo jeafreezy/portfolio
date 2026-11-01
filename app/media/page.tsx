@@ -86,13 +86,13 @@ export default function MediaPage({}) {
               </p>
               <Link href={media.link} target="blank" title={media.talkTitle}>
                 <p className="text-deep-purple text-sm dark:text-light-purple">
-                  {media.category == MediaCategory.PODCAST
+                  {media.linkLabel ?? (media.category == MediaCategory.PODCAST
                     ? "Listent to podcast"
                     : media.slides
                     ? "View slides"
                     : media.category == MediaCategory.INTERVIEWS
                     ? "Read"
-                    : "Watch video"}
+                    : "Watch video")}
                   {` >`}
                 </p>
               </Link>
